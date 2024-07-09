@@ -1,0 +1,716 @@
+[
+    {
+        "id": 119,
+        "title": "Saya in Peril",
+        "description": "Save Saya who is in peril.",
+        "completed": false
+    },
+    {
+        "id": 118,
+        "title": "Nao and the Crooks",
+        "description": "Deal with crooks bothering Nao.",
+        "completed": true
+    },
+    {
+        "id": 117,
+        "title": "Mika's Family",
+        "description": "Assist Mika with her family problems.",
+        "completed": false
+    },
+    {
+        "id": 116,
+        "title": "Yui and Adam",
+        "description": "Help Yui and Adam with their issues.",
+        "completed": false
+    },
+    {
+        "id": 115,
+        "title": "Shiori's Stalker",
+        "description": "Deal with a stalker following Shiori.",
+        "completed": false
+    },
+    {
+        "id": 114,
+        "title": "Miyu and Her Son",
+        "description": "Assist Miyu with her son.",
+        "completed": false
+    },
+    {
+        "id": 113,
+        "title": "Ranko's Worry",
+        "description": "Listen to and resolve Ranko's worries.",
+        "completed": false
+    },
+    {
+        "id": 112,
+        "title": "Kana and Her Dog",
+        "description": "Help Kana take care of her dog.",
+        "completed": false
+    },
+    {
+        "id": 111,
+        "title": "Rin in Trouble",
+        "description": "Assist Rin who is in trouble.",
+        "completed": false
+    },
+    {
+        "id": 110,
+        "title": "Reimi Betrayed",
+        "description": "Help Reimi after she has been betrayed.",
+        "completed": false
+    },
+    {
+        "id": 109,
+        "title": "Straight to the Top!",
+        "description": "Assist someone in their quest to rise to the top.",
+        "completed": false
+    },
+    {
+        "id": 108,
+        "title": "Amon",
+        "description": "Face off against the formidable Amon.",
+        "completed": false
+    },
+    {
+        "id": 107,
+        "title": "Let's Learn English 4",
+        "description": "Help someone learn English (part 4).",
+        "completed": false
+    },
+    {
+        "id": 106,
+        "title": "Let's Learn English 3",
+        "description": "Help someone learn English (part 3).",
+        "completed": false
+    },
+    {
+        "id": 105,
+        "title": "Let's Learn English 2",
+        "description": "Help someone learn English (part 2).",
+        "completed": false
+    },
+    {
+        "id": 104,
+        "title": "Let's Learn English 1",
+        "description": "Help someone learn English (part 1).",
+        "completed": false
+    },
+    {
+        "id": 103,
+        "title": "New Dog, New Tricks: Fetch",
+        "description": "Teach a new dog the trick 'fetch'.",
+        "completed": false
+    },
+    {
+        "id": 102,
+        "title": "New Dog, New Tricks: Turn Around",
+        "description": "Teach a new dog the trick 'turn around'.",
+        "completed": false
+    },
+    {
+        "id": 101,
+        "title": "New Dog, New Tricks: Sit",
+        "description": "Teach a new dog the trick 'sit'.",
+        "completed": false
+    },
+    {
+        "id": 100,
+        "title": "The Fifth Bouncer",
+        "description": "Provide services as the fifth bouncer in a series.",
+        "completed": false
+    },
+    {
+        "id": 99,
+        "title": "The Fourth Bouncer",
+        "description": "Help out as the fourth bouncer in a series.",
+        "completed": false
+    },
+    {
+        "id": 98,
+        "title": "The Third Bouncer",
+        "description": "Take on duties as the third bouncer in a series.",
+        "completed": false
+    },
+    {
+        "id": 97,
+        "title": "The Second Bouncer",
+        "description": "Assist as the second bouncer in a series.",
+        "completed": false
+    },
+    {
+        "id": 96,
+        "title": "The First Bouncer",
+        "description": "Help out as the first bouncer in a series.",
+        "completed": false
+    },
+    {
+        "id": 95,
+        "title": "Bouncers Needed",
+        "description": "Provide bouncer services where needed.",
+        "completed": false
+    },
+    {
+        "id": 94,
+        "title": "High-Tech Peeping Tom",
+        "description": "Catch a high-tech peeping tom.",
+        "completed": false
+    },
+    {
+        "id": 93,
+        "title": "Deliver Race",
+        "description": "Participate in a delivery race.",
+        "completed": false
+    },
+    {
+        "id": 92,
+        "title": "Convenient Robbery",
+        "description": "Investigate a convenient store robbery.",
+        "completed": true
+    },
+    {
+        "id": 91,
+        "title": "Queen of Kamurocho",
+        "description": "Deal with issues surrounding the Queen of Kamurocho.",
+        "completed": false
+    },
+    {
+        "id": 90,
+        "title": "Ramen No. 1 Star",
+        "description": "Assist a ramen chef in becoming the No. 1 star.",
+        "completed": false
+    },
+    {
+        "id": 89,
+        "title": "Water Purifiers",
+        "description": "Deal with water purifier issues.",
+        "completed": false
+    },
+    {
+        "id": 88,
+        "title": "Presidential Golfer",
+        "description": "Help a presidential golfer with their game.",
+        "completed": false
+    },
+    {
+        "id": 87,
+        "title": "As the Rose Balsam Blooms",
+        "description": "Assist with a situation involving blooming rose balsams.",
+        "completed": false
+    },
+    {
+        "id": 86,
+        "title": "A Melting Heart",
+        "description": "Help melt someone's cold heart.",
+        "completed": false
+    },
+    {
+        "id": 85,
+        "title": "Kiryu the Pickpocket!?",
+        "description": "Clear Kiryu's name from pickpocketing accusations.",
+        "completed": false
+    },
+    {
+        "id": 84,
+        "title": "Last Month's Winner",
+        "description": "Challenge last month's winner in a competition.",
+        "completed": false
+    },
+    {
+        "id": 83,
+        "title": "Death Bowler",
+        "description": "Deal with a deadly bowler causing trouble.",
+        "completed": false
+    },
+    {
+        "id": 82,
+        "title": "A Lost Key",
+        "description": "Help someone find a lost key.",
+        "completed": false
+    },
+    {
+        "id": 81,
+        "title": "Watch Out for Renovations",
+        "description": "Watch out for dangerous renovations in progress.",
+        "completed": false
+    },
+    {
+        "id": 80,
+        "title": "Your Fortunes Told Here",
+        "description": "Get your fortunes told and deal with the results.",
+        "completed": false
+    },
+    {
+        "id": 79,
+        "title": "Lasagna at Large",
+        "description": "Deal with a lasagna-related issue on the loose.",
+        "completed": false
+    },
+    {
+        "id": 78,
+        "title": "Anything for Grandma's Love",
+        "description": "Help someone do anything to win their grandma's love.",
+        "completed": false
+    },
+    {
+        "id": 77,
+        "title": "Stealing from the Dragon's Hoard",
+        "description": "Steal valuable items from a hoard.",
+        "completed": false
+    },
+    {
+        "id": 76,
+        "title": "Disconnected",
+        "description": "Resolve a case of disconnected relationships.",
+        "completed": false
+    },
+    {
+        "id": 75,
+        "title": "The Returnee",
+        "description": "Assist a returnee with reintegrating into society.",
+        "completed": false
+    },
+    {
+        "id": 74,
+        "title": "Bargain Sale",
+        "description": "Help organize a bargain sale event.",
+        "completed": false
+    },
+    {
+        "id": 73,
+        "title": "Mars Fighters in Tokyo",
+        "description": "Assist with a film involving Mars fighters in Tokyo.",
+        "completed": false
+    },
+    {
+        "id": 72,
+        "title": "A New Con",
+        "description": "Expose a new con artist scheme.",
+        "completed": false
+    },
+    {
+        "id": 71,
+        "title": "Revenge of the Con Men",
+        "description": "Seek revenge against con men who wronged someone.",
+        "completed": false
+    },
+    {
+        "id": 70,
+        "title": "The Con Wars",
+        "description": "Handle a war between rival con artist groups.",
+        "completed": false
+    },
+    {
+        "id": 69,
+        "title": "The Con Menace",
+        "description": "Deal with a group of con artists.",
+        "completed": false
+    },
+    {
+        "id": 68,
+        "title": "Thrown to the Loan Sharks",
+        "description": "Rescue someone thrown to the loan sharks.",
+        "completed": false
+    },
+    {
+        "id": 67,
+        "title": "Chumming the Waters",
+        "description": "Investigate suspicious activity in the waters.",
+        "completed": false
+    },
+    {
+        "id": 66,
+        "title": "Walking the Plank",
+        "description": "Deal with pirates and walk the plank.",
+        "completed": false
+    },
+    {
+        "id": 65,
+        "title": "Chic Snatcher",
+        "description": "Catch a chic thief who's been snatching stylish items.",
+        "completed": false
+    },
+    {
+        "id": 64,
+        "title": "The Tuna Fund",
+        "description": "Help raise funds for a tuna-related cause.",
+        "completed": false
+    },
+    {
+        "id": 63,
+        "title": "Missed Caller",
+        "description": "Investigate a series of missed calls.",
+        "completed": false
+    },
+    {
+        "id": 62,
+        "title": "Return to the Dragon Palace",
+        "description": "Return to the Dragon Palace to solve a problem.",
+        "completed": false
+    },
+    {
+        "id": 61,
+        "title": "The Distiller's Treasure",
+        "description": "Search for a treasure hidden by a distiller.",
+        "completed": false
+    },
+    {
+        "id": 60,
+        "title": "Lost and Found",
+        "description": "Help find a lost item.",
+        "completed": false
+    },
+    {
+        "id": 59,
+        "title": "Ghosts from the Past",
+        "description": "Confront ghosts from Kiryu's past.",
+        "completed": false
+    },
+    {
+        "id": 58,
+        "title": "Barking up the Wrong Tree",
+        "description": "Resolve a misunderstanding involving a barking dog.",
+        "completed": false
+    },
+    {
+        "id": 57,
+        "title": "I Want to Go to Tokyo 3",
+        "description": "Help someone achieve their dream of going to Tokyo (part 3).",
+        "completed": false
+    },
+    {
+        "id": 56,
+        "title": "I Want to Go to Tokyo 2",
+        "description": "Help someone achieve their dream of going to Tokyo (part 2).",
+        "completed": false
+    },
+    {
+        "id": 55,
+        "title": "I Want to Go to Tokyo 1",
+        "description": "Help someone achieve their dream of going to Tokyo (part 1).",
+        "completed": false
+    },
+    {
+        "id": 54,
+        "title": "Riled Riders",
+        "description": "Deal with a gang of rowdy riders causing trouble.",
+        "completed": false
+    },
+    {
+        "id": 53,
+        "title": "Bullseye of Love",
+        "description": "Help a man win over his love interest with a bullseye.",
+        "completed": false
+    },
+    {
+        "id": 52,
+        "title": "Under the Table",
+        "description": "Investigate shady dealings happening under the table.",
+        "completed": false
+    },
+    {
+        "id": 51,
+        "title": "Dessert",
+        "description": "Assist with the dessert preparation for a banquet.",
+        "completed": false
+    },
+    {
+        "id": 50,
+        "title": "Main Course",
+        "description": "Help prepare the main course for a banquet.",
+        "completed": false
+    },
+    {
+        "id": 49,
+        "title": "Appetizer",
+        "description": "Assist with the preparation of appetizers for an event.",
+        "completed": false
+    },
+    {
+        "id": 48,
+        "title": "Hor D'oeuvres",
+        "description": "Help a chef perfect his hors d'oeuvres.",
+        "completed": false
+    },
+    {
+        "id": 47,
+        "title": "Hit-and-Stop",
+        "description": "Deal with a hit-and-run incident.",
+        "completed": false
+    },
+    {
+        "id": 46,
+        "title": "Mikio's Munchathon",
+        "description": "Help Mikio with his eating challenge.",
+        "completed": false
+    },
+    {
+        "id": 45,
+        "title": "The Iriomote Incident",
+        "description": "Investigate a strange incident on Iriomote Island.",
+        "completed": false
+    },
+    {
+        "id": 44,
+        "title": "Bag That Snatcher",
+        "description": "Catch a thief who's been snatching bags.",
+        "completed": false
+    },
+    {
+        "id": 43,
+        "title": "Sea Bream Strongarm",
+        "description": "Help a fisherman deal with a strong-arming competitor.",
+        "completed": false
+    },
+    {
+        "id": 42,
+        "title": "Temptation",
+        "description": "Deal with a situation involving temptation and fidelity.",
+        "completed": false
+    },
+    {
+        "id": 41,
+        "title": "Catch Those Shoplifters!",
+        "description": "Catch shoplifters causing trouble in the area.",
+        "completed": false
+    },
+    {
+        "id": 40,
+        "title": "Suspicious Spouses",
+        "description": "Resolve issues between suspicious spouses.",
+        "completed": false
+    },
+    {
+        "id": 39,
+        "title": "The Old Man's Memories",
+        "description": "Help an old man recover his lost memories.",
+        "completed": false
+    },
+    {
+        "id": 38,
+        "title": "Morning Glory Hide-and-Seek",
+        "description": "Play hide-and-seek with the kids from Morning Glory Orphanage.",
+        "completed": false
+    },
+    {
+        "id": 37,
+        "title": "Mr. Try and Catch Me",
+        "description": "Take on a challenge from Mr. Try and Catch Me.",
+        "completed": false
+    },
+    {
+        "id": 36,
+        "title": "Mr. Try and Flee Me",
+        "description": "Take on a challenge from Mr. Try and Flee Me.",
+        "completed": false
+    },
+    {
+        "id": 35,
+        "title": "Mr. Try and Hit Me Again",
+        "description": "Take on a challenge from Mr. Try and Hit Me Again.",
+        "completed": false
+    },
+    {
+        "id": 34,
+        "title": "Reckoning",
+        "description": "Help someone seeking revenge for a past wrong.",
+        "completed": false
+    },
+    {
+        "id": 33,
+        "title": "Robbing the Orphanage",
+        "description": "Deal with someone stealing from the orphanage.",
+        "completed": false
+    },
+    {
+        "id": 32,
+        "title": "Out of His League",
+        "description": "Assist a man who's trying to impress a woman out of his league.",
+        "completed": false
+    },
+    {
+        "id": 31,
+        "title": "Fast Food for the Heart",
+        "description": "Help a couple rekindle their relationship through fast food.",
+        "completed": false
+    },
+    {
+        "id": 30,
+        "title": "Rookie's Dilemma",
+        "description": "Assist a rookie cop with his first big case.",
+        "completed": false
+    },
+    {
+        "id": 29,
+        "title": "Manga Mania",
+        "description": "Help a manga artist with their work.",
+        "completed": false
+    },
+    {
+        "id": 28,
+        "title": "Talking About Me?",
+        "description": "Deal with rumors being spread about Kiryu.",
+        "completed": false
+    },
+    {
+        "id": 27,
+        "title": "The Hustler's Challenge",
+        "description": "Take on a challenge from a local hustler.",
+        "completed": false
+    },
+    {
+        "id": 26,
+        "title": "Kiryu the Collector",
+        "description": "Collect various items requested by different people.",
+        "completed": false
+    },
+    {
+        "id": 25,
+        "title": "Nonstop Stalkers",
+        "description": "Help a woman being stalked by multiple people.",
+        "completed": false
+    },
+    {
+        "id": 24,
+        "title": "Shisa Shakedown",
+        "description": "Help retrieve stolen Shisa statues.",
+        "completed": false
+    },
+    {
+        "id": 23,
+        "title": "II in Theater Square",
+        "description": "Deal with troublemakers in Theater Square.",
+        "completed": false
+    },
+    {
+        "id": 22,
+        "title": "Rough Draft",
+        "description": "Assist an author struggling with writer's block.",
+        "completed": false
+    },
+    {
+        "id": 21,
+        "title": "A Boy and his Balloon",
+        "description": "Help a boy retrieve his lost balloon.",
+        "completed": false
+    },
+    {
+        "id": 20,
+        "title": "Bottled Love",
+        "description": "Help a woman find a message in a bottle from her lost love.",
+        "completed": false
+    },
+    {
+        "id": 19,
+        "title": "Yamashita Treasure Hunt",
+        "description": "Join a treasure hunt for the legendary Yamashita treasure.",
+        "completed": false
+    },
+    {
+        "id": 18,
+        "title": "Instant Ramen Takes Time",
+        "description": "Assist a man trying to perfect his instant ramen recipe.",
+        "completed": false
+    },
+    {
+        "id": 17,
+        "title": "The Seven Mysteries of Ryukyu 7",
+        "description": "Uncover the seventh of the Seven Mysteries of Ryukyu.",
+        "completed": false
+    },
+    {
+        "id": 16,
+        "title": "The Seven Mysteries of Ryukyu 6",
+        "description": "Uncover the sixth of the Seven Mysteries of Ryukyu.",
+        "completed": false
+    },
+    {
+        "id": 15,
+        "title": "The Seven Mysteries of Ryukyu 5",
+        "description": "Uncover the fifth of the Seven Mysteries of Ryukyu.",
+        "completed": false
+    },
+    {
+        "id": 14,
+        "title": "The Seven Mysteries of Ryukyu 4",
+        "description": "Uncover the fourth of the Seven Mysteries of Ryukyu.",
+        "completed": false
+    },
+    {
+        "id": 13,
+        "title": "The Seven Mysteries of Ryukyu 3",
+        "description": "Uncover the third of the Seven Mysteries of Ryukyu.",
+        "completed": false
+    },
+    {
+        "id": 12,
+        "title": "The Seven Mysteries of Ryukyu 2",
+        "description": "Uncover the second of the Seven Mysteries of Ryukyu.",
+        "completed": false
+    },
+    {
+        "id": 11,
+        "title": "The Seven Mysteries of Ryukyu 1",
+        "description": "Uncover the first of the Seven Mysteries of Ryukyu.",
+        "completed": false
+    },
+    {
+        "id": 10,
+        "title": "Another Stardust",
+        "description": "Help manage the Stardust club and deal with its issues.",
+        "completed": false
+    },
+    {
+        "id": 9,
+        "title": "Murder at Caf\u00e9 Alps",
+        "description": "Investigate a murder that took place at Caf\u00e9 Alps.",
+        "completed": false
+    },
+    {
+        "id": 8,
+        "title": "The Comforting Yakuza",
+        "description": "Comfort a grieving yakuza member.",
+        "completed": false
+    },
+    {
+        "id": 7,
+        "title": "Silver Screen Dragon",
+        "description": "Assist an aspiring actress in her movie debut.",
+        "completed": false
+    },
+    {
+        "id": 6,
+        "title": "They Never Learn",
+        "description": "Deal with a group of delinquents who never seem to learn their lesson.",
+        "completed": false
+    },
+    {
+        "id": 5,
+        "title": "Early Honeymoon",
+        "description": "Help a couple enjoy their honeymoon by solving their problems.",
+        "completed": false
+    },
+    {
+        "id": 4,
+        "title": "Dotting the Eye",
+        "description": "Assist a boy with his eye injury by taking him to the hospital.",
+        "completed": false
+    },
+    {
+        "id": 3,
+        "title": "Hometown Girl",
+        "description": "Help a girl from Kiryu's hometown with her personal problems.",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "title": "Two Fathers",
+        "description": "Assist two fathers who are feuding over their children's issues.",
+        "completed": false
+    },
+    {
+        "id": 1,
+        "title": "Date's Pride",
+        "description": "Help Detective Date deal with a troublesome journalist.",
+        "completed": false
+    }
+]
