@@ -26,7 +26,7 @@ def filter_substories(query, substories, filter_by, status_filter, chapter_filte
         filtered = [substory for substory in filtered if substory['completed']]
     elif status_filter == 'Not Completed':
         filtered = [substory for substory in filtered if not substory['completed']]
-
+    
     if chapter_filter != 'All':
         filtered = [substory for substory in filtered if substory.get('available from', '') == chapter_filter]
 
@@ -208,11 +208,17 @@ filter_option = ttk.Combobox(frame_filter, values=['ID', 'Title', 'Description']
 filter_option.set('Title')
 filter_option.pack(side=tk.LEFT)
 
+# Adding Status Filter
+label_status = tk.Label(frame_filter, text="Status:")
+label_status.pack(side=tk.LEFT, padx=5)
 status_option = ttk.Combobox(frame_filter, values=['All', 'Completed', 'Not Completed'])
 status_option.set('All')
 status_option.pack(side=tk.LEFT, padx=5)
 
-chapter_option = ttk.Combobox(frame_filter, values=['All', 'chapter 1', 'chapter 2', 'chapter 3', 'chapter 4', 'chapter 5','chapter 6'])
+# Adding Chapter Filter
+label_chapter = tk.Label(frame_filter, text="Chapter:")
+label_chapter.pack(side=tk.LEFT, padx=5)
+chapter_option = ttk.Combobox(frame_filter, values=['All', 'chapter 1', 'chapter 2', 'chapter 3', 'chapter 4', 'chapter 5'])
 chapter_option.set('All')
 chapter_option.pack(side=tk.LEFT, padx=5)
 
