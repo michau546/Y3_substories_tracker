@@ -75,14 +75,29 @@ def sort_by_column(column_index):
     sort_reverse[column_index] = not sort_reverse[column_index]
     refresh_table(tree, substories)
 
+# Function to change font size only for the Treeview
+def change_font_size(delta):
+    global current_font_size
+    current_font_size += delta
+    new_font = (current_font_family, current_font_size)
+    style.configure("Treeview", font=new_font)
+    style.configure("Treeview.Heading", font=new_font)
+
 # Loading data
 substories = load_data()
 sort_reverse = [False, False, False, False]  # Sorting flags for columns
+current_font_family = 'Helvetica'
+current_font_size = 12  # Default font size
 
 # Creating the main application window
 root = tk.Tk()
 root.title("Yakuza 3 Substories Manager")
 root.geometry('1024x768')  # Set default window size
+
+# Creating the style
+style = ttk.Style()
+style.configure("Treeview", font=(current_font_family, current_font_size))
+style.configure("Treeview.Heading", font=(current_font_family, current_font_size))
 
 # Creating the frame for filtering options
 frame_filter = tk.Frame(root)
@@ -104,6 +119,13 @@ status_option.pack(side=tk.LEFT, padx=5)
 
 button_filter = tk.Button(frame_filter, text="Filter", command=on_filter)
 button_filter.pack(side=tk.LEFT, padx=5)
+
+# Adding font size controls for the Treeview
+button_increase_font = tk.Button(frame_filter, text="Increase Font Size", command=lambda: change_font_size(2))
+button_increase_font.pack(side=tk.LEFT, padx=5)
+
+button_decrease_font = tk.Button(frame_filter, text="Decrease Font Size", command=lambda: change_font_size(-2))
+button_decrease_font.pack(side=tk.LEFT, padx=5)
 
 # Creating the table to display substories
 columns = ("ID", "Title", "Description", "Status")
