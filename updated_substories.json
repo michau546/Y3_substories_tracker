@@ -5,7 +5,7 @@
         "description": "This is the Substory attached to spending time with Saya Unten at Flawless in Ryukyu.",
         "completed": false,
         "available from": "chapter 3",
-        "status": "In Progress"
+        "status": "Not Completed"
     },
     {
         "id": 118,
@@ -169,7 +169,7 @@
         "title": "The Second Bouncer",
         "description": "Assist as the second bouncer in a series.",
         "completed": false,
-        "status": "Completed"
+        "status": "Not Completed"
     },
     {
         "id": 96,

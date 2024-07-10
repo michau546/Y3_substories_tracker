@@ -23,22 +23,13 @@ def filter_substories(query, substories, filter_by, status_filter, chapter_filte
     elif filter_by == 'Description':
         filtered = [substory for substory in substories if query.lower() in substory['description'].lower()]
 
-    if status_filter == 'Completed':
-        filtered = [substory for substory in filtered if substory['completed']]
-    elif status_filter == 'Not Completed':
-        filtered = [substory for substory in filtered if not substory['completed']]
+    if status_filter != 'All':
+        filtered = [substory for substory in filtered if substory['status'] == status_filter]
     
     if chapter_filter != 'All':
         filtered = [substory for substory in filtered if substory.get('available from', '') == chapter_filter]
 
     return filtered
-
-# Function to mark substory as completed
-def mark_as_completed(substory_id, completed, substories):
-    for substory in substories:
-        if substory['id'] == substory_id:
-            substory['completed'] = completed
-            break
 
 # Function to refresh the table view
 def refresh_table(tree, substories):
@@ -46,9 +37,8 @@ def refresh_table(tree, substories):
         tree.delete(row)
 
     for substory in substories:
-        status = "Completed" if substory['completed'] else "Not Completed"
         available_from = substory.get('available from', '')
-        tree.insert("", "end", values=(substory['id'], substory['title'], substory['description'], available_from, status))
+        tree.insert("", "end", values=(substory['id'], substory['title'], substory['description'], available_from, substory['status']))
 
 # Function to handle filtering
 def on_filter():
@@ -61,17 +51,16 @@ def on_filter():
         messagebox.showinfo("No Substories Found", "No substories found matching the filters.")
     refresh_table(tree, filtered_substories)
 
-# Function to handle checkbox toggling
-def on_toggle_completed(event):
+# Function to handle status change
+def change_status(event):
     selected_item = tree.selection()
     if selected_item:
-        col = tree.identify_column(event.x)
-        if col == "#5":  # Only toggle if the "Status" column is clicked
-            substory_id = int(tree.item(selected_item, 'values')[0])
-            substory = next(sub for sub in substories if sub['id'] == substory_id)
-            substory['completed'] = not substory['completed']
-            save_data(substories)
-            refresh_table(tree, substories)
+        substory_id = int(tree.item(selected_item, 'values')[0])
+        substory = next(sub for sub in substories if sub['id'] == substory_id)
+        new_status = status_var.get()
+        substory['status'] = new_status
+        save_data(substories)
+        refresh_table(tree, substories)
 
 # Function to handle sorting columns
 def sort_by_column(column_index):
@@ -85,7 +74,7 @@ def sort_by_column(column_index):
     elif column_index == 3:  # Sort by Available From
         substories = sorted(substories, key=lambda x: x.get('available from', ''), reverse=sort_reverse[column_index])
     elif column_index == 4:  # Sort by Status
-        substories = sorted(substories, key=lambda x: x['completed'], reverse=sort_reverse[column_index])
+        substories = sorted(substories, key=lambda x: x['status'], reverse=sort_reverse[column_index])
     
     sort_reverse[column_index] = not sort_reverse[column_index]
     refresh_table(tree, substories)
@@ -159,9 +148,11 @@ def show_details(event):
         tk.Label(detail_frame, text="Available From:").grid(row=3, column=0, sticky='e', padx=5, pady=5)
         tk.Label(detail_frame, text=substory.get('available from', '')).grid(row=3, column=1, sticky='w', padx=5, pady=5)
 
-        status = "Completed" if substory['completed'] else "Not Completed"
         tk.Label(detail_frame, text="Status:").grid(row=4, column=0, sticky='e', padx=5, pady=5)
-        tk.Label(detail_frame, text=status).grid(row=4, column=1, sticky='w', padx=5, pady=5)
+        status_option = ttk.Combobox(detail_frame, values=['Completed', 'Not Completed', 'In Progress'])
+        status_option.set(substory['status'])
+        status_option.grid(row=4, column=1, sticky='w', padx=5, pady=5)
+        status_option.bind("<<ComboboxSelected>>", lambda e: update_status(substory, status_option.get()))
 
         # Adding font size controls for the detail window
         button_frame = tk.Frame(detail_window)
@@ -178,6 +169,11 @@ def show_details(event):
 
         button_reset_font = tk.Button(button_frame, text="Reset Font Size", command=lambda: reset_detail_font_size(detail_frame, description_text))
         button_reset_font.grid(row=0, column=2, padx=5)
+
+def update_status(substory, new_status):
+    substory['status'] = new_status
+    save_data(substories)
+    refresh_table(tree, substories)
 
 # Loading data
 substories = load_data()
@@ -215,7 +211,7 @@ filter_option.pack(side=tk.LEFT)
 # Adding Status Filter
 label_status = tk.Label(frame_filter, text="Status:")
 label_status.pack(side=tk.LEFT, padx=5)
-status_option = ttk.Combobox(frame_filter, values=['All', 'Completed', 'Not Completed'])
+status_option = ttk.Combobox(frame_filter, values=['All', 'Completed', 'Not Completed', 'In Progress'])
 status_option.set('All')
 status_option.pack(side=tk.LEFT, padx=5)
 
@@ -279,7 +275,6 @@ refresh_table(tree, substories)
 
 # Binding events
 tree.bind("<Double-1>", show_details)
-tree.bind("<Button-1>", on_toggle_completed)
 
 # Running the main application loop
 root.mainloop()
