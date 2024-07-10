@@ -140,19 +140,24 @@ def show_details(event):
         detail_frame.grid_columnconfigure(1, weight=1)
 
         tk.Label(detail_frame, text="ID:").grid(row=0, column=0, sticky='e', padx=5, pady=5)
-        tk.Label(detail_frame, text=substory['id']).grid(row=0, column=1, sticky='w', padx=5, pady=5)
+        id_entry = tk.Entry(detail_frame)
+        id_entry.insert(0, substory['id'])
+        id_entry.grid(row=0, column=1, sticky='w', padx=5, pady=5)
 
         tk.Label(detail_frame, text="Title:").grid(row=1, column=0, sticky='e', padx=5, pady=5)
-        tk.Label(detail_frame, text=substory['title']).grid(row=1, column=1, sticky='w', padx=5, pady=5)
+        title_entry = tk.Entry(detail_frame)
+        title_entry.insert(0, substory['title'])
+        title_entry.grid(row=1, column=1, sticky='w', padx=5, pady=5)
 
         tk.Label(detail_frame, text="Description:").grid(row=2, column=0, sticky='ne', padx=5, pady=5)
         description_text = tk.Text(detail_frame, wrap=tk.WORD, height=10, width=80)
         description_text.grid(row=2, column=1, sticky='w', padx=5, pady=5)
         description_text.insert(tk.END, substory['description'])
-        description_text.configure(state='disabled')
 
         tk.Label(detail_frame, text="Available From:").grid(row=3, column=0, sticky='e', padx=5, pady=5)
-        tk.Label(detail_frame, text=substory.get('available from', '')).grid(row=3, column=1, sticky='w', padx=5, pady=5)
+        chapter_option = ttk.Combobox(detail_frame, values=['chapter 3', 'chapter 4', 'chapter 5'])
+        chapter_option.set(substory.get('available from', ''))
+        chapter_option.grid(row=3, column=1, sticky='w', padx=5, pady=5)
 
         tk.Label(detail_frame, text="Status:").grid(row=4, column=0, sticky='e', padx=5, pady=5)
         status_option = ttk.Combobox(detail_frame, values=['Completed', 'Not Completed', 'In Progress'])
@@ -175,6 +180,17 @@ def show_details(event):
 
         button_reset_font = tk.Button(button_frame, text="Reset Font Size", command=lambda: reset_detail_font_size(detail_frame, description_text))
         button_reset_font.grid(row=0, column=2, padx=5)
+
+        def on_close():
+            substory['id'] = int(id_entry.get())
+            substory['title'] = title_entry.get()
+            substory['description'] = description_text.get("1.0", tk.END).strip()
+            substory['available from'] = chapter_option.get()
+            save_data(substories)
+            refresh_table(tree, substories)
+            detail_window.destroy()
+
+        detail_window.protocol("WM_DELETE_WINDOW", on_close)
 
 def update_status(substory, new_status):
     substory['status'] = new_status
@@ -229,7 +245,7 @@ status_option.pack(side=tk.LEFT, padx=5)
 # Adding Chapter Filter
 label_chapter = tk.Label(frame_filter, text="Chapter:")
 label_chapter.pack(side=tk.LEFT, padx=5)
-chapter_option = ttk.Combobox(frame_filter, values=['All', 'chapter 3', 'chapter 4', 'chapter 5'])
+chapter_option = ttk.Combobox(frame_filter, values=['All', 'chapter 3', 'chapter 4', 'chapter 5','chapter 6','chapter 7','chapter 9','chapter 10','chapter 12'])
 chapter_option.set('All')
 chapter_option.pack(side=tk.LEFT, padx=5)
 
