@@ -57,7 +57,7 @@ def change_status(event):
     if selected_item:
         substory_id = int(tree.item(selected_item, 'values')[0])
         substory = next(sub for sub in substories if sub['id'] == substory_id)
-        new_status = status_var.get()
+        new_status = status_combobox.get()
         substory['status'] = new_status
         save_data(substories)
         refresh_table(tree, substories)
@@ -269,6 +269,15 @@ hsb.grid(row=1, column=0, sticky='ew')
 # Configure the frame to expand with the window
 frame_tree.grid_rowconfigure(0, weight=1)
 frame_tree.grid_columnconfigure(0, weight=1)
+
+# Adding a separate combobox for status change in the main window
+status_combobox_frame = tk.Frame(root)
+status_combobox_frame.pack(pady=5)
+
+tk.Label(status_combobox_frame, text="Change Status:").pack(side=tk.LEFT)
+status_combobox = ttk.Combobox(status_combobox_frame, values=['Completed', 'Not Completed', 'In Progress'], state='readonly')
+status_combobox.pack(side=tk.LEFT)
+status_combobox.bind("<<ComboboxSelected>>", change_status)
 
 # Initial table refresh
 refresh_table(tree, substories)
