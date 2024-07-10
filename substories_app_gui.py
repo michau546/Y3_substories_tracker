@@ -61,6 +61,12 @@ def change_status(event):
         substory['status'] = new_status
         save_data(substories)
         refresh_table(tree, substories)
+        # Re-select the item
+        for item in tree.get_children():
+            if int(tree.item(item, 'values')[0]) == substory_id:
+                tree.selection_set(item)
+                tree.focus(item)
+                break
 
 # Function to handle sorting columns
 def sort_by_column(column_index):
@@ -174,6 +180,12 @@ def update_status(substory, new_status):
     substory['status'] = new_status
     save_data(substories)
     refresh_table(tree, substories)
+    # Re-select the item
+    for item in tree.get_children():
+        if int(tree.item(item, 'values')[0]) == substory['id']:
+            tree.selection_set(item)
+            tree.focus(item)
+            break
 
 # Loading data
 substories = load_data()
