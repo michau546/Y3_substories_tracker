@@ -1,16 +1,30 @@
 import json
+import os
+import sys
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 
+def resource_path(relative_path):
+    """ Get the absolute path to the resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores the path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 # Function to load data from JSON file
 def load_data():
-    with open('substories.json', 'r') as file:
+    json_path = resource_path('substories.json')
+    with open(json_path, 'r') as file:
         return json.load(file)
 
 # Function to save data to JSON file
 def save_data(substories):
-    with open('substories.json', 'w') as file:
+    json_path = resource_path('substories.json')
+    with open(json_path, 'w') as file:
         json.dump(substories, file, indent=4)
 
 # Function to filter substories
@@ -51,6 +65,10 @@ def on_filter():
         messagebox.showinfo("No Substories Found", "No substories found matching the filters.")
     refresh_table(tree, filtered_substories)
 
+# Function to get current filter settings
+def get_current_filters():
+    return entry_search.get(), filter_option.get(), status_option.get(), chapter_option.get()
+
 # Function to handle status change
 def change_status(event):
     selected_items = tree.selection()
@@ -61,7 +79,12 @@ def change_status(event):
             substory = next(sub for sub in substories if sub['id'] == substory_id)
             substory['status'] = new_status
         save_data(substories)
-        refresh_table(tree, substories)
+        
+        # Get current filters and reapply them after saving data
+        query, filter_by, status_filter, chapter_filter = get_current_filters()
+        filtered_substories = filter_substories(query, substories, filter_by, status_filter, chapter_filter)
+        refresh_table(tree, filtered_substories)
+        
         # Re-select the items based on their IDs
         for item in tree.get_children():
             if int(tree.item(item, 'values')[0]) in selected_ids:
@@ -155,7 +178,7 @@ def show_details(event):
         description_text.insert(tk.END, substory['description'])
 
         tk.Label(detail_frame, text="Available From:").grid(row=3, column=0, sticky='e', padx=5, pady=5)
-        chapter_option = ttk.Combobox(detail_frame, values=['chapter 3', 'chapter 4', 'chapter 5'])
+        chapter_option = ttk.Combobox(detail_frame, values=['chapter 3', 'chapter 4', 'chapter 5','chapter 6','chapter 7','chapter 9','chapter 10','chapter 12'])
         chapter_option.set(substory.get('available from', ''))
         chapter_option.grid(row=3, column=1, sticky='w', padx=5, pady=5)
 
@@ -187,7 +210,12 @@ def show_details(event):
             substory['description'] = description_text.get("1.0", tk.END).strip()
             substory['available from'] = chapter_option.get()
             save_data(substories)
-            refresh_table(tree, substories)
+            
+            # Get current filters and reapply them after saving data
+            query, filter_by, status_filter, chapter_filter = get_current_filters()
+            filtered_substories = filter_substories(query, substories, filter_by, status_filter, chapter_filter)
+            refresh_table(tree, filtered_substories)
+            
             detail_window.destroy()
 
         detail_window.protocol("WM_DELETE_WINDOW", on_close)
@@ -195,7 +223,12 @@ def show_details(event):
 def update_status(substory, new_status):
     substory['status'] = new_status
     save_data(substories)
-    refresh_table(tree, substories)
+    
+    # Get current filters and reapply them after saving data
+    query, filter_by, status_filter, chapter_filter = get_current_filters()
+    filtered_substories = filter_substories(query, substories, filter_by, status_filter, chapter_filter)
+    refresh_table(tree, filtered_substories)
+    
     # Re-select the items
     for item in tree.get_children():
         if int(tree.item(item, 'values')[0]) == substory['id']:
