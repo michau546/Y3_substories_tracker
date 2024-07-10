@@ -10,7 +10,7 @@
         "id": 118,
         "title": "Nao and the Crooks",
         "description": "This is the Substory attached to spending time with Nao Kaneshiro at Flawless in Ryukyu.",
-        "completed": true,
+        "completed": false,
         "available from": "chapter 3"
     },
     {
@@ -66,14 +66,14 @@
         "id": 110,
         "title": "Reimi Betrayed",
         "description": "Help Reimi after she has been betrayed.",
-        "completed": true,
+        "completed": false,
         "available from": "chapter 5"
     },
     {
         "id": 109,
         "title": "Straight to the Top!",
         "description": "At the south part of Hatsumachi, you'll see a guy in a tux vest hanging out in front of a club. This is South Island, a cabaret club. Speak to the guy and he'll ask you to help him train a new hostess to become #1. This substory is further explained in the Hostess Maker section of the guide. While you can train up five women total, you only have to complete one for the purpose of the substory. Your reward for completing one hostess is 100,000 yen.",
-        "completed": true,
+        "completed": false,
         "available from": "chapter 3"
     },
     {
@@ -178,7 +178,7 @@
         "id": 92,
         "title": "Convenient Robbery",
         "description": "Investigate a convenient store robbery.",
-        "completed": true
+        "completed": false
     },
     {
         "id": 91,
@@ -196,7 +196,7 @@
     {
         "id": 89,
         "title": "Water Purifiers",
-        "description": "Deal with water purifier issues. After you complete the 'Return to the Dragon Palace' substory, you’ll get a text about a deal on water purifiers. Go east from Dragon Palace to find a guy in a yellow jacket. Speak to him and agree to be led inside. You’ll get the pitch. Refuse to pay on both counts. Defeat the scam artists and you'll get 50,000 yen.",
+        "description": "Deal with water purifier issues. After you complete the 'Return to the Dragon Palace' substory, you\u00e2\u20ac\u2122ll get a text about a deal on water purifiers. Go east from Dragon Palace to find a guy in a yellow jacket. Speak to him and agree to be led inside. You\u00e2\u20ac\u2122ll get the pitch. Refuse to pay on both counts. Defeat the scam artists and you'll get 50,000 yen.",
         "completed": false,
         "available from": "chapter 5"
     },
@@ -717,8 +717,8 @@
     },
     {
         "id": 9,
-        "title": "Murder at Café Alps",
-        "description": "Investigate a murder that took place at Café Alps.",
+        "title": "Murder at Caf\u0102\u00a9 Alps",
+        "description": "Investigate a murder that took place at Caf\u0102\u00a9 Alps.",
         "completed": false,
         "available from": "chapter 6"
     },

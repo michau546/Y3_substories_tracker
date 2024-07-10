@@ -1,6 +1,7 @@
 import json
 import tkinter as tk
 from tkinter import ttk
+from tkinter import messagebox
 
 # Function to load data from JSON file
 def load_data():
@@ -56,6 +57,8 @@ def on_filter():
     status_filter = status_option.get()
     chapter_filter = chapter_option.get()
     filtered_substories = filter_substories(query, substories, filter_by, status_filter, chapter_filter)
+    if not filtered_substories:
+        messagebox.showinfo("No Substories Found", "No substories found matching the filters.")
     refresh_table(tree, filtered_substories)
 
 # Function to handle checkbox toggling
@@ -188,6 +191,7 @@ detail_font_size = default_font_size
 root = tk.Tk()
 root.title("Yakuza 3 Substories Manager")
 root.geometry('1024x768')  # Set default window size
+root.resizable(False, False)  # Disable window resizing
 
 # Creating the style
 style = ttk.Style()
