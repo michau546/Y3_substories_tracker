@@ -53,20 +53,20 @@ def on_filter():
 
 # Function to handle status change
 def change_status(event):
-    selected_item = tree.selection()
-    if selected_item:
-        substory_id = int(tree.item(selected_item, 'values')[0])
-        substory = next(sub for sub in substories if sub['id'] == substory_id)
+    selected_items = tree.selection()
+    if selected_items:
         new_status = status_combobox.get()
-        substory['status'] = new_status
+        selected_ids = [int(tree.item(item, 'values')[0]) for item in selected_items]
+        for substory_id in selected_ids:
+            substory = next(sub for sub in substories if sub['id'] == substory_id)
+            substory['status'] = new_status
         save_data(substories)
         refresh_table(tree, substories)
-        # Re-select the item
+        # Re-select the items based on their IDs
         for item in tree.get_children():
-            if int(tree.item(item, 'values')[0]) == substory_id:
-                tree.selection_set(item)
+            if int(tree.item(item, 'values')[0]) in selected_ids:
+                tree.selection_add(item)
                 tree.focus(item)
-                break
 
 # Function to handle sorting columns
 def sort_by_column(column_index):
@@ -180,12 +180,11 @@ def update_status(substory, new_status):
     substory['status'] = new_status
     save_data(substories)
     refresh_table(tree, substories)
-    # Re-select the item
+    # Re-select the items
     for item in tree.get_children():
         if int(tree.item(item, 'values')[0]) == substory['id']:
-            tree.selection_set(item)
+            tree.selection_add(item)
             tree.focus(item)
-            break
 
 # Loading data
 substories = load_data()
@@ -230,7 +229,7 @@ status_option.pack(side=tk.LEFT, padx=5)
 # Adding Chapter Filter
 label_chapter = tk.Label(frame_filter, text="Chapter:")
 label_chapter.pack(side=tk.LEFT, padx=5)
-chapter_option = ttk.Combobox(frame_filter, values=['All', 'chapter 1', 'chapter 2', 'chapter 3', 'chapter 4', 'chapter 5'])
+chapter_option = ttk.Combobox(frame_filter, values=['All', 'chapter 3', 'chapter 4', 'chapter 5'])
 chapter_option.set('All')
 chapter_option.pack(side=tk.LEFT, padx=5)
 
@@ -254,7 +253,7 @@ frame_tree.pack(expand=True, fill=tk.BOTH)
 
 # Creating the table to display substories
 columns = ("ID", "Title", "Description", "Available From", "Status")
-tree = ttk.Treeview(frame_tree, columns=columns, show='headings')
+tree = ttk.Treeview(frame_tree, columns=columns, show='headings', selectmode='extended')
 tree.heading("ID", text="ID", command=lambda: sort_by_column(0))
 tree.heading("Title", text="Title", command=lambda: sort_by_column(1))
 tree.heading("Description", text="Description", command=lambda: sort_by_column(2))
