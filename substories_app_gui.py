@@ -161,23 +161,27 @@ def reset_detail_font_size(detail_frame, description_text):
             widget.configure(font=new_font)
     description_text.configure(font=new_font)
 
+def apply_theme_to_widget(widget, widget_style):
+    if isinstance(widget, tk.Entry):
+        widget.configure(background='#333333', foreground='#FFFFFF')
+    elif isinstance(widget, tk.Text):
+        widget.configure(background='#333333', foreground='#FFFFFF')
+    elif isinstance(widget, ttk.Combobox):
+        widget_style.configure("TCombobox", fieldbackground='#555555', background='#333333', foreground='#FFFFFF')
+    elif isinstance(widget, (tk.Label, tk.Button, tk.Frame)):
+        widget.configure(background='#333333', foreground='#FFFFFF')
+    elif isinstance(widget, ttk.Button):
+        widget_style.configure("TButton", background='#333333', foreground='#FFFFFF')
+
 def apply_theme_to_window(window, widgets):
+    widget_style = ttk.Style()
     if dark_mode_var.get():
-        window.configure(background='#333333')
         for widget in widgets:
             try:
-                if isinstance(widget, tk.Entry):
-                    widget.configure(background='#555555', fg='#FFFFFF')
-                elif isinstance(widget, tk.Text):
-                    widget.configure(background='#555555', fg='#FFFFFF')
-                elif isinstance(widget, ttk.Combobox):
-                    widget_style = ttk.Style()
-                    widget_style.configure("TCombobox", fieldbackground='#555555', background='#333333', foreground='#FFFFFF')
-                elif isinstance(widget, (tk.Label, tk.Button, tk.Frame)):
-                    widget.configure(background='#333333', fg='#FFFFFF')
-                elif isinstance(widget, ttk.Button):
-                    widget_style = ttk.Style()
-                    widget_style.configure("TButton", background='#555555', foreground='#FFFFFF')
+                apply_theme_to_widget(widget, widget_style)
+                if isinstance(widget, tk.Frame):
+                    for child in widget.winfo_children():
+                        apply_theme_to_widget(child, widget_style)
             except tk.TclError as e:
                 print(f"Error configuring widget: {e}")
     else:
@@ -185,17 +189,27 @@ def apply_theme_to_window(window, widgets):
         for widget in widgets:
             try:
                 if isinstance(widget, tk.Entry):
-                    widget.configure(background='#FFFFFF', fg='#000000')
+                    widget.configure(background='#FFFFFF', foreground='#000000')
                 elif isinstance(widget, tk.Text):
-                    widget.configure(background='#FFFFFF', fg='#000000')
+                    widget.configure(background='#FFFFFF', foreground='#000000')
                 elif isinstance(widget, ttk.Combobox):
-                    widget_style = ttk.Style()
                     widget_style.configure("TCombobox", fieldbackground='#FFFFFF', background='#f0f0f0', foreground='#000000')
                 elif isinstance(widget, (tk.Label, tk.Button, tk.Frame)):
-                    widget.configure(background='#f0f0f0', fg='#000000')
+                    widget.configure(background='#f0f0f0', foreground='#000000')
                 elif isinstance(widget, ttk.Button):
-                    widget_style = ttk.Style()
                     widget_style.configure("TButton", background='#f0f0f0', foreground='#000000')
+                if isinstance(widget, tk.Frame):
+                    for child in widget.winfo_children():
+                        if isinstance(child, tk.Entry):
+                            child.configure(background='#FFFFFF', foreground='#000000')
+                        elif isinstance(child, tk.Text):
+                            child.configure(background='#FFFFFF', foreground='#000000')
+                        elif isinstance(child, ttk.Combobox):
+                            widget_style.configure("TCombobox", fieldbackground='#FFFFFF', background='#f0f0f0', foreground='#000000')
+                        elif isinstance(child, (tk.Label, tk.Button, tk.Frame)):
+                            child.configure(background='#f0f0f0', foreground='#000000')
+                        elif isinstance(child, ttk.Button):
+                            widget_style.configure("TButton", background='#f0f0f0', foreground='#000000')
             except tk.TclError as e:
                 print(f"Error configuring widget: {e}")
 
@@ -299,8 +313,6 @@ def show_details(event):
             detail_window.destroy()
 
         detail_window.protocol("WM_DELETE_WINDOW", on_close)
-
-
 
 def update_status(substory, new_status):
     substory['status'] = new_status
@@ -566,7 +578,6 @@ def apply_theme():
         root.configure(background='#f0f0f0')  # Reset background color of main window
         frame_filter.configure(background='#f0f0f0')  # Reset background color of filtering frame
 
-
 # Loading data
 substories = load_data()
 sort_reverse = [False, False, False, False, False]  # Sorting flags for columns
@@ -709,4 +720,3 @@ root.protocol("WM_DELETE_WINDOW", on_exit)
 
 # Running the main application loop
 root.mainloop()
-
