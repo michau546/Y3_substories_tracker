@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Essence of Jumping",
+        "description": "The first Revelation cannot be missed. Mack will show you the old lady in Ryukyu. Once you finish the QTEs, note how she was able to \"Leap, flip, and stick the landing. Magnificent\".",
+        "status": "Completed"
+    },
+    {
+        "id": 2,
+        "title": "Essence of Hurling",
+        "description": "Available at the end of Chapter 4. Just across the street from Stardust is a man perving on a lady with a bookbag. Once the scene finishes, choose \"Countered his grapple like a pro\".",
+        "status": "Completed"
+    },
+    {
+        "id": 3,
+        "title": "Essence of Pole Dancing",
+        "description": "Available in Chapter 5 - Go to Asia, the bikini bar, and take in a show. Once you leave, focus on the guy clinging to the pole outside. Choose \"Amazing dance. Can I use my legs like that, too?\".",
+        "status": "Completed"
+    },
+    {
+        "id": 4,
+        "title": "Essence of Rolling",
+        "description": "Available in Chapter 5, once you learn the Komaki Daruma Tumbler from Komaki's Training. Go to the Batting Center and look at the couple in the middle cage. Choose \"Hit 'em low, then hit 'em high.\"",
+        "status": "Completed"
+    },
+    {
+        "id": 5,
+        "title": "Super Finish: Knock Down",
+        "description": "Available in Chapter 6 once Rikiya texts you that he's at a park. Go to Mach Bowl and focus on the guys bowling on the right side. Choose \"You could knock down everything with a ball his size.\"",
+        "status": "Completed"
+    },
+    {
+        "id": 6,
+        "title": "Essence of Self-Destruction",
+        "description": "After beating the boss of Chapter 6, you'll get an e-mail about a soba chef in the southeast part of Kamurocho. Go to Senryo Ave and then east along the unnamed street in the southeast corner until you hit the very end. You'll find the soba guy on his bike. Choose \"If only he hadn't been holding that soba...\"",
+        "status": "Completed"
+    },
+    {
+        "id": 7,
+        "title": "Essence of Reversal",
+        "description": "Partway through Chapter 7, you'll get an e-mail about a dad and a boy wanting a toy. Go to Park Boulevard and you'll see the pair west of Purgatory. \"He underestimated his son because he was lying down.\"",
+        "status": "Completed"
+    },
+    {
+        "id": 8,
+        "title": "Essence of Terror",
+        "description": "In Chapter 9 you get another text about a ninja on Nakamichi St. Go to the south end and look north of the dude in gray holding the tray of stuff and focus on the woman crouching down near a box. \"Fleet feet are the secret to dealing with crowds.\"",
+        "status": "Completed"
+    },
+    {
+        "id": 9,
+        "title": "Super Finish: Hell's Gauntlet",
+        "description": "In Chapter 10 once you return to Okinawa, you'll get the text to go to the crossroads in Hatsumachi. Head there and focus on the dude in the black suit. \"Poor guy just had some tough luck.\"",
+        "status": "Completed"
+    },
+    {
+        "id": 10,
+        "title": "Essence of Drunken Thrust",
+        "description": "In Chapter 10, once you go back to Morning Glory, you'll get one last text from Mack calling you to Hatsumachi. You can only do this at evening or night. Go to the northeast corner of Hatsumachi and focus on the two guys at the end of the road. \"The alcohol made him limber and streamlined his power.\"",
+        "status": "Completed"
+    }
+]

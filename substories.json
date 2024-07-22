@@ -5,7 +5,7 @@
         "description": "First, leave Haruka behind in New Serena. Head to Le Marche and you'll see Date outside it. Chat with him and choose either choice. Walk with Date back to Serena and you'll witness the drama. Once you're outside, head back inside Serena. Once you get the story, leave and head to Public Park 3 nearby. Date will be there and you'll fill him in. Head back to Serena and then go out the back door. Defeat the punks out here, then head out to find Date. Date will go off on his own. You'll have no choice but to wander for a couple of minutes. You'll soon get a call from Wakazo calling you to a marked location in Nakamichi Alley. Head there and defeat all the bad guys.",
         "completed": true,
         "available from": "chapter 12",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "description": "This is the only particular substory in Chapter 10, and you can only do it once you get a call from Tamiya confirming Toma went to Hatsumachi. Or more correctly, this substory must be done at sunset, so if you miss it, make sure you change the time to sunset. Go down to the Ryudo Office. There's a guy standing outside the office. Approach him and he'll ask if Nakahara's around. You'll automatically take him back to the orphanage where they are and it turns out he's Mikio's father. His dad wants him to leave the life but Mikio isn't having it. Go down to the beach to find Mikio and choose any choice. A couple of Kansai yakuza show up to beat down. After which, head downtown and near Mahjong Camp to find Mikio's dad again. Beat up the yakuza here and then head down to the Ryudo Office to let Mikio know about his dad's troubles. When you get there, Nakahara will call you. There's problems at Mikio's dad's restaurant, which is Umachi. Head over there and beat up all the guys that showed up, then chase after the Commerce Union President running off. This will close out the substory.",
         "completed": true,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "description": "THIS CAN ONLY BE DONE WITH RIKIYA. Also, you have to have returned to New Serena to speak with Date. Rikiya will show up and lament he couldn't find the bikini bar he was looking for. Instead of advancing the story by speaking to Date, speak to Rikiya and escort him to Asia. Have them take in the show. Rikiya will watch the dancer, and Kiryu will watch Rikiya(?). Rikiya will talk to the dancer afterwards and it turns out he knows her from Okinawa. She will reveal she's actually the sister of the girl Rikiya knew back in middle school. Once you leave the bar, Rikiya will get a call from the girl. She's being harassed by a stalker. Head over to the green marker and Rikiya will chase the dude off. Next, you'll get another call to come to the Batting Center. Next, the call will be to the front of Millennium Tower. Lastly, head south to Nakamichi Alley to find some punks to beat up. You'll have to beat up one more dude next, and then you'll beat up like five guys, then you're done the substory.",
         "completed": true,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "description": "THIS CAN ONLY BE DONE WITH RIKIYA. Make sure that you have him following you. If you miss your chance in Chapter 6, the only other time you can do this is in Premium Adventure. Head to Pink Alley, to the west of Karaokekan and Look (press Confirm) at the business in the corner of the alley: Divine Dragon, the tattoo parlor that did Kiryu's dragon. Go inside and Rikiya will request Utabori to finish his viper. Utabori refuses, so the two leave. Go east out of the alley and you'll spot an altercation. You and Rikiya will beat them all down. Stuff happens, and the substory closes out.",
         "completed": true,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "description": "The trigger for this substory is a little difficult. First, it has to be daytime. Second, you have to have Haruka with you. Third, Kiryu must be in his suit for this to trigger. This is to say that the window for this substory is near the end of Chapter 4, after Kiryu changes back into his suit and you say goodbye to everyone. Fortunately, the trigger to hit it is pretty easy. Simply walk out towards the beach and you'll come across Akimoto and Mizuki, two characters that Kiryu and Haruka have run into both in Yakuza 1 and 2. Yes, as Kiryu brings up, they have a habit of meeting when Akimoto is about to kill himself for some reason. The two are apparently now engaged and on vacation. After you talk to them, they'll leave and head down to the Public Market. Follow them there and go upstairs to find them in the food court eating. Next, follow them to Stone Market, the jewelry shop near the intersection of Ryukyu and Kitaryu. They'll take off. Now, go back to the beach. Speak to Koji and he'll mention the couple. Agree to check on them and here we go again. Choose the following dialogue choices \"She probably wanted to help the old lady.\", \"She probably couldn't say no to her mom.\", \"That's honorable of her.\", \"She's going to be a great wife.\", \"She must really want kids with you.\" You actually do get quite a bit experience from this, so it's worth going for.",
         "completed": true,
         "available from": "chapter 4",
-        "status": "Complete"
+        "status": "Completed"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "description": "You have to have completed ...Early Honeymoon... and of course, you'll have to have Haruka with you. Go to the front of Millennium Tower and speak to the office worker. Looks like Akimoto's on the rooftop. That's bad news. If you agree to help, you'll automatically go in the tower. Go to the back where the elevators are and ride up. Approach the shoes at the edge of the roof. You don't have to do anything else; just watch the culmination of this messed-up relationship. Still, you get a boatload of experience for it.",
         "completed": false,
         "available from": "chapter 12",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "description": "SAVE BEFORE YOU DO THIS ONE. Go to the east side of Theater Square and you'll find three guys talking amongst themselves. Approach then and you'll learn they're a movie crew whose star just got injured. They notice Kiryu and are like \"You're okay, get in!\" so Kiryu can agree to perform the lines and actions of the hero. The important thing to remember is that you don't have to do the lines as written. In fact, it's better if you don't. Here's what you have to do:\n\n\"You killed my father, and I want payback.\"\nDefeat the enemies in order: Hanai (short hair), Narumi (long hair), Matsukaze (bearded), Otsuki (bald)\n\"Fight me to the death like a man!\"\nUse the following Heat Actions in order: \"Wall Crush\", \"Komaki Sword Slash\", \"Essence of Brick Breaking\" (with the daruma).\n\"I'll make you apologize to my father... in hell!\"\nLet Yamashiro get your health down to red before you defeat him.\n\"Keep your money. I want justice.\"",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "description": "You must complete Mr. Try and Flee Me for this to be available. Also, you must have defeated Kanda and you must not be with Rikiya. Just south of the Shichifuku Parking Lot is a guy harassing a young woman. Tell him to Leave her alone before I make you and he waddles off. You'll direct her to where she needs to go and she'll offer you a drink as compensation. Take her up on it, and you'll head into the bar. The two of you will chat, then the guy she's waiting for will show up and be... not nice. Say Is that any way to speak to her? He'll take off. Agree to take the girl back to her hotel. Boy, will some stuff happen. You'll have the opportunity to spend 100,000 yen to make it all go away. Refuse, of course, then beat down the guy. You'll go back to the bar automatically to settle accounts and beat up another guy to end the substory.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "description": "You can start this in Chapter 9, but cannot complete it until the final chapter. This is a long one. In front of Caf\u00e9 Alps, you'll see a woman handing out fliers. Approach her and you'll also run into Date's boss, Wakazo. He'll take you inside the cafe and tell you about a case he wrote about six years ago. Basically, he wrote an article implicating a guy named Akechi, but doesn't think he did it. If you agree to help, you'll basically go through the whole case like it's a murder mystery, following the trail of the suspects. Wakazo will also hand you his Notebook, which you can find in the Valuables section of your Items. From there you can see the relationship between all the suspects. The only lead you get from this is that Maeda, the detective in charge, goes to bars at night.\n\nWhich means you can't find him until Chapter 12, the next time you're in Kamurocho at night. When that comes around, head to Bantam and speak to the man in the hat. Ask him about all the topics available. You'll learn some new info, in particular everyone else's whereabouts. Kiryu will also get the idea of checking in with the Florist.\n\nFlorist - Head to his office in Purgatory and get two pieces of data.\nUsami - Go to Mach Bowl and speak to her. You'll learn no one saw Akechi kill Oda.\nAsai - Go to Poppo Nakamichi and you'll learn a woman's name: Saitoh.\nKinoshita - Go to Cafe Alps and speak to him. You'll learn that he saw the murderer leave wearing a cafe uniform, but didn't see his face.\nImagawa - Go to Club SEGA in Theater Square and speak to him. In addition to his info, you'll also learn someone stole his effects on the day of the murder.\nNext, return to Asai and when you choose \"Stop Asking Questions\", Kiryu will bring up Imagawa, and will mention he never stole Imagawa's uniform.\nNow head back to Alps. You'll see Kinoshita talking to a woman named Yuko. Kiryu will also sit down with Wakazo to debrief. Wakazo mentions that the woman is Kinoshita's wife, who was a former employee but wasn't in that day.\nNow you learned Yuko like's host clubs. Go to the only one you know, Stardust. Boom, she's there. Kiryu talks to Yuya about her and Yuko comes up and introduces herself.\nNext head to Bantam to talk to Detective Maeda. He'll pass you a list of evidence. Kiryu gets a eureka moment which we're not privy to.\nLastly, let's go back to Alps. Kiryu will begin the denouement:\nPresent Usami's Testimony\nPresent Ashtray Fingerprints\nPresent Kinoshita's Testimony\nPresent Imagawa's Testimony\nPresent the List of Evidence and Asai's Testimony 2\nJ'accuse Yuko Kinoshita\nPresent Asai's Testimony\nPresent Yuko's Business Card\nPresent Wakazo's Testimony\nPresent the Florist's Testimony\nThe substory will end and you'll get 200,000 yen.",
         "completed": false,
         "available from": "chapter 9",
-        "status": "Not Completed"
+        "status": "In Progress"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "description": "You must first clear Anything for Grandma's Love. Enter Stardust and you'll witness Kazuki talking with someone. Seems this guy wants Stardust to open a second club in Yokohama, but Kazuki is happy how things are. Go further into the club and speak to Yuya and you'll hear some more rumblings about another club. Leave Stardust and walk around until Yuya gives you a call. Go to Bantam to meet with him and Eiji. After this, return to Stardust and the battle lines will apparently be drawn. Speak to Yuya, then Kazuki, then leave and go to Caf\u0102\u00a9 Alps to speak to Kazuki. After this, go to Public Park No. 3 to the east of Stardust. You'll tail Eiji into a little alley. Beat him up and Kazuki will run off to Millennium Tower. Follow him there and you'll fight a bunch more bad guys. As a reward for all this, you'll get 100,000 yen.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "description": "This must be completed at night. Outside of the M Store on Ryukyu St., you'll see three schoolgirls gathered. Approach them and they'll warn you not to go near the lockers at night. Approach the lockers and you'll hear a moaning, but will also rustle a few thugs. Ask them about the rumor and they'll attack you. They'll then drop the key to Locker #44. Use it and you'll find a 'Mystery Cell Phone'. Head back downstairs and you'll be attacked by even more thugs. Beat them down to end the substory.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "description": "Once you complete the previous story, go to the west side of Ryukyu Blvd. just outside of the Blue Seal Ice Cream to find the three schoolgirls again. They'll mention 'The Devil Cat'. Enter Aqua Sky and head back out and you'll encounter a black cat. Follow it east along the river path and you'll spot it on the sidewalk. Approach it and a guy will fight you. He'll give you a Catnip Stick afterwards. Now go west and you'll find another cat on the ground. Give it the Catnip and it will lead you to the girls. You'll get 10,000 yen.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "description": "Once you complete the previous story, go to the bridge on Kitaryu and you'll find the girls again. Now they're talking about a friend who disappeared and may have been a victim of the 'Phantom Tour Guide'. Near the bridge you'll find a black man with a green shirt. He'll offer you a tour. Accept his offer and one thing leads to another. You'll end up having to beat up four tough dudes and you'll get 30,000 yen as a reward.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "description": "Once you complete the previous story, go to the southwest part of the North Public Market to find the girls again. They're now talking about 'Mythical Goya Juice'. As they leave, a kid shows up, looking for the juice to make his mom better. The lady in the shop will tell you what ingredients you need: goya, kuruzata, basanai, dugwai, and lemon. Head to the Public Market, and east of the stairs leading up you'll find a woman you can talk to. Do so and you can buy the various groceries. Head back to the lady in the shop and she'll give you the juice. Return to the kid and his mom will reward you with 10,000 yen.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "description": "You get the idea by now. The girls are just north of Maeda Drugs. You'll learn about a 'Coral Love Necklace'. Speak to the vendor and buy one. Now head south to the corner of the arcade and you'll run into a lady who will list 50,000 yen off you. Head back towards the vendor and you'll hear one of the girls complaining. Speak to the vendor and he'll direct you to the second floor restaurant. Now go to the second floor. He's right near Kamiyama Works. Speak to the manufacturer. Sell him the necklace for 70,000 yen.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "description": "The girls are now in front of the Public Market entrance. They're talking about 'Golden Agu'. Enter the Public Market and head east. Speak to the pair of people, then to the man that stays behind. You'll learn that some dudes at the north end of town (northeast of Flawless) are selling some pig and claiming it's Golden Agu. Head there and defeat the piggish man and you'll get 50,000 yen.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "description": "The final chapter of the Mysteries saga starts on the east bridge, with the famous schoolgirls. One of the girls' father is being harassed by a bunch of thugs in Hatsumachi. Head to the crossroads of Hatsumachi and examine the black car. A punk will try to hustle you and take you to his office. There, you'll have the option of signing an agreement to pay the damages. You could choose to just slap them, but in this case, agree to their terms. Now head to the eastern bridge and the punk will find you again, saying your tab is five million. Obviously Kiryu will refuse these terms, so beat down all the bad guys and you'll get 50,000 yen and an Azure Gem. Also, you can return to the girls and you'll get a Lucky Coin.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 18,
@@ -141,7 +141,7 @@
         "description": "This is one of the ones you can't finish until Chapter 10. Enter Kyushu No. 1 Star and you'll see the owner arguing with some guy. Speak to the owner and he'll ID the young man as a guy trying to get the Kyushu taste in instant style. Talk to the man outside and he'll ask you to try some of the instant ramen. Accept, then choose \"Encourage Him\" when it doesn't turn out quite right. He'll leave for now. Head over to Millennium Tower to find him being rejected by some goons. Beat them up and he'll get a new idea and run off. Now, return to Kyushu No. 1 Star and you'll see the two arguing some more. Ueda will head off to Okinawa.\n\nOnce Chapter 10 rolls around and you're in Ryukyu, you'll find him just south of the Ebisu Pawn near a car. Speak to him and tell him where to find the Okinawan soba. Now, go to the soba stand and talk to him. He'll head back to Tokyo. Go there yourself and to Kyushu No. 1 Star. Finally, you'll get a Kyushu No. 1 Star Ramen Sample.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 19,
@@ -149,7 +149,7 @@
         "description": "You need to complete ...Let's Learn English 3... for this to appear. Go outside the Ebisu Pawn to find an old man in an orange shirt and a ponytail. Speak to him and he'll tell you he's searching for treasure. He'll even give you a map. I'll save you the trouble and point out that the X is southwest of Karaokekan in Hatsumachi. There's a parking garage there. Examine it and you'll call the old man over. He'll give you an Antique Chain Mail for your help.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 20,
@@ -157,7 +157,7 @@
         "description": "The trigger for this one is nuts. It only appears after you complete 'Early Honeymoon', and only after you meet Mack and learn about Revelations. Head down to the beach alone and to the west side. You'll find a bottle washed ashore. Haruka will join you and you'll get a flashback of Kiryu and Haruka. She'll mention seeing a bottle like that in Kariyushi Arcade. Head down there and go to the south end of the arcade. At the corner that turns west, you'll see a shop with a woman standing at the entrance.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 21,
@@ -165,7 +165,7 @@
         "description": "SAVE BEFORE YOU DO THIS. You must complete \"Catch Those Shoplifters!\". Just south of the intersection of Nakamichi and Taihei, you'll find a crying young boy in green. Speak to him and he'll tell you that he lost his red balloon, which is how is mother finds him. Offer to help, then chase after the balloon. Pitch the camera up so you can keep an eye on it. You'll run up East Millennium Tower St., then west on Shichifuku, where it will come to rest in Children's Park. There you'll actually meet the mom. With the two reunited, you'll get a Caviar Skin Bag as a reward.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 22,
@@ -181,7 +181,7 @@
         "description": "SAVE BEFORE YOU DO THIS ONE. This one is oddly marked as a green dot on your map, and you have to complete \"Water Purifiers\" before it appears. Go to the east side of Theater Square in front of the theater itself to find a bunch of, let's say, \"mature\" ladies wearing happi coats with an actor's face on the back. The guy's name is Il Yu-Jin, and Kiryu's actually met him in a previous game. The lady you speak to will fill you in on the situation: Yu-sama's singing autographs, and she asks you to get one for her. The goal is to lightly thread your way through the gaggle of ladies, and you have three chances to do this. You can't make a wide berth around the ladies, and if you bump into anyone, you'll be tossed back to the beginning. The path is actually straight up the middle, between the three ladies in red, and the opening between the blue ladies in front. I suggest pitching the camera down so you're looking at your feet and light taps of the Left Stick to inch your way forward. Also, try not to move if other civilians are wandering in front of you. Once you reach the front, say \"I've met this guy before.\" Some yakuza jerks will show up. Beat them up and you'll get 5,000 yen.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 24,
@@ -189,7 +189,7 @@
         "description": "First clear 'Out of His League', then at the entrance to Kariyushi Arcade, you'll see a couple. Speak to them and they'll tell you they're looking for a shisa figure with its mouth closed. You can find shisa all over, but the one you want is actually at the north end of town, at the dead-end street in the northeast of Hatsumachi. You'll automatically spot it as you pass it. Approach and you'll call the couple. You'll get a 50,000 yen reward.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 25,
@@ -197,7 +197,7 @@
         "description": "A young woman is in front of Jewel. Speak to her and she'll talk about thinking she's being stalked. A dude in a red jacket will soon appear. Follow him slowly. Keep a distance of about fifty feet (Judgment this ain't). After a short while the man in red will talk to a guy in glasses. Choose to follow the guy in glasses and you'll tail him a short way to a bald guy. Follow the bald guy and you'll meet back up with Emi and everyone else involved with this. After all is said and done, you'll get 50,000 yen.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 26,
@@ -205,7 +205,7 @@
         "description": "Go to Theater Square and you'll see a debt collector chasing after his client. He recognizes you from your old Dojima days and asks for your help in collecting from his client. Agree to help and he says he'll call you if he gets any info on the guy. A few moments later, you'll receive a phone call and be told that the guy is hanging out in one of five random locations:\n\nIn Park Boulevard, more specifically north of Kanrai near where the homeless are hanging out.\nInside Smile Burger on Nakamichi.\nAtop the sign at the south entrance of Pink St.\nInside Earth Angel.\nInside Mach Bowl.\nOnce you get the call, it's a good idea to SAVE BEFORE YOU APPROACH HIM. You are actually timed at this point, meaning if you ignore the call and go do some minigames or something, you may get another call notifying you that your target has moved. Anyway, go to his location and talk to him and he'll start dodging around in battle, much like Mr. Try and Hit Me. If you have Komaki Dodge Shot, quickstep forwards and press Triangle to track into him with a shoulder charge. You'll have to do this about four times before he's down. If you get him on your first try, you'll get 100,000 yen. Every time you fail or elapse enough time that he switches locations without confronting him, he'll run off and you'll get less yen as you go, decreased by 20,000 every time. You'll then get another call giving you his location again and so on.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 27,
@@ -221,7 +221,7 @@
         "description": "This may require you to visit Love in Heart at least once. If nothing else, you have to complete \"Bullseye of Love\" to clear the room. In Bantam, you'll see a young lady sitting alone. Talk to her and mention you know her from \"Love in Heart\" and the two of you will discuss the finer points of being a massage therapist. Hear out her troubles (don't refuse, or the substory ends) and ask her all three questions about the man she's interested in. After that, she'll leave for a moment and Yuya will stop by. After she comes back, hear her out some more, then say \"No, not at all.\" For your help, she'll give you a 50% discount at Love in Heart on the Standard Massage.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 29,
@@ -229,7 +229,7 @@
         "description": "While you can start this now, you can't finish it until Chapter 10. Enter any Poppo and you'll get a call from Taichi. He wants you to pick up the latest issue of Shonen Five for him since it goes on sale in Tokyo before the islands. Go into the Poppo and pick up a copy. Now, head to the front of Millennium Tower near the lockers and you'll see a dude on the ground. Speak to him and you'll help him up. He'll run off to \"a cafe\". It's Cafe Alps, specifically, so head in there and listen to the conversation between the guy and his editor, then speak to the editor. Turns out he's an artist, but his parents don't approve. You can't do anything about this until you are allowed to return to Okinawa.\n\nIn Chapter 10, put the Shonen Five into your inventory. When you get the ability to walk around again, go west of the Stone Market shop to find the editor. He'll mention visiting the writer's parents. Go to Maeda Pharmacy and speak to the man at the counter, the writer's father. Long story short, his father's cool with him becoming a manga artist. Go to the eastern bridge to find the writer. Tell the editor that \"he's giving up on his dream\" and you'll be able to sort this out. You'll get a 50 Issues of Shonen Five. Depending on where you are in the story, you may not be able to give them to Taichi, but if you can, he'll be out at the front gate to take them. You'll get a Gold Plate as a reward.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 30,
@@ -237,7 +237,7 @@
         "description": "You must complete \"Mr. Try and Flee Me\" first. Go to Public Park No. 3 to the east of Stardust and you'll find a salaryman on the ground. Go get some Suntory Mineral Water from the Poppo and give it to him and he'll tell you his story about his job. You can respond however you like. Leave the area and return later and you'll find him again. Give him another answer (any is fine). Leave and return later again and you'll find him a third time. Give him whichever answer you want and he'll get ticked and fight you. Defeat him and you'll get a Staminan Spark.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 31,
@@ -245,7 +245,7 @@
         "description": "You may need to complete some nearby Substories for this to appear. In front of the Smile Burger is a young forlorn man. Speak to him and agree to help him BE A MAN. You can choose a lot of the available choices, but the correct choice at the end will be 'I'll let her in for you.' Once you get the desired response, pick 'Will you read his love letter?'. This will close out the substory.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 32,
@@ -253,7 +253,7 @@
         "description": "Complete the previous substory, then head to Flawless. You'll find the teenager again, after a bit of a makeover. Speak to him and he'll move to a different location, then speak to him again. The girl he's after is actually Mika, of all people, and how she responds is based on whether or not you've met, which is cool. Anyway, the substory ends in shame.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 33,
@@ -261,7 +261,7 @@
         "description": "Once you complete the previous substory, return to Morning Glory and you'll see the poor sap outside. Help him up and talk to you and you'll automatically agree to help him. You can pick any of the dialogue options you want, but he'll run off in shame once more.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 34,
@@ -269,7 +269,7 @@
         "description": "You must have completed ...Robbing the Orphanage... . You'll find the dude you've been helping with his love life outside the Smile Burger once more. Speak to him and he'll go inside for one last try at the burger girl. Follow him in and some punks will show up. Beat them down and the couple will start talking. You can choose either choice here. You'll get an Italian Shoulder Bag for all this.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 35,
@@ -277,7 +277,7 @@
         "description": "This substory can only be completed at night. Go to the Shichifuku Parking Lot east of Kanrai to find this dude challenging all comers. Kiryu has encountered this man before and managed to tag him. For 3,000 yen, you get the opportunity of earning 50,000 yen. There's actually a real easy way to do this. Unlock the \"Komaki Dodge Shot\" which is on your Tech list of Upgrades. Quickstep forward and press Triangle. You'll pretty much auto-track to Mr. T&HM, done and done.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 36,
@@ -285,7 +285,7 @@
         "description": "You must have completed \"Mr. Try and Hit Me Again\", naturally. Go to the Shichifuku Parking Lot and you'll see another guy talking to Mr. T&HM. This is his aniki, Mr. Try and Flee Me. Pay 5,000 and he'll start chasing you. It's basically a chase battle, only you're the one being chased, so all you have to do is keep ahead of him. The course is largely straight down Senryo Ave. until it takes a hard left into the south end of the Champion District. Make sure you let off the R2/RT button before you hit someone. A minor slowdown due to reducing speed is much preferable to colliding with someone. Even if the dude catches you, you can mash the button to get away, but it does cost you stamina. Once you get a little ways into the Champion District, he'll give up and you'll get 70,000 yen.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 37,
@@ -293,7 +293,7 @@
         "description": "You must complete Mr. Try and Flee Me. Go back to Shichifuku Parking Lot and there's the third member of the group. Obviously, for this one you'll have to chase and capture him. The route is simple, right around the parking lot block, but which side of the street he runs on and how he jukes changes on each lap. It's not easy, and will likely take you a few tries. Good luck. You might have to wait and complete Mack's Running Training to improve your chances. Beating him will get you 100,000 yen.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 38,
@@ -301,7 +301,7 @@
         "description": "This Substory will only become available later in Chapter 4 after you finish the baseball event. Talk to Haruka while you're not ready to go yet and choose to explore alone. You'll find your kids in their play room complaining about how bored they are. Speak to them and they'll challenge you to hide-and-seek. Now, while there's no reward for this, in order to get the 'star' completion on it, you must find Izumi (the littlest girl) last. Here's where everyone is:\nTaichi - If you're looking for Taichi, he's on the roof. Use first-person view and look up on the roof and tap for a prompt.\nShiro - Behind the lumber pile.\nEi - Under the table out in the yard.\nIzumi - Behind the baseball target.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 39,
@@ -309,7 +309,7 @@
         "description": "Complete \"Hor D'oeuvres\" and you'll find an old gentleman in front of the east door of Millennium Tower being harassed. Chase off the punks and the old man will ask if you know about a placed called \"Jinsei\" on Suppon St. Just a reminder that Suppon St. is the small street that goes off west from Tenkaichi in the southwest. Go there and speak to the guy in the red shirt. He'll let Kiryu know that the place is gone now, and that it may have moved to the Champion District. Go to the southeast part of the District and you'll see one man shaking another for a debt. Beat up the debt collector and you'll learn that this is the place you're looking for. Go back to the old man and tell him, but Ask About the Situation first if you wish. Once you take him there, you'll have more bad guys to beat up. Do so, and you'll get 100,000 yen.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 40,
@@ -317,7 +317,7 @@
         "description": "You must clear \"The Old Man's Memories\" for this one. Go to Bantam and you'll spot a woman sitting at the far corner. Approach her and she'll recognize you. She'll ask you to help out her husband who used to work with the Tojo, but has gone straight. He's been acting suspicious recently, and she's worried he's in real trouble. If you agree to help, she'll send you to the Orchid Palace Mahjong parlor to find him. He's wearing red sportswear. Go there and the man will walk out as you approach. Tail him up Nakamichi St. and west and he'll spot you at the end and attack you. Beat him and he'll explain everything. You'll get 70,000 yen for your troubles.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 41,
@@ -325,7 +325,7 @@
         "description": "You must complete \"Kiryu the Pickpocket!?\" first. Go to the Showa Poppo and walk back out. On your way out, an employee will accuse you of shoplifting. As you won't have anything, he'll apologize, then ask for your help to ferret out shoplifters. Agree to help. Over the course of your little shift, you'll see three potentially suspicious people. Only the second person is someone you should stop. At the end of it, you'll have made a total of 4,000 yen.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 42,
@@ -333,7 +333,7 @@
         "description": "Just south of Umachi, you'll find a woman and a doctor talking. Apparently, a kidnapping took place. Speak to the pair and agree to help the woman. Once the two of you go to the area for the exchange, choose 'Jump Right In' and you'll fight the kidnapper. Once he's defeated, you'll get 10,000 yen as a reward.",
         "completed": false,
         "available from": "chapter 3",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 43,
@@ -341,7 +341,7 @@
         "description": "For this to appear, you have to finish \"Walking the Plank\". Go to the Public Market and the fish stand at the south end. You'll learn that a man ordered a sea bream, but the fishmonger ended up giving it to a tough chef. He gives Kiryu 200,000 yen to help get it back. Head up to the restaurant next to South Island. The chef is to the north of South Island. Speak to him and he'll give you options: pay him 300,000 yen (100,000 more than the fishmonger gave you) or catch him a tuna. The tuna is the hardest fish in the game to catch, but if you're going for completion, you'll probably want to catch one anyway. Regardless of which you pick, head back to the fishmonger. Give him the fish, and you get another choice. If you bought the fish, you can tell him it cost 300,000 yen or not. If you gave the guy a tuna, you have the option to return the money or not. I leave it up to you which to choose. If you try to return the money, he'll refuse and give you a Silver Plate.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 44,
@@ -349,7 +349,7 @@
         "description": "As you go along the south end of Kariyushi Arcade, outside the Public Market, you'll witness a purse-snatching. The snatcher will head into the market. Follow him and you'll find the culprit in the southeast corner of the first floor. You'll take him to the old lady and get 3000 yen.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 45,
@@ -357,7 +357,7 @@
         "description": "You must have completed ...Chumming the Waters... for this to appear. Enter the Public Market and you'll be approached by the guy who owns the market. He'll want you to help him stop an iriomote wildcat trafficking ring. Head upstairs and look for the man in the green hat with a red shirt and a carrier. When you see the men, approach the one on the left. He'll ask for your proof. Tell him ...I don't need proof... . Beat down the two guys and you'll get 50,000 yen.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 46,
@@ -365,7 +365,7 @@
         "description": "Enter the Public Market and you'll see Mikio hanging out in its center. Talk to him and agree to go on patrol. Walk with Mikio as he VERY SLOWLY goes around the market. He'll first stop to talk to a lady at a stall in the northeast, then another stall close by, then a third stall to the east, then a fourth to the southeast. Then you'll hear a shriek and Mikio and you will fight some thugs. Here's a great place to get both Essence of Stove and Essence of Hammer (with the tuna). You'll get a Giant Blue Parrotfish as a reward, which can be sold at the nearby Fish Market for 10,000 yen.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 47,
@@ -373,15 +373,15 @@
         "description": "You must complete ...Let's Learn English 3... AND ...I Want To Go to Tokyo 3... to get this one unlocked. Go to the intersection and you'll see a pair of guys talking. Listen and you'll learn they're talking about a ...hit-and-stop... scam artist, who drives a black sedan. Time to find this guy. Cross the street while traffic is moving and collide with a black sedan, and as luck would have it, it's your guy. Beat him up and his dudes. You get 30,000 yen for the win, BUT if you manage to knock a guy down, then grab his legs, then drag him over to the car and hit the Heat Action, you'll slam him into the car windshield, and instead get 50,000 yen. It's a good complete, either way.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 48,
         "title": "Hor D'oeuvres",
-        "description": "Help a chef perfect his hors d'oeuvres. This is available once you complete 'Bargain Sale'. Go to Kanrai and you'll see a forlorn worker standing outside. A dine-and-dasher has skipped on his bill. Agree to help and Kiryu will engage in a Chase of the man. Fortunately, you can try this as many times as you want. And good thing, too, since there is no hold to run unless you've got open ground with no people in front of you. Colliding with people at speed will really cost you stamina. Once you catch the dude, you'll get Staminan Royale as a reward.",
+        "description": "This is available once you complete 'Bargain Sale'. Go to Kanrai and you'll see a forlorn worker standing outside. A dine-and-dasher has skipped on his bill. Agree to help and Kiryu will engage in a Chase of the man. Fortunately, you can try this as many times as you want. And good thing, too, since there is no hold to run unless you've got open ground with no people in front of you. Colliding with people at speed will really cost you stamina. Once you catch the dude, you'll get Staminan Royale as a reward.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 49,
@@ -389,7 +389,7 @@
         "description": "You must complete \"Hor D'ouevres\" and \"Suspicious Spouses\" to get this one. Go to Kyushu No. 1 Star and the dine-and-dasher is at it again. I found this one easier than the first. The dude goes in a figure-8 path and it only takes two strikes to get him down. Do so and you'll get a Staminan Spark.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 50,
@@ -397,7 +397,7 @@
         "description": "You must complete ...Appetizer... . Go to the Gelateria Kamuro and you'll find a lady outside. Speak to her and once again, it's time to chase the big man. This chase will take you around Taihei and Theater Square, but given how open it is, it's not all that hard. Of course, it takes about six hits to get him down. You can choose either dialogue option afterwards. Your reward is a Staminan Spark.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 51,
@@ -405,7 +405,7 @@
         "description": "You must complete ...Main Course... . In front of the Ebisu Pawn in Ryukyu is a shop owner with a red apron. Speak to him and yep, it's dine-and-dash time again. Chase the guy throughout the Ryukyu alleys and once you catch him, you'll get a Gold Plate.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 52,
@@ -413,7 +413,7 @@
         "description": "SAVE BEFORE YOU DO THIS. Enter Aqua Sky and you'll see a dude clearly in his cups. Speak to him and he'll challenge you to a drinking game. Make sure you're sober for this, then accept. The game you'll play is \"Look the Other Way\", where you'll have to look away where he points. Unfortunately, the game is entirely random, so this is why you saved first. If you win three times, you'll get 50,000 yen, if you lose, you'll pay 20,000 yen. Regardless of the outcome, you'll get a Legendary Drinker of Ryukyu.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 53,
@@ -429,7 +429,7 @@
         "description": "Deal with a gang of rowdy riders causing trouble. This one's only available at night after you complete 'High-Tech Peeping Tom'. Go to the west end of Shichifuku St. in front of Children's Park and you'll see a bit of a scene on a taxi. Speak to the rider and ask him what's going on. He'll ask you to help him with his bike then beat down the drunks. You'll get 20,000 yen for this, just so long as you don't use a Heat Action near the taxi and break it.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 55,
@@ -437,15 +437,15 @@
         "description": "Go down Kariyushi Arcade and you'll spot a young woman wearing overalls and a pink shirt. Speak to her and she'll ask if you're from Tokyo. Agree to hang out and answer questions and you'll end up having a conversation with her about Tokyo. Your responses aren't all that important, but you will get a Soki Burger Set for your trouble.",
         "completed": false,
         "available from": "chapter 3",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 56,
         "title": "I Want to Go to Tokyo 2",
-        "description": "Help someone achieve their dream of going to Tokyo (part 2). Once you've completed the previous substory back in Ryukyu, go to Smile Burger and here's Kaede behind the counter. She'll give you Smile Fries just for saying hi. Come back later and her boss will give her the business for taking free food. Kiryu speaks up and gets her another job, this time at the Gelateria. Head over there and approach the back counter and Kaede will speak up and be embarrassed again. She'll call saying she's working at Mach Bowl next. Once you complete all this, the last thing to do is go to the Batting Center and she'll tell you she got a job at Earth Angel next. Head over there and take out the dudes that show up once the place clears. Once it clears, enter and it turns out that Kaede is actually a great fit for this place. Also gives you 50,000 yen for your trouble.",
+        "description": "Once you've completed the previous substory back in Ryukyu, go to Smile Burger and here's Kaede behind the counter. She'll give you Smile Fries just for saying hi. Come back later and her boss will give her the business for taking free food. Kiryu speaks up and gets her another job, this time at the Gelateria. Head over there and approach the back counter and Kaede will speak up and be embarrassed again. She'll call saying she's working at Mach Bowl next. Once you complete all this, the last thing to do is go to the Batting Center and she'll tell you she got a job at Earth Angel next. Head over there and take out the dudes that show up once the place clears. Once it clears, enter and it turns out that Kaede is actually a great fit for this place. Also gives you 50,000 yen for your trouble.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 57,
@@ -453,7 +453,7 @@
         "description": "You must complete ...I Want to Go to Tokyo 2... for this. Go just north of the Ebisu Pawn and you'll see the girl again. Speak to her and after a conversation, she'll give you a Caviar Skin Bag. Easy grab.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 58,
@@ -461,7 +461,7 @@
         "description": "You must complete ...Nonstop Stalkers... . Go to the intersection of Shichifuku and Senryo and you'll find a dude in a red and white jacket. Speak to him and he'll offer to get you to a club for 5,000 yen. You can talk to him four times and continue refusing until he offers for free, or just pay the 5,000 to get this over with more quickly. If you choose to get it over with quickly, you'll get into a fight and earn 50,000 yen, but if you refuse all times, you'll get into a fight and beat down a bunch of the barkers and get 100,000 yen.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 59,
@@ -469,7 +469,7 @@
         "description": "Confront ghosts from Kiryu's past. The trigger for this substory can actually happen in multiple locations. I've got it to trigger in the M Store and in the Poppo in Nakamichi Alley. Enter the store and walk slightly towards the magazine rack and a short cutscene will show a dude will be giving you a tip to talk to you. He shows you an old magazine photo of the Millennium Tower bombing three years back (which throws me a bit because Kiryu was in Osaka at the time). After that, head to the publishing company. It's discovered that the photographer likes to drink at Shellac. Head there and you'll speak to the photographer. Turns out he was taking a picture of his dad's business that was early in Yakuza 1, of all times. The young dude is the old man in the photograph's son, and he's off for revenge. Head up to the northeast corner of the map to find the pair. Defeat the son and you'll complete the substory.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 60,
@@ -477,7 +477,7 @@
         "description": "You'll first need to finish \"Let's Learn English 2\". At the entrance to Kariyushi Arcade, you'll see a woman in a pink dress. She can't find her child. Agree to help. Her child is wearing blue and a straw hat. Head down south to find a child in a straw hat. Speak to her, but it's obviously not her (not wearing blue), but it turns out this girl swapped hats with the other, and the girl you're looking for is now wearing a baseball cap. Round the corner and head west to the soba stand. You'll see a girl with a baseball cap who is... not the girl you're looking for. Apparently she's now wearing a ribbon. Head to Maeda Drugs and you'll see a third girl dancing in front of the shisa figure. Not her. Now you're looking for an animal backpack. She's at the southeast corner of the arcade. This is finally the right girl, and you get 3000 yen for all the shenanigans.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 61,
@@ -485,7 +485,7 @@
         "description": "You'll have to complete 'I Want to Go to Tokyo 1' above to have this available. In the alley in the North Public Market is a guy hustling a store owner. Speak to him and you'll learn that he owes back a big loan. Long story short, you'll have to help find an old family heirloom and sell it back. Coincidentally enough, it's buried right on your beach. Head back there and you'll run into some kids mentioning 'Turtle Rock'. Go to the west side of the beach and run along the rocks until you get a 'Look' prompt. Use it and you'll call the guy. The two of you will dig and find a pot. Your reward in all this is a Shisa Belt.",
         "completed": false,
         "available from": "chapter 3",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 62,
@@ -493,7 +493,7 @@
         "description": "Return to the Dragon Palace to solve a problem. Go to the '?' marker east of the Batting Center and you'll see some punks hanging out looking intimidating, but there's no cutscene or any other indication that you've 'begun' the substory. Now head west and north into the Hotel District, towards the edge of the map, and you'll see a homeless guy surrounded by punks. Ruin them, then head back to the punks to the southeast. Smash all five of them, then their leader will come out. He's the boss, so deal with the fight. After defeating all of them, you'll gain access to the Dragon Palace. Shortly thereafter you'll get a phone call from the casino owner, letting you know both the casino and the gambling hall are open again.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 63,
@@ -501,7 +501,7 @@
         "description": "For this to appear, you'll have to get far enough through \"Manga Mania\" so that the editor says he'll go to Okinawa. Go to Tenkaichi Alley and you'll spot an old man surrounded by some young women. They'll run off and the man will talk to Kiryu saying he's looking for his daughter, Nami. Kiryu will suggest a telephone club (where men wait for calls from women for conversations and hoping for dating as well). While they're talking, a barker walks up and hands off tissues for \"Honey\", a teleclub, and the man takes off. Go to your inventory and select the tissues to call them. You'll get connected with someone who tells you she's waiting at Kanrai (sometimes women would use a teleclub as a way to get men to treat them to food if they're not well off). Go to Kanrai and it's not the woman you're looking for, but she does give you a lead: sometimes women if they're homeless will sleep at the burger joint. This info costs you 20,000, unfortunately, but head down to Smile Burger and outside you'll see a woman in a yellow jacket. Kiryu will tell her the story and her dad will show up. Also showing up are some sleazebags. Beat them down with the old man at your side and you'll get 100,000 yen.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 64,
@@ -509,7 +509,7 @@
         "description": "You must complete ...Watch Out for Renovations... . Go to Sushi Gin and enter. When the chef brings up the tuna, agree to order it. You'll talk to the guy next to you who runs the fishery that supplies them. He'll ask if you want to invest. Agree to do so. The more shares you buy, the greater your reward. Buying 100 Shares requires a million yen, but if you have the money, do it. Regardless, once you invest, you'll only be able to continue this in Chapter 10 by being in Okinawa.Once you arrive, you'll get a text from the guy with the address of their business attached. Head to the northeast corner of Hatsumachi and Kiryu will spot it. Go inside and you'll find it's not the office. Head back to Kamurocho and you'll get another fishy text. Head to Sushi Gin and you'll talk to the chef. He'll mention they have an office east of Millennium Tower. Head over there and go north of the Matsuya, and south of the Wild Jackson. The building with the green awning is the one you have to approach. Enter and you'll fight Sawada and his goons. You get all your money back you paid, plus a bonus depending on how many shares you got. The max possible reward is four Maguros.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 65,
@@ -517,7 +517,7 @@
         "description": "In front of Le Marche, you'll see a couple talking about bag snatching. Enter the boutique and talk to the clerk and he'll warn you that there have been many snatchings lately. So buy a bag. The Italian Shoulder Bag would made the most sense, since it's the cheapest at 87,000 yen. Once you leave, fate strikes. Head towards Pink Street. A couple will tell you that he took the first left at a 4-way down Pink Street. Run down Pink Street and take a left at the alley portion that connects to the Nakamichi Poppo. You'll spot the dude. Instead of just bagging him now, choose to Follow Him. You'll be led to the back lot in Nakamichi. Defeat all the jerks and in addition to getting your bag back, you'll also get a Caviar Skin Bag.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 66,
@@ -525,7 +525,7 @@
         "description": "On the west side of the river, you'll see a man balancing on the edge of the fence. Speak to him and choose either option. You'll get a Staminan Royale.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 67,
@@ -533,7 +533,7 @@
         "description": "After completing \"Sea Bream Strongarm\", return to the bridge to find the guy on the fence again. Talk him down and pick either choice. You'll get another Staminan Royale.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 68,
@@ -541,7 +541,7 @@
         "description": "You need to complete ...The Iriomote Incident... . Once again, the tubby guy with glasses is prepping to jump off the western bridge. Speak to him and then say you can't abandon him. You'll be led to his loan sharks. Beat them up and you'll get a Staminan Spark.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 69,
@@ -549,7 +549,7 @@
         "description": "This one isn't marked on the map. Near Karaokekan in Ryukyu you'll see three suited toughs plodding on the street. Bump into them, refuse to give them any money, then demolish them. You'll get 10,000 yen.",
         "completed": false,
         "available from": "chapter 3",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 70,
@@ -557,7 +557,7 @@
         "description": "After completing \"The Con Menace\", return to Kitaryu St. to find a larger group of dudes wandering the street. Bump into them and beat them all up and you'll get 50,000 yen.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 71,
@@ -565,7 +565,15 @@
         "description": "You need to complete ...Under the Table... and ...The Con Wars... . Head along the river bank and you'll find a gaggle of six hoodlums. Beat them all down and you'll get 100,000 yen.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
+    },
+    {
+        "id": 73,
+        "title": "Mars Fighters in Tokyo",
+        "description": "Head to the front of Millennium Tower and you'll see a guy in a red jacket and a goofy hat. Talk to him and you'll meet Kitagawa, a comedian and a member of a duo known as the Mars Fighters, whom Kiryu helped in the previous game. He'll ask you to help him find his partner and will give you a photo of him. I'll just save you the trouble and tell you that he's on Park Boulevard, north of the Shichifuku Parking Lot. He's standing near the homeless tents. Speak to him and defeat him in combat. When he attempts comedy with you, give him a thick \"So?\" You'll get the crew back together and get 10,000 yen and Minamizawa's Autograph, which you can sell for 50 yen. Ouch.",
+        "completed": false,
+        "available from": "chapter 9",
+        "status": "Completed"
     },
     {
         "id": 72,
@@ -573,15 +581,7 @@
         "description": "After you complete ...Revenge of the Con Men... , take a trip to Tokyo while you still can and head to Bantam. Here they are again, and a lot of them this time. Bump into them and they'll bite off more than they can chew with another group. Choose to Save the Scammers and beat up the punks and you'll get 150,000 yen.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
-    },
-    {
-        "id": 81,
-        "title": "Watch Out for Renovations",
-        "description": "You must finish \"Convenient Robbery\". In front of New Serena is an old man. Speak to him and he'll ask you about a local renovations company. Kiryu will say he's not familiar with them. Now, enter New Serena and the mama will ask you to mind the bar for her for a short while. Agree to it, then a couple of dudes from that same renovation company will show up and offer to inspect the building. Refuse them three times. They'll get all indignant and you'll fight them. Mama-san will give you 50,000 yen for minding the store.",
-        "completed": false,
-        "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 74,
@@ -589,7 +589,7 @@
         "description": "Help organize a bargain sale event. At the southeast corner of the map on Senryo Ave. is a shifty dude with sunglasses. Talk to him and he'll offer to sell you a designer bag. Haggle him down a few thousand. He won't go lower than 36,000 yen, though. Buy it and take it to Ebisu Pawn. The proprietor there will confirm it's fake. Go back to the guy and he'll seem to be desperate to buy the bag back. Refuse all his offers and he'll fight you. Once you beat him, turns out that the bag is a bigger risk to a bigger crime than expected. You'll get 300,000 yen as hush money. Nice profit.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 75,
@@ -597,7 +597,7 @@
         "description": "You must complete \"Another Stardust\" for this to be available. Also, this won't unlock at all until after you defeat Kanda and also after Rikiya and Kiryu part ways. Head to the gate on Tenkaichi St. and you'll find a dude asking about the Emoto Clinic. Talk to him and offer to take him there. Walk him up Tenkaichi and west down Taihei to get there if you forgot. Once the two men catch up, offer to show him around town. Take him to the Millennium Tower and there will be reminiscence. Also, some punks will show up. Beat them up and down. The next stop is Shangri-La, which is east down Taihei Blvd. It's the building on the corner of Taihei and Senryo that has Roman-looking columns. Shut down, of course, because of Kiryu back in 2005. You'll fight those same three jerks again. Head north now to West Park, which is in the northeast corner of the map. This time there are four jerks, including the guy's old patriarch, but no fight this time. Instead, you get a Blood Brooch.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 76,
@@ -605,7 +605,7 @@
         "description": "Complete 'Stealing from the Dragon's Hoard' and head for the phone booth in Theater Square. You'll get a call on it, so pick it up. The threatening voice on the other line is telling you to buy something from Le Marche and drop it off, but heck with that. If you'll notice, the background is really noisy. The perp is actually just south of New Serena in front of 'Slot House'. Speak to him and beat him up to get 50,000 yen instead of playing his wild goose chases.",
         "completed": false,
         "available from": "chapter 9",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 77,
@@ -613,7 +613,7 @@
         "description": "Complete 'Your Fortunes Told Here' and travel to the west end of Taihei Blvd., south of Mach Bowl. You'll bump into a guy who will steal 40,000 yen. Chase after him in a chase battle (this one's actually pretty easy) and you'll get 100,000 yen, for a net profit of 60,000 yen. You can also collect the money as he drops it to get your 40k back. Wow, that was quick.",
         "completed": false,
         "available from": "chapter 9",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 78,
@@ -621,7 +621,7 @@
         "description": "You must complete \"Cat Watcher\" for this to appear. Enter Suppon St. and a punk will stop you, asking you to pretend to work for him to impress his granny. Agree to help him out. When the granny shows up, select \"We try not to use A/C\" (this is a reference to the \"cool biz\" movement that started in Japan in 2005 to have business people dress in lighter clothes rather than crank the A/C). Then when she asks for a tour of the office, say \"It's off-limits due to an accident\". When a loan shark shows up, select \"Pay the 100,000 yen\". As a reward, you'll get a Sushi Set and 110,000 yen back, for a net profit of 10,000 yen.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 79,
@@ -629,23 +629,23 @@
         "description": "After you complete \"Kiryu the Collector\", go just east of Children's Park on Shichifuku to find a lady in a dress looking for Lasagna, her cat. Agree to help find the cat. First, pick up a Catnip Stick from the Poppo on Tenkaichi St. Head down to Tenkaichi St. where it meets Tenkaichi Alley. You'll find the cat outside the blue-walled restaurant. Use the Catnip to get Lasagna's attention and you'll bring the cat back to its owner. She'll give you 30,000 yen.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 80,
         "title": "Your Fortunes Told Here",
         "description": "Head to Pink Street just south of Club Shine and you'll see a fortune-teller with a decent line behind her. Skip the line and just go right up to the teller and she'll take an interest in you. Agree to learn your destiny and she'll set up the fee for her services at 120,000 yen. Agree to this and she'll read your fortune. Once you're done, head south and a woman will stop you. She'll mention people that might have been swindled by her. Head to the Club SEGA on Nakamichi and speak to the ladies outside. They'll mention getting hustled by her. Go back and you'll see her pay off her plants that were standing in line. Kiryu wonders what's all this then and she gets scared and summons her sons to beat you up. Take them all down and you'll have a choice once the other ladies show. You can either tell them where she is and you'll get your 120,000 yen back, or you can keep silent. If you choose to keep silent, head south and speak to the ladies again. They'll leave and you'll get the fortune-teller's Crystal Ball, which can be sold for 200,000 yen.",
         "completed": false,
-        "available from": "chapter 7",
-        "status": "Not Completed"
+        "available from": "chapter 9",
+        "status": "Completed"
     },
     {
         "id": 81,
         "title": "Watch Out for Renovations",
-        "description": "Watch out for dangerous renovations in progress.",
+        "description": "You must finish \"Convenient Robbery\". In front of New Serena is an old man. Speak to him and he'll ask you about a local renovations company. Kiryu will say he's not familiar with them. Now, enter New Serena and the mama will ask you to mind the bar for her for a short while. Agree to it, then a couple of dudes from that same renovation company will show up and offer to inspect the building. Refuse them three times. They'll get all indignant and you'll fight them. Mama-san will give you 50,000 yen for minding the store.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 82,
@@ -653,7 +653,7 @@
         "description": "Directly in front of the Coin Lockers is a woman searching for her dropped key. You'll get a prompt to use first-person mode to look around. Look above the lady on the second sky-bridge above you to find it. She'll give you the key as a reward.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 83,
@@ -669,7 +669,7 @@
         "description": "Once you've completed \"Missed Caller\", head to the Poppo on Nakamichi. You'll see a cowering man. Approach him and he'll attack you. Once you settle him down, he'll ask you to be his bodyguard to protect him and his winning lottery ticket. Agree to be his bodyguard (if you ask to see the ticket, your reward is reduced) and you'll take him to a taxi. Leave the area and return and he'll be in the same spot by the taxi. He'll give you 10,000 yen because it turns out the ticket was fake.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 85,
@@ -677,7 +677,7 @@
         "description": "You must complete \"Last Month's Winner\" for this to appear. Go near the Matsuya southeast of Millennium Tower and a woman in a yellow jacket will collide with you. She'll accuse you of taking her wallet. Go into your inventory and you'll find a strange wallet in there. Use it to give it back to her, but she'll remain accusatory. Punks will show up to fight you. Demolish them and you'll finish the substory.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 86,
@@ -685,7 +685,7 @@
         "description": "This is available after you complete \"Fast Food for the Heart\". On the corner of Ryukyu and Kitaryu, you'll find a dude with two tall ice cream cones. Speak to him and he'll ask you to carry two more for him so you can reach his family. Agree to help. Now you'll have to walk slowly the entire way to the M Store without colliding with a car or a pedestrian. There are basically two ways to go about it: either wait for the crossing signal and move along the sidewalk, or go down the middle of the road where the cars whizz by you. Either way, if it feels like you'll collide with someone, come to a complete halt until they pass you. Slow and steady wins the race on this one. If you fail, pay the man 1200 yen for a replacement pair, or you can just give up if you're too frustrated. Once you reach the family, you'll get one of the Six-Scoop Ice Cream as a reward.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 87,
@@ -693,7 +693,7 @@
         "description": "This one becomes available once you clean up some substories in the area. Outside of the Monorail Station is a dude in a fancy getup playing a sanshin. As is typical for these issues, Kiryu must step in and beat up some bad guys. Do so and you'll get a Sata Andagi as a reward.",
         "completed": false,
         "available from": "chapter 3",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 88,
@@ -709,7 +709,7 @@
         "description": "After you complete the \"Return to the Dragon Palace\" substory, you'll get a text about a deal on water purifiers. Go east from Dragon Palace to find a guy in a yellow jacket. Speak to him and agree to be led inside. You'll get the pitch. Refuse to pay on both counts. Defeat the scam artists and you'll get 50,000 yen.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 90,
@@ -717,7 +717,7 @@
         "description": "You must complete \"Appetizer\". Go inside Kyushu No. 1 Star and the owner will apologize for the place being full, but he's shorthanded. Offer to help and he'll ask you to take orders for him. Here are the orders:\n\nChashu Tonkotsu Ramen\nMentaiko Tonkotsu Ramen\nLarge Kyushu Tonkotsu Ramen\nDouble Stewed Tonkotsu Ramen\nKyushu Tonkotsu Ramen\nGetting them all right will get you 20,000 yen.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 91,
@@ -725,7 +725,7 @@
         "description": "After completing Mr. Try and Catch Me, head to the east end of Shichifuku to find a guy in glasses. As you approach him, he'll ask if you can be discreet. Say you can, and he'll introduce himself as a representative for Makiko Takahashi. The request is for you to run interference as a bodyguard and stop paparazzi. This is actually easier than it sounds. While Makiko and her beau walk down the street, you can talk to each of the paparazzi, but you don't have to wait for Makiko by any means. Talk to each guy in order:The one that the manager pointed out to you, just across the street.Round the corner to the right up Park Alley, the second one is in the doorway to the right.The third is up the street to the left, in the alley where Kamiyama Works is.The fourth is at the north end of the street, just to the left of the blue tarp shelter.The last one doesn't have his camera up, but is walking back and forth near the taxi. He has a black cap like the others.Once you get all five, you'll get 100,000 yen and an Italian Perfume as your reward.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 92,
@@ -733,15 +733,15 @@
         "description": "You must have cleared ...The Returnee... . Go to Park Boulevard west of West Park and you'll see a dude in black. Speak to him and he'll mumble about the M Store on Shichifuku before taking off. Head there and walk all the way into the store. The dude will show up with a ski mask and a pair of pliers. Kiryu will be Kiryu. Beat him down. Once he flees, agree to go after the robber. Speak to the guy in black and glasses on the street corner. Tell him the guy was wearing a black jacket and you'll be pointed towards Children's Park. Head west to it and you'll find the guy. Beat him down again and when his girlfriend shows up, Urge Him to Turn Himself In. You'll get 30,000 yen as a reward.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 93,
-        "title": "Deliver Race",
+        "title": "Delivery Race",
         "description": "Visit the Waraba Okinawan Soba stall twice. When you come back a third time, the lady running the stand will be admonishing her delivery guy. Speak to them and offer to deliver soba for them. You have five minutes to deliver all three orders. Go to Maeda Pharmacy, Mahjong Camp up north, then the Ryukyu Nights info center in the northwest. Hit all three in time and you'll get 10,000 yen.",
         "completed": false,
         "available from": "chapter 3",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 94,
@@ -749,7 +749,7 @@
         "description": "You have to complete \"Try and Hit Me Again\" for this one to appear. At the corner of Senryo and Taihei, a woman in shades and a purple dress will ask you to hear her out. Do so and you'll be taken to the small lot east of the Millennium Tower. She'll want you to help her find a guy peeping on her. Use First-Person mode to spot any suspicious folks, and you can't leave the immediate area.\n\nWell, the first one should be right in front of you, hanging from a ledge, wearing red underwear.\nThe second guy to spot is on top of the building to the northeast, on the very roof.\nThe third person is on the roof to the southwest, the woman in a skirt.\nThe fourth person is on the northwest roof, the woman yelling at a cat.\nFinally, you'll find the last person clinging to the wall to the west, wearing gray.\nBeat up the Peeper, and you'll get 50,000 yen as a reward.",
         "completed": false,
         "available from": "chapter 5",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 95,
@@ -757,7 +757,7 @@
         "description": "To start this, you'll have to complete the substory \"Return to the Dragon Palace\" and have visited the Komaki dojo. Also I'm pretty sure you must also have found Rikiya in this chapter and separated with him again. Go to the casino in the Dragon Palace and you'll see some ruffians try to hustle the casino manager. They'll leave and the manager will ask Kiryu if he could find a bouncer for their casino. This is a bit of an odd substory as it requires completion of all the subsequent bouncer substories. Read on below for more information. Just as a note you cannot complete this substory until Chapter 9. You must complete all five bouncer substories. Once you do, you'll be asked to return to the casino, where you'll get 500,000 yen as a reward.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 96,
@@ -765,7 +765,7 @@
         "description": "The first bouncer that the Dragon Palace Casino manager will ask you to find is \"Violence Tobita\", who hangs in the Champion District. Head to the northwest corner of the district to find your finest prospect passed out on the ground. Wake him up and then beat him up. He'll become the bouncer of the Casino.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 97,
@@ -773,7 +773,7 @@
         "description": "Obviously, you'll have to complete \"The First Bouncer\" first. Once you do, head to the front of Millennium Tower and you'll get a text from the manager asking for the second bouncer. Iwakuma is on East Shichifuku. Head to the marked spot just west of Kanrai and speak to Iwakuma. He's a heavy sumo fighter, so be prepared for a bit of a fight.",
         "completed": false,
         "available from": "chapter 6",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 98,
@@ -781,7 +781,7 @@
         "description": "After completing ...The Second Bouncer... , you'll get another text near Millennium Tower, this time about a guy trying to get out of the yakuza. Enter the back lot in Tenkaichi Alley that's marked, and the guy will sneak up on you. Answer his question Kiryu. Kazuma Kiryu. and he'll recognize you. His name is Nanba (no not that Nanba), and he'll take the job, but first, a bunch of yakuza catch up to you and attack. Defeat them to end the substory.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 99,
@@ -789,7 +789,7 @@
         "description": "After complete ...The Third Bouncer... , go near Millennium Tower and you'll get another text about a weapons enthusiast over at Asia, the bikini bar. Head to the marked spot near there and speak to the guy outside to enter. Speak to the man at the door, and then the man in pink crouched on the ground. You'll fight him in the nearby lot and he'll have weapons around him. He starts with a Stun Gun. Still, he's not too difficult to defeat.",
         "completed": false,
         "available from": "chapter 7",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 100,
@@ -797,7 +797,7 @@
         "description": "Once you complete 'The Fourth Bouncer' you'll get one last text. You're now looking for 'Gatling Sendo'. You're directed to start your search at the Men's Entertainment Booth on Shichifuku. Head there and Sendo will just walk right in. Speak to him and try to recruit him. He'll refuse, so speak to him again and fight him. Defeat him and he'll agree to be a bouncer and will give you a Rage Bracelet. Also don't forget to go back to the Casino to close out the 'Bouncers Needed' substory.",
         "completed": false,
         "available from": "chapter 9",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 101,
@@ -805,7 +805,7 @@
         "description": "This Substory can only be accessed after you complete \"Morning Glory Hide-and-Seek\", which means it must be done late in Chapter 4 after you finish the baseball event, and Haruka can't be with you. Izumi and Mame are out in the yard, so speak to her and she'll tell you she's trying to get Mame to sit. Basically, when you tell him to sit, make sure he actually does it, then choose \"Give Him a Treat\" when he's successful. It's a real quick substory.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 102,
@@ -813,7 +813,7 @@
         "description": "Once you complete the previous substory, speak to Izumi again. Now the command is to turn around. Give him a treat if he does it. It's possible you may not be successful the first time around, but keep at it.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 103,
@@ -821,7 +821,7 @@
         "description": "Mame's last trick (you must complete the previous substory) is to fetch. Just like before, give him the command, and give him a treat if successful. You'll get a Staminan Spark as a reward.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 104,
@@ -829,7 +829,7 @@
         "description": "This will be a little odd, given that you're already likely reading this game in English, but go to the woman in a suit to the east of the Monorail Station and speak to her. She'll give you an English Textbook for studying the language. Now, head south down the street and you'll see a lady crouched by the sidewalk. Note the font change that indicates English-speaking. Speak to her and select 'Do you need help?'. You'll complete the substory.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 105,
@@ -837,7 +837,7 @@
         "description": "Once you complete the previous substory, return to the spot near the bridge and speak to the woman again. Buy the 'Beginner's Handbook' for 10,000 yen, and head to Kariyushi Arcade. You'll see the same woman from before near the Boba stand. Speak to her and say 'It's straight this way.' You'll get an Italian Wallet as a reward.",
         "completed": false,
         "available from": "chapter 4",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 106,
@@ -845,7 +845,7 @@
         "description": "After you complete ...Lost and Found..., return to the lady north of Ebisu Pawn and this time buy her English textbook for 20,000 yen. Now, head to Aqua Sky and you'll find the lady from before. She introduces herself as Stacy. Your response to her is I don't deserve your love. She'll give you an Italian Necklace..",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 107,
@@ -853,7 +853,7 @@
         "description": "After you complete ...Yamashita Treasure Hunt..., go back to the lady north of Ebisu Pawn and buy her dating textbook for 55,000 yen. You'll now find Stacy northeast of the main crossroads south of here. The correct answer is Yes, please! Sadly, not all things can go as planned. Refuse the offer and you'll get in a fight. Beat the three guys and you'll get 150,000 yen to basically cover expenses plus a little more, and if you said everything right to Stacy throughout your encounters, you'll get an Italian Ring, too.",
         "completed": false,
         "available from": "chapter 10",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 108,
@@ -869,7 +869,7 @@
         "description": "At the south part of Hatsumachi, you'll see a guy in a tux vest hanging out in front of a club. This is South Island, a cabaret club. Speak to the guy and he'll ask you to help him train a new hostess to become #1. This substory is further explained in the Hostess Maker section of the guide. While you can train up five women total, you only have to complete one for the purpose of the substory. Your reward for completing one hostess is 100,000 yen.",
         "completed": false,
         "available from": "chapter 3",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 110,
