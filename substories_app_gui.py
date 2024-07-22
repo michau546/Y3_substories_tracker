@@ -162,28 +162,33 @@ def reset_detail_font_size(detail_frame, description_text):
     description_text.configure(font=new_font)
 
 def apply_theme_to_widget(widget, widget_style):
-    if isinstance(widget, tk.Entry):
-        widget.configure(background='#333333', foreground='#FFFFFF')
-    elif isinstance(widget, tk.Text):
-        widget.configure(background='#333333', foreground='#FFFFFF')
-    elif isinstance(widget, ttk.Combobox):
-        widget_style.configure("TCombobox", fieldbackground='#555555', background='#333333', foreground='#FFFFFF')
-    elif isinstance(widget, (tk.Label, tk.Button, tk.Frame)):
-        widget.configure(background='#333333', foreground='#FFFFFF')
-    elif isinstance(widget, ttk.Button):
-        widget_style.configure("TButton", background='#333333', foreground='#FFFFFF')
+    try:
+        if isinstance(widget, tk.Entry):
+            widget.configure(background='#333333', foreground='#FFFFFF')
+        elif isinstance(widget, tk.Text):
+            widget.configure(background='#333333', foreground='#FFFFFF')
+        elif isinstance(widget, ttk.Combobox):
+            widget_style.configure("TCombobox", fieldbackground='#555555', background='#333333', foreground='#FFFFFF')
+        elif isinstance(widget, tk.Frame):
+            widget.configure(background='#333333')
+        elif isinstance(widget, tk.Label):
+            widget.configure(background='#333333', foreground='#FFFFFF')
+        elif isinstance(widget, tk.Button):
+            widget.configure(background='#333333', foreground='#FFFFFF')
+        elif isinstance(widget, ttk.Button):
+            widget_style.configure("TButton", background='#333333', foreground='#FFFFFF')
+    except tk.TclError as e:
+        print(f"Error configuring widget: {e}")
 
 def apply_theme_to_window(window, widgets):
     widget_style = ttk.Style()
     if dark_mode_var.get():
+        window.configure(background='#333333')
         for widget in widgets:
-            try:
-                apply_theme_to_widget(widget, widget_style)
-                if isinstance(widget, tk.Frame):
-                    for child in widget.winfo_children():
-                        apply_theme_to_widget(child, widget_style)
-            except tk.TclError as e:
-                print(f"Error configuring widget: {e}")
+            apply_theme_to_widget(widget, widget_style)
+            if isinstance(widget, tk.Frame):
+                for child in widget.winfo_children():
+                    apply_theme_to_widget(child, widget_style)
     else:
         window.configure(background='#f0f0f0')
         for widget in widgets:
@@ -194,7 +199,11 @@ def apply_theme_to_window(window, widgets):
                     widget.configure(background='#FFFFFF', foreground='#000000')
                 elif isinstance(widget, ttk.Combobox):
                     widget_style.configure("TCombobox", fieldbackground='#FFFFFF', background='#f0f0f0', foreground='#000000')
-                elif isinstance(widget, (tk.Label, tk.Button, tk.Frame)):
+                elif isinstance(widget, tk.Frame):
+                    widget.configure(background='#f0f0f0')
+                elif isinstance(widget, tk.Label):
+                    widget.configure(background='#f0f0f0', foreground='#000000')
+                elif isinstance(widget, tk.Button):
                     widget.configure(background='#f0f0f0', foreground='#000000')
                 elif isinstance(widget, ttk.Button):
                     widget_style.configure("TButton", background='#f0f0f0', foreground='#000000')
@@ -206,7 +215,11 @@ def apply_theme_to_window(window, widgets):
                             child.configure(background='#FFFFFF', foreground='#000000')
                         elif isinstance(child, ttk.Combobox):
                             widget_style.configure("TCombobox", fieldbackground='#FFFFFF', background='#f0f0f0', foreground='#000000')
-                        elif isinstance(child, (tk.Label, tk.Button, tk.Frame)):
+                        elif isinstance(child, tk.Frame):
+                            child.configure(background='#f0f0f0')
+                        elif isinstance(child, tk.Label):
+                            child.configure(background='#f0f0f0', foreground='#000000')
+                        elif isinstance(child, tk.Button):
                             child.configure(background='#f0f0f0', foreground='#000000')
                         elif isinstance(child, ttk.Button):
                             widget_style.configure("TButton", background='#f0f0f0', foreground='#000000')
@@ -225,13 +238,13 @@ def show_details(event):
         detail_window.resizable(True, True)  # Enable resizing
         
         # Adding a canvas and scrollbar for the entire detail window
-        canvas = tk.Canvas(detail_window)
+        canvas = tk.Canvas(detail_window, background='#333333' if dark_mode_var.get() else '#f0f0f0')
         scrollbar = ttk.Scrollbar(detail_window, orient="vertical", command=canvas.yview)
         canvas.configure(yscrollcommand=scrollbar.set)
         scrollbar.pack(side="right", fill="y")
         canvas.pack(side="left", fill="both", expand=True)
 
-        detail_frame = tk.Frame(canvas)
+        detail_frame = tk.Frame(canvas, background='#333333' if dark_mode_var.get() else '#f0f0f0')
         canvas.create_window((0, 0), window=detail_frame, anchor="nw")
 
         detail_frame.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
@@ -240,35 +253,35 @@ def show_details(event):
 
         widgets = []
 
-        widgets.append(tk.Label(detail_frame, text="ID:"))
+        widgets.append(tk.Label(detail_frame, text="ID:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=0, column=0, sticky='e', padx=5, pady=5)
-        id_entry = tk.Entry(detail_frame)
+        id_entry = tk.Entry(detail_frame, background='#333333' if dark_mode_var.get() else '#FFFFFF', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         id_entry.insert(0, substory['id'])
         id_entry.grid(row=0, column=1, sticky='w', padx=5, pady=5)
         widgets.append(id_entry)
 
-        widgets.append(tk.Label(detail_frame, text="Title:"))
+        widgets.append(tk.Label(detail_frame, text="Title:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=1, column=0, sticky='e', padx=5, pady=5)
-        title_entry = tk.Entry(detail_frame)
+        title_entry = tk.Entry(detail_frame, background='#333333' if dark_mode_var.get() else '#FFFFFF', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         title_entry.insert(0, substory['title'])
         title_entry.grid(row=1, column=1, sticky='w', padx=5, pady=5)
         widgets.append(title_entry)
 
-        widgets.append(tk.Label(detail_frame, text="Description:"))
+        widgets.append(tk.Label(detail_frame, text="Description:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=2, column=0, sticky='ne', padx=5, pady=5)
-        description_text = tk.Text(detail_frame, wrap=tk.WORD, height=10, width=80)
+        description_text = tk.Text(detail_frame, wrap=tk.WORD, height=10, width=80, background='#333333' if dark_mode_var.get() else '#FFFFFF', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         description_text.grid(row=2, column=1, sticky='w', padx=5, pady=5)
         description_text.insert(tk.END, substory['description'])
         widgets.append(description_text)
 
-        widgets.append(tk.Label(detail_frame, text="Available From:"))
+        widgets.append(tk.Label(detail_frame, text="Available From:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=3, column=0, sticky='e', padx=5, pady=5)
         chapter_option = ttk.Combobox(detail_frame, values=['chapter 3', 'chapter 4', 'chapter 5','chapter 6','chapter 7','chapter 9','chapter 10','chapter 12'])
         chapter_option.set(substory.get('available from', ''))
         chapter_option.grid(row=3, column=1, sticky='w', padx=5, pady=5)
         widgets.append(chapter_option)
 
-        widgets.append(tk.Label(detail_frame, text="Status:"))
+        widgets.append(tk.Label(detail_frame, text="Status:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=4, column=0, sticky='e', padx=5, pady=5)
         status_option = ttk.Combobox(detail_frame, values=['Completed', 'Not Completed', 'In Progress'])
         status_option.set(substory['status'])
@@ -277,22 +290,22 @@ def show_details(event):
         widgets.append(status_option)
 
         # Adding font size controls for the detail window
-        button_frame = tk.Frame(detail_frame)
+        button_frame = tk.Frame(detail_frame, background='#333333' if dark_mode_var.get() else '#f0f0f0')
         button_frame.grid(row=5, column=0, columnspan=2, pady=10)
         button_frame.grid_columnconfigure(0, weight=1)
         button_frame.grid_columnconfigure(1, weight=1)
         button_frame.grid_columnconfigure(2, weight=1)
         widgets.append(button_frame)
 
-        button_increase_font = tk.Button(button_frame, text="Increase Font Size", command=lambda: change_detail_font_size(detail_frame, description_text, 2))
+        button_increase_font = tk.Button(button_frame, text="Increase Font Size", command=lambda: change_detail_font_size(detail_frame, description_text, 2), background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         button_increase_font.grid(row=0, column=0, padx=5)
         widgets.append(button_increase_font)
 
-        button_decrease_font = tk.Button(button_frame, text="Decrease Font Size", command=lambda: change_detail_font_size(detail_frame, description_text, -2))
+        button_decrease_font = tk.Button(button_frame, text="Decrease Font Size", command=lambda: change_detail_font_size(detail_frame, description_text, -2), background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         button_decrease_font.grid(row=0, column=1, padx=5)
         widgets.append(button_decrease_font)
 
-        button_reset_font = tk.Button(button_frame, text="Reset Font Size", command=lambda: reset_detail_font_size(detail_frame, description_text))
+        button_reset_font = tk.Button(button_frame, text="Reset Font Size", command=lambda: reset_detail_font_size(detail_frame, description_text), background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         button_reset_font.grid(row=0, column=2, padx=5)
         widgets.append(button_reset_font)
 
@@ -342,13 +355,13 @@ def show_revelation_details(event):
         detail_window.resizable(True, True)  # Enable resizing
         
         # Adding a canvas and scrollbar for the entire detail window
-        canvas = tk.Canvas(detail_window)
+        canvas = tk.Canvas(detail_window, background='#333333' if dark_mode_var.get() else '#f0f0f0')
         scrollbar = ttk.Scrollbar(detail_window, orient="vertical", command=canvas.yview)
         canvas.configure(yscrollcommand=scrollbar.set)
         scrollbar.pack(side="right", fill="y")
         canvas.pack(side="left", fill="both", expand=True)
 
-        detail_frame = tk.Frame(canvas)
+        detail_frame = tk.Frame(canvas, background='#333333' if dark_mode_var.get() else '#f0f0f0')
         canvas.create_window((0, 0), window=detail_frame, anchor="nw")
 
         detail_frame.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
@@ -357,28 +370,28 @@ def show_revelation_details(event):
 
         widgets = []
 
-        widgets.append(tk.Label(detail_frame, text="ID:"))
+        widgets.append(tk.Label(detail_frame, text="ID:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=0, column=0, sticky='e', padx=5, pady=5)
-        id_entry = tk.Entry(detail_frame)
+        id_entry = tk.Entry(detail_frame, background='#333333' if dark_mode_var.get() else '#FFFFFF', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         id_entry.insert(0, revelation['id'])
         id_entry.grid(row=0, column=1, sticky='w', padx=5, pady=5)
         widgets.append(id_entry)
 
-        widgets.append(tk.Label(detail_frame, text="Title:"))
+        widgets.append(tk.Label(detail_frame, text="Title:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=1, column=0, sticky='e', padx=5, pady=5)
-        title_entry = tk.Entry(detail_frame)
+        title_entry = tk.Entry(detail_frame, background='#333333' if dark_mode_var.get() else '#FFFFFF', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         title_entry.insert(0, revelation['title'])
         title_entry.grid(row=1, column=1, sticky='w', padx=5, pady=5)
         widgets.append(title_entry)
 
-        widgets.append(tk.Label(detail_frame, text="Description:"))
+        widgets.append(tk.Label(detail_frame, text="Description:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=2, column=0, sticky='ne', padx=5, pady=5)
-        description_text = tk.Text(detail_frame, wrap=tk.WORD, height=10, width=80)
+        description_text = tk.Text(detail_frame, wrap=tk.WORD, height=10, width=80, background='#333333' if dark_mode_var.get() else '#FFFFFF', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         description_text.grid(row=2, column=1, sticky='w', padx=5, pady=5)
         description_text.insert(tk.END, revelation['description'])
         widgets.append(description_text)
 
-        widgets.append(tk.Label(detail_frame, text="Status:"))
+        widgets.append(tk.Label(detail_frame, text="Status:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000'))
         widgets[-1].grid(row=3, column=0, sticky='e', padx=5, pady=5)
         status_option = ttk.Combobox(detail_frame, values=['Completed', 'Not Completed'])
         status_option.set(revelation['status'])
@@ -387,22 +400,22 @@ def show_revelation_details(event):
         widgets.append(status_option)
 
         # Adding font size controls for the detail window
-        button_frame = tk.Frame(detail_frame)
+        button_frame = tk.Frame(detail_frame, background='#333333' if dark_mode_var.get() else '#f0f0f0')
         button_frame.grid(row=4, column=0, columnspan=2, pady=10)
         button_frame.grid_columnconfigure(0, weight=1)
         button_frame.grid_columnconfigure(1, weight=1)
         button_frame.grid_columnconfigure(2, weight=1)
         widgets.append(button_frame)
 
-        button_increase_font = tk.Button(button_frame, text="Increase Font Size", command=lambda: change_detail_font_size(detail_frame, description_text, 2))
+        button_increase_font = tk.Button(button_frame, text="Increase Font Size", command=lambda: change_detail_font_size(detail_frame, description_text, 2), background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         button_increase_font.grid(row=0, column=0, padx=5)
         widgets.append(button_increase_font)
 
-        button_decrease_font = tk.Button(button_frame, text="Decrease Font Size", command=lambda: change_detail_font_size(detail_frame, description_text, -2))
+        button_decrease_font = tk.Button(button_frame, text="Decrease Font Size", command=lambda: change_detail_font_size(detail_frame, description_text, -2), background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         button_decrease_font.grid(row=0, column=1, padx=5)
         widgets.append(button_decrease_font)
 
-        button_reset_font = tk.Button(button_frame, text="Reset Font Size", command=lambda: reset_detail_font_size(detail_frame, description_text))
+        button_reset_font = tk.Button(button_frame, text="Reset Font Size", command=lambda: reset_detail_font_size(detail_frame, description_text), background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
         button_reset_font.grid(row=0, column=2, padx=5)
         widgets.append(button_reset_font)
 
@@ -468,10 +481,10 @@ def show_revelations():
     revelations_window.grid_columnconfigure(0, weight=1)
 
     # Adding a separate combobox for status change in the main window using grid
-    status_combobox_frame = tk.Frame(revelations_window)
+    status_combobox_frame = tk.Frame(revelations_window, background='#333333' if dark_mode_var.get() else '#f0f0f0')
     status_combobox_frame.grid(row=2, column=0, columnspan=2, pady=5)
 
-    tk.Label(status_combobox_frame, text="Change Status:").grid(row=0, column=0, padx=5)
+    tk.Label(status_combobox_frame, text="Change Status:", background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000').grid(row=0, column=0, padx=5)
     status_combobox = ttk.Combobox(status_combobox_frame, values=['Completed', 'Not Completed'], state='readonly')
     status_combobox.grid(row=0, column=1, padx=5)
     
