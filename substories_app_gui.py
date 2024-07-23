@@ -16,14 +16,14 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # Function to load data from JSON file
-def load_data():
-    json_path = resource_path('substories.json')
+def load_data(json_filename):
+    json_path = resource_path(json_filename)
     with open(json_path, 'r') as file:
         return json.load(file)
 
 # Function to save data to JSON file
-def save_data(substories):
-    json_path = resource_path('substories.json')
+def save_data(substories, json_filename):
+    json_path = resource_path(json_filename)
     with open(json_path, 'w') as file:
         json.dump(substories, file, indent=4)
 
@@ -95,7 +95,7 @@ def change_status(event):
         for substory_id in selected_ids:
             substory = next(sub for sub in substories if sub['id'] == substory_id)
             substory['status'] = new_status
-        save_data(substories)
+        save_data(substories, json_filename)
         
         # Get current filters and reapply them after saving data
         query, filter_by, status_filters, chapter_filters = get_current_filters()
@@ -316,7 +316,7 @@ def show_details(event):
             substory['title'] = title_entry.get()
             substory['description'] = description_text.get("1.0", tk.END).strip()
             substory['available from'] = chapter_option.get()
-            save_data(substories)
+            save_data(substories, json_filename)
             
             # Get current filters and reapply them after saving data
             query, filter_by, status_filters, chapter_filters = get_current_filters()
@@ -329,7 +329,7 @@ def show_details(event):
 
 def update_status(substory, new_status):
     substory['status'] = new_status
-    save_data(substories)
+    save_data(substories, json_filename)
     
     # Get current filters and reapply them after saving data
     query, filter_by, status_filters, chapter_filters = get_current_filters()
@@ -526,7 +526,8 @@ def save_config():
         'query': entry_search.get(),
         'filter_by': filter_option.get(),
         'status_filter': ','.join([status_listbox.get(i) for i in status_listbox.curselection()]),
-        'chapter_filter': ','.join([chapter_listbox.get(i) for i in chapter_listbox.curselection()])
+        'chapter_filter': ','.join([chapter_listbox.get(i) for i in chapter_listbox.curselection()]),
+        'json_file': json_filename_var.get()
     }
     config['WINDOW'] = {
         'width': root.winfo_width(),
@@ -552,6 +553,7 @@ def apply_config(config):
         for i in range(chapter_listbox.size()):
             if chapter_listbox.get(i) in chapter_filters:
                 chapter_listbox.select_set(i)
+        json_filename_var.set(filters.get('json_file', 'substories.json'))
     if 'WINDOW' in config:
         window = config['WINDOW']
         width = window.get('width', '1024')
@@ -591,19 +593,28 @@ def apply_theme():
         root.configure(background='#f0f0f0')  # Reset background color of main window
         frame_filter.configure(background='#f0f0f0')  # Reset background color of filtering frame
 
+def change_json_file(event):
+    global substories, json_filename
+    json_filename = json_filename_var.get()
+    substories = load_data(json_filename)
+    on_filter()
+# Creating the main application window
+root = tk.Tk()
+root.title("Yakuza Substories Manager")
+root.geometry('1024x768')  # Set default window size
+root.resizable(True, True)  # Enable window resizing
+
+# Initialize JSON filename variable
+json_filename_var = tk.StringVar(value='substories.json')
+json_filename = json_filename_var.get()
+
 # Loading data
-substories = load_data()
+substories = load_data(json_filename)
 sort_reverse = [False, False, False, False, False]  # Sorting flags for columns
 current_font_family = 'Helvetica'
 default_font_size = 12  # Default font size
 current_font_size = default_font_size
 detail_font_size = default_font_size
-
-# Creating the main application window
-root = tk.Tk()
-root.title("Yakuza 3 Substories Manager")
-root.geometry('1024x768')  # Set default window size
-root.resizable(True, True)  # Enable window resizing
 
 # Creating the style
 style = ttk.Style()
@@ -666,6 +677,14 @@ button_revelations.grid(row=2, column=3, padx=5, pady=5)
 dark_mode_var = tk.BooleanVar()
 dark_mode_checkbutton = tk.Checkbutton(frame_filter, text="Dark Mode", variable=dark_mode_var, command=toggle_dark_mode)
 dark_mode_checkbutton.grid(row=2, column=4, padx=5, pady=5)
+
+# Adding JSON file selection
+label_json_file = tk.Label(frame_filter, text="Select JSON file:")
+label_json_file.grid(row=0, column=4, padx=5, pady=5)
+
+json_file_combobox = ttk.Combobox(frame_filter, textvariable=json_filename_var, values=['substories.json', 'y4subst.json'])
+json_file_combobox.grid(row=0, column=5, padx=5, pady=5)
+json_file_combobox.bind("<<ComboboxSelected>>", change_json_file)
 
 # Creating a frame for the Treeview and scrollbars
 frame_tree = tk.Frame(root)
