@@ -55,6 +55,11 @@ def filter_substories(query, substories, filter_by, status_filters, chapter_filt
     if 'All' not in chapter_filters:
         filtered = [substory for substory in filtered if substory.get('available from', '') in chapter_filters]
 
+    if json_filename == 'y4subst.json':
+        character_filters = [character_listbox.get(i) for i in character_listbox.curselection()]
+        if 'All' not in character_filters:
+            filtered = [substory for substory in filtered if substory.get('character', '') in character_filters]
+
     return filtered
 
 # Function to refresh the table view
@@ -63,7 +68,10 @@ def refresh_table(tree, substories):
         tree.delete(row)
     for substory in substories:
         available_from = substory.get('available from', '')
-        tree.insert("", "end", values=(substory['id'], substory['title'], substory['description'], available_from, substory['status']))
+        if json_filename == 'y4subst.json':
+            tree.insert("", "end", values=(substory['id'], substory['title'], substory['description'], substory.get('character', ''), available_from, substory['status']))
+        else:
+            tree.insert("", "end", values=(substory['id'], substory['title'], substory['description'], available_from, substory['status']))
 
 # Function to handle filtering
 def on_filter():
@@ -121,6 +129,8 @@ def sort_by_column(column_index):
         substories = sorted(substories, key=lambda x: x.get('available from', ''), reverse=sort_reverse[column_index])
     elif column_index == 4:  # Sort by Status
         substories = sorted(substories, key=lambda x: x['status'], reverse=sort_reverse[column_index])
+    if json_filename == 'y4subst.json' and column_index == 3:
+        substories = sorted(substories, key=lambda x: x.get('character', ''), reverse=sort_reverse[column_index])
     
     sort_reverse[column_index] = not sort_reverse[column_index]
     refresh_table(tree, substories)
@@ -593,11 +603,70 @@ def apply_theme():
         root.configure(background='#f0f0f0')  # Reset background color of main window
         frame_filter.configure(background='#f0f0f0')  # Reset background color of filtering frame
 
+def show_character_filter_window():
+    character_filter_window = tk.Toplevel(root)
+    character_filter_window.title("Character Filter")
+    character_filter_window.geometry('300x200')
+
+    label_character = tk.Label(character_filter_window, text="Character:")
+    label_character.pack(pady=5)
+
+    character_listbox = tk.Listbox(character_filter_window, selectmode=tk.MULTIPLE, exportselection=0, height=6)
+    characters = ['All', 'Character 1', 'Character 2', 'Character 3']  # Replace with actual character names
+    for character in characters:
+        character_listbox.insert(tk.END, character)
+    character_listbox.pack(pady=5)
+
+    def apply_character_filter():
+        global character_filters
+        character_filters = [character_listbox.get(i) for i in character_listbox.curselection()]
+        if not character_filters:
+            character_filters = ['All']
+        character_filter_window.destroy()
+        on_filter()
+
+    button_apply_filter = tk.Button(character_filter_window, text="Apply Filter", command=apply_character_filter)
+    button_apply_filter.pack(pady=10)
+
 def change_json_file(event):
     global substories, json_filename
     json_filename = json_filename_var.get()
     substories = load_data(json_filename)
+    update_treeview_columns()  # Call the function to update columns based on the file
+    if json_filename == 'y4subst.json':
+        label_character.grid()
+        character_listbox.grid()
+    else:
+        label_character.grid_remove()
+        character_listbox.grid_remove()
     on_filter()
+
+# Function to update the Treeview columns based on the selected JSON file
+def update_treeview_columns():
+    tree["columns"] = ("ID", "Title", "Description", "Available From", "Status")
+    if json_filename == 'y4subst.json':
+        tree["columns"] = ("ID", "Title", "Description", "Character", "Available From", "Status")
+    
+    tree.heading("ID", text="ID", command=lambda: sort_by_column(0))
+    tree.heading("Title", text="Title", command=lambda: sort_by_column(1))
+    tree.heading("Description", text="Description", command=lambda: sort_by_column(2))
+    if json_filename == 'y4subst.json':
+        tree.heading("Character", text="Character", command=lambda: sort_by_column(3))
+        tree.heading("Available From", text="Available From", command=lambda: sort_by_column(4))
+        tree.heading("Status", text="Status", command=lambda: sort_by_column(5))
+    else:
+        tree.heading("Available From", text="Available From", command=lambda: sort_by_column(3))
+        tree.heading("Status", text="Status", command=lambda: sort_by_column(4))
+    
+    # Set column widths
+    tree.column("ID", width=50)
+    tree.column("Title", width=200)
+    tree.column("Description", width=300)
+    tree.column("Available From", width=100)
+    tree.column("Status", width=100)
+    if json_filename == 'y4subst.json':
+        tree.column("Character", width=100)
+
 # Creating the main application window
 root = tk.Tk()
 root.title("Yakuza Substories Manager")
@@ -655,8 +724,20 @@ for chapter in chapters:
     chapter_listbox.insert(tk.END, chapter)
 chapter_listbox.grid(row=1, column=3, padx=5, pady=5)
 
+# Adding Character Filter
+label_character = tk.Label(frame_filter, text="Character:")
+label_character.grid(row=1, column=4, padx=5, pady=5)
+
+character_listbox = tk.Listbox(frame_filter, selectmode=tk.MULTIPLE, exportselection=0, height=4)
+characters = ['All', 'Akiyama', 'Saejima', 'Tanimura', 'Kiryu']  # Replace with actual character names
+for character in characters:
+    character_listbox.insert(tk.END, character)
+character_listbox.grid(row=1, column=5, padx=5, pady=5)
+character_listbox.grid_remove()  # Initially hide it
+
+# Adding the filter button
 button_filter = tk.Button(frame_filter, text="Filter", command=on_filter)
-button_filter.grid(row=0, column=3, padx=5, pady=5)
+button_filter.grid(row=0, column=6, padx=5, pady=5)
 
 # Adding font size controls for the Treeview
 button_increase_font = tk.Button(frame_filter, text="Increase Font Size", command=lambda: change_font_size(2))
@@ -692,19 +773,28 @@ frame_tree.pack(expand=True, fill=tk.BOTH)
 
 # Creating the table to display substories
 columns = ("ID", "Title", "Description", "Available From", "Status")
+if json_filename == 'y4subst.json':
+    columns = ("ID", "Title", "Description", "Character", "Available From", "Status")
+
 tree = ttk.Treeview(frame_tree, columns=columns, show='headings', selectmode='extended')
 tree.heading("ID", text="ID", command=lambda: sort_by_column(0))
 tree.heading("Title", text="Title", command=lambda: sort_by_column(1))
 tree.heading("Description", text="Description", command=lambda: sort_by_column(2))
-tree.heading("Available From", text="Available From", command=lambda: sort_by_column(3))
-tree.heading("Status", text="Status", command=lambda: sort_by_column(4))
-
+if json_filename == 'y4subst.json':
+    tree.heading("Character", text="Character", command=lambda: sort_by_column(3))
+    tree.heading("Available From", text="Available From", command=lambda: sort_by_column(4))
+    tree.heading("Status", text="Status", command=lambda: sort_by_column(5))
+else:
+    tree.heading("Available From", text="Available From", command=lambda: sort_by_column(3))
+    tree.heading("Status", text="Status", command=lambda: sort_by_column(4))
 # Set column widths
 tree.column("ID", width=50)
 tree.column("Title", width=200)
 tree.column("Description", width=300)
 tree.column("Available From", width=100)
 tree.column("Status", width=100)
+if json_filename == 'y4subst.json':
+    tree.column("Character", width=100)
 
 # Creating scrollbars
 vsb = ttk.Scrollbar(frame_tree, orient="vertical", command=tree.yview)
