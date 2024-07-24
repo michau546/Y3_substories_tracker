@@ -40,7 +40,7 @@ def save_revelations(revelations):
         json.dump(revelations, file, indent=4)
 
 # Function to filter substories
-def filter_substories(query, substories, filter_by, status_filters, chapter_filters):
+def filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters=[]):
     filtered = substories
     if filter_by == 'ID':
         filtered = [substory for substory in substories if query in str(substory['id'])]
@@ -55,10 +55,8 @@ def filter_substories(query, substories, filter_by, status_filters, chapter_filt
     if 'All' not in chapter_filters:
         filtered = [substory for substory in filtered if substory.get('available from', '') in chapter_filters]
 
-    if json_filename == 'y4subst.json':
-        character_filters = [character_listbox.get(i) for i in character_listbox.curselection()]
-        if 'All' not in character_filters:
-            filtered = [substory for substory in filtered if substory.get('character', '') in character_filters]
+    if 'All' not in character_filters:
+        filtered = [substory for substory in filtered if substory.get('character', '') in character_filters]
 
     return filtered
 
@@ -75,15 +73,21 @@ def refresh_table(tree, substories):
 
 # Function to handle filtering
 def on_filter():
+    global substories  # Add this line to use the global substories variable
+    json_filename = {v: k for k, v in json_file_display_names.items()}[json_filename_var.get()]
+    substories = load_data(json_filename)  # Load data from the selected JSON file
     query = entry_search.get()
     filter_by = filter_option.get()
     status_filters = [status_listbox.get(i) for i in status_listbox.curselection()]
     chapter_filters = [chapter_listbox.get(i) for i in chapter_listbox.curselection()]
+    character_filters = [character_listbox.get(i) for i in character_listbox.curselection()] if json_filename == 'y4subst.json' else []
     if not status_filters:
         status_filters = ['All']
     if not chapter_filters:
         chapter_filters = ['All']
-    filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters)
+    if not character_filters:
+        character_filters = ['All']
+    filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
     if 'chapter 10' in chapter_filters:
         messagebox.showinfo("Chapter 10 Reminder", "Remember to check substories started previously, some of them can only be completed from now on !!!")
     if not filtered_substories:
@@ -92,7 +96,7 @@ def on_filter():
 
 # Function to get current filter settings
 def get_current_filters():
-    return entry_search.get(), filter_option.get(), [status_listbox.get(i) for i in status_listbox.curselection()], [chapter_listbox.get(i) for i in chapter_listbox.curselection()]
+    return entry_search.get(), filter_option.get(), [status_listbox.get(i) for i in status_listbox.curselection()], [chapter_listbox.get(i) for i in chapter_listbox.curselection()], [character_listbox.get(i) for i in character_listbox.curselection()] if json_filename == 'y4subst.json' else []
 
 # Function to handle status change
 def change_status(event):
@@ -106,8 +110,8 @@ def change_status(event):
         save_data(substories, json_filename)
         
         # Get current filters and reapply them after saving data
-        query, filter_by, status_filters, chapter_filters = get_current_filters()
-        filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters)
+        query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
+        filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
         refresh_table(tree, filtered_substories)
         
         # Re-select the items based on their IDs
@@ -327,8 +331,8 @@ def show_details(event):
             save_data(substories, json_filename)
             
             # Get current filters and reapply them after saving data
-            query, filter_by, status_filters, chapter_filters = get_current_filters()
-            filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters)
+            query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
+            filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
             refresh_table(tree, filtered_substories)
             
             detail_window.destroy()
@@ -340,8 +344,8 @@ def update_status(substory, new_status):
     save_data(substories, json_filename)
     
     # Get current filters and reapply them after saving data
-    query, filter_by, status_filters, chapter_filters = get_current_filters()
-    filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters)
+    query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
+    filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
     refresh_table(tree, substories)
     
     # Re-select the items
@@ -349,7 +353,7 @@ def update_status(substory, new_status):
         if int(tree.item(item, 'values')[0]) == substory['id']:
             tree.selection_add(item)
             tree.focus(item)
-
+            
 # Function to open a new window with revelation details
 def show_revelation_details(event):
     selected_item = revelations_tree.selection()
@@ -535,6 +539,7 @@ def save_config():
         'filter_by': filter_option.get(),
         'status_filter': ','.join([status_listbox.get(i) for i in status_listbox.curselection()]),
         'chapter_filter': ','.join([chapter_listbox.get(i) for i in chapter_listbox.curselection()]),
+        'character_filter': ','.join([character_listbox.get(i) for i in character_listbox.curselection()]),
         'json_file': json_filename_var.get()
     }
     config['WINDOW'] = {
@@ -561,7 +566,11 @@ def apply_config(config):
         for i in range(chapter_listbox.size()):
             if chapter_listbox.get(i) in chapter_filters:
                 chapter_listbox.select_set(i)
-        json_filename_var.set(filters.get('json_file', 'substories.json'))
+        character_filters = filters.get('character_filter', 'All').split(',')
+        for i in range(character_listbox.size()):
+            if character_listbox.get(i) in character_filters:
+                character_listbox.select_set(i)
+        json_filename_var.set(filters.get('json_file', 'Yakuza 3'))
     if 'WINDOW' in config:
         window = config['WINDOW']
         width = window.get('width', '1024')
@@ -615,13 +624,7 @@ def show_character_filter_window():
         character_listbox.insert(tk.END, character)
     character_listbox.pack(pady=5)
 
-    def apply_character_filter():
-        global character_filters
-        character_filters = [character_listbox.get(i) for i in character_listbox.curselection()]
-        if not character_filters:
-            character_filters = ['All']
-        character_filter_window.destroy()
-        on_filter()
+    
 
     button_apply_filter = tk.Button(character_filter_window, text="Apply Filter", command=apply_character_filter)
     button_apply_filter.pack(pady=10)
@@ -668,9 +671,6 @@ style = ttk.Style()
 style.configure("Treeview", font=(current_font_family, current_font_size))
 style.configure("Treeview.Heading", font=(current_font_family, current_font_size))
 
-
-
-# Adding Chapter Filter
 # Creating the frame for filtering options
 frame_filter = tk.Frame(root)
 frame_filter.pack(pady=10)
@@ -714,7 +714,9 @@ characters = ['All', 'Akiyama', 'Saejima', 'Tanimura', 'Kiryu']  # Replace with 
 for character in characters:
     character_listbox.insert(tk.END, character)
 character_listbox.grid(row=1, column=5, padx=5, pady=5)
-character_listbox.grid_remove()  # Initially hide it
+if json_filename != 'y4subst.json':
+    label_character.grid_remove()
+    character_listbox.grid_remove()
 
 # Adding the filter button
 button_filter = tk.Button(frame_filter, text="Filter", command=on_filter)
@@ -747,7 +749,6 @@ label_json_file.grid(row=0, column=4, padx=5, pady=5)
 json_file_combobox = ttk.Combobox(frame_filter, textvariable=json_filename_var, values=list(json_file_display_names.values()))
 json_file_combobox.grid(row=0, column=5, padx=5, pady=5)
 json_file_combobox.bind("<<ComboboxSelected>>", change_json_file)
-
 
 # Creating a frame for the Treeview and scrollbars
 frame_tree = tk.Frame(root)
@@ -806,8 +807,8 @@ config = load_config()
 apply_config(config)
 
 # Initial table refresh
-query, filter_by, status_filters, chapter_filters = get_current_filters()
-filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters)
+query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
+filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
 if 'chapter 10' in chapter_filters:
     messagebox.showinfo("Chapter 10 Reminder", "Remember to check substories started previously, some of them can only be completed from now on !!!")
 refresh_table(tree, filtered_substories)
