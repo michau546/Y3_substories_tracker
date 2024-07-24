@@ -73,9 +73,11 @@ def refresh_table(tree, substories):
 
 # Function to handle filtering
 def on_filter():
-    global substories  # Add this line to use the global substories variable
-    json_filename = {v: k for k, v in json_file_display_names.items()}[json_filename_var.get()]
-    substories = load_data(json_filename)  # Load data from the selected JSON file
+    global substories, json_filename
+    display_name = json_filename_var.get()
+    json_filename = {v: k for k, v in json_file_display_names.items()}[display_name]
+    substories = load_data(json_filename)
+    
     query = entry_search.get()
     filter_by = filter_option.get()
     status_filters = [status_listbox.get(i) for i in status_listbox.curselection()]
@@ -807,11 +809,7 @@ config = load_config()
 apply_config(config)
 
 # Initial table refresh
-query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
-filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
-if 'chapter 10' in chapter_filters:
-    messagebox.showinfo("Chapter 10 Reminder", "Remember to check substories started previously, some of them can only be completed from now on !!!")
-refresh_table(tree, filtered_substories)
+on_filter()
 
 # Binding events
 tree.bind("<Double-1>", show_details)
