@@ -77,6 +77,14 @@ def on_filter():
     display_name = json_filename_var.get()
     json_filename = {v: k for k, v in json_file_display_names.items()}[display_name]
     substories = load_data(json_filename)
+
+    # Show or hide character filter based on the selected JSON file
+    if json_filename == 'y4subst.json':
+        label_character.grid()
+        character_listbox.grid()
+    else:
+        label_character.grid_remove()
+        character_listbox.grid_remove()
     
     query = entry_search.get()
     filter_by = filter_option.get()
