@@ -65,10 +65,10 @@ def refresh_table(tree, substories):
     for row in tree.get_children():
         tree.delete(row)
     for substory in substories:
-        values = (substory['id'], substory['title'], substory['description'])
         if json_filename == 'y4subst.json':
-            values += (substory.get('character', ''),)
-        values += (substory.get('available from', ''), substory['status'])
+            values = (substory['id'], substory['title'], substory['description'],substory['available from'], substory['status'], substory['character'])
+        else:
+            values = (substory['id'], substory['title'], substory['description'], substory['available from'], substory['status'])
         tree.insert("", "end", values=values)
 
 # Function to handle filtering
@@ -139,9 +139,11 @@ def sort_by_column(column_index):
         substories = sorted(substories, key=lambda x: x['title'], reverse=sort_reverse[column_index])
     elif column_index == 2:  # Sort by Description
         substories = sorted(substories, key=lambda x: x['description'], reverse=sort_reverse[column_index])
-    elif column_index == 3:  # Sort by Available From
+    elif column_index == 3:  # Sort by Character (Yakuza 4 only)
+        substories = sorted(substories, key=lambda x: x.get('character', ''), reverse=sort_reverse[column_index])
+    elif column_index == 4:  # Sort by Available From
         substories = sorted(substories, key=lambda x: x.get('available from', ''), reverse=sort_reverse[column_index])
-    elif column_index == 4:  # Sort by Status
+    elif column_index == 5:  # Sort by Status
         substories = sorted(substories, key=lambda x: x['status'], reverse=sort_reverse[column_index])
     
     sort_reverse[column_index] = not sort_reverse[column_index]
@@ -261,9 +263,11 @@ def show_details(event):
         
         # Adding a canvas and scrollbar for the entire detail window
         canvas = tk.Canvas(detail_window, background='#333333' if dark_mode_var.get() else '#f0f0f0')
-        scrollbar = ttk.Scrollbar(detail_window, orient="vertical", command=canvas.yview)
-        canvas.configure(yscrollcommand=scrollbar.set)
-        scrollbar.pack(side="right", fill="y")
+        v_scrollbar = ttk.Scrollbar(detail_window, orient="vertical", command=canvas.yview)
+        h_scrollbar = ttk.Scrollbar(detail_window, orient="horizontal", command=canvas.xview)
+        canvas.configure(yscrollcommand=v_scrollbar.set, xscrollcommand=hsb.set)
+        v_scrollbar.pack(side="right", fill="y")
+        h_scrollbar.pack(side="bottom", fill="x")
         canvas.pack(side="left", fill="both", expand=True)
 
         detail_frame = tk.Frame(canvas, background='#333333' if dark_mode_var.get() else '#f0f0f0')
@@ -338,12 +342,11 @@ def show_details(event):
             substory['title'] = title_entry.get()
             substory['description'] = description_text.get("1.0", tk.END).strip()
             substory['available from'] = chapter_option.get()
+            substory['status'] = status_option.get()
             save_data(substories, json_filename)
             
-            # Get current filters and reapply them after saving data
-            query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
-            filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
-            refresh_table(tree, filtered_substories)
+            # Refresh the table without resetting the filters
+            refresh_table(tree, substories)
             
             detail_window.destroy()
 
@@ -352,10 +355,6 @@ def show_details(event):
 def update_status(substory, new_status):
     substory['status'] = new_status
     save_data(substories, json_filename)
-    
-    # Get current filters and reapply them after saving data
-    query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
-    filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
     refresh_table(tree, substories)
     
     # Re-select the items
@@ -363,7 +362,7 @@ def update_status(substory, new_status):
         if int(tree.item(item, 'values')[0]) == substory['id']:
             tree.selection_add(item)
             tree.focus(item)
-            
+
 # Function to open a new window with revelation details
 def show_revelation_details(event):
     selected_item = revelations_tree.selection()
@@ -378,9 +377,11 @@ def show_revelation_details(event):
         
         # Adding a canvas and scrollbar for the entire detail window
         canvas = tk.Canvas(detail_window, background='#333333' if dark_mode_var.get() else '#f0f0f0')
-        scrollbar = ttk.Scrollbar(detail_window, orient="vertical", command=canvas.yview)
-        canvas.configure(yscrollcommand=scrollbar.set)
-        scrollbar.pack(side="right", fill="y")
+        v_scrollbar = ttk.Scrollbar(detail_window, orient="vertical", command=canvas.yview)
+        h_scrollbar = ttk.Scrollbar(detail_window, orient="horizontal", command=canvas.xview)
+        canvas.configure(yscrollcommand=v_scrollbar.set, xscrollcommand=hsb.set)
+        v_scrollbar.pack(side="right", fill="y")
+        h_scrollbar.pack(side="bottom", fill="x")
         canvas.pack(side="left", fill="both", expand=True)
 
         detail_frame = tk.Frame(canvas, background='#333333' if dark_mode_var.get() else '#f0f0f0')
@@ -634,8 +635,6 @@ def show_character_filter_window():
         character_listbox.insert(tk.END, character)
     character_listbox.pack(pady=5)
 
-    
-
     button_apply_filter = tk.Button(character_filter_window, text="Apply Filter", command=apply_character_filter)
     button_apply_filter.pack(pady=10)
 
@@ -670,7 +669,7 @@ json_filename = {v: k for k, v in json_file_display_names.items()}[json_filename
 
 # Loading data
 substories = load_data(json_filename)
-sort_reverse = [False, False, False, False, False]  # Sorting flags for columns
+sort_reverse = [False, False, False, False, False, False]  # Sorting flags for columns
 current_font_family = 'Helvetica'
 default_font_size = 12  # Default font size
 current_font_size = default_font_size
@@ -773,13 +772,9 @@ tree = ttk.Treeview(frame_tree, columns=columns, show='headings', selectmode='ex
 tree.heading("ID", text="ID", command=lambda: sort_by_column(0))
 tree.heading("Title", text="Title", command=lambda: sort_by_column(1))
 tree.heading("Description", text="Description", command=lambda: sort_by_column(2))
-if json_filename == 'y4subst.json':
-    tree.heading("Character", text="Character", command=lambda: sort_by_column(3))
-    tree.heading("Available From", text="Available From", command=lambda: sort_by_column(4))
-    tree.heading("Status", text="Status", command=lambda: sort_by_column(5))
-else:
-    tree.heading("Available From", text="Available From", command=lambda: sort_by_column(3))
-    tree.heading("Status", text="Status", command=lambda: sort_by_column(4))
+tree.heading("Available From", text="Available From", command=lambda: sort_by_column(3))
+tree.heading("Status", text="Status", command=lambda: sort_by_column(4))
+
 # Set column widths
 tree.column("ID", width=50)
 tree.column("Title", width=200)
@@ -789,6 +784,8 @@ tree.column("Status", width=100)
 if json_filename == 'y4subst.json':
     tree.column("Character", width=100)
 
+# Initial table refresh
+on_filter()
 # Creating scrollbars
 vsb = ttk.Scrollbar(frame_tree, orient="vertical", command=tree.yview)
 hsb = ttk.Scrollbar(frame_tree, orient="horizontal", command=tree.xview)

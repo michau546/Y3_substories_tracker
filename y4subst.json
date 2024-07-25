@@ -50,7 +50,7 @@
         "description": "In front of the Matsuya at the end of Tenkaichi St., you'll see a woman arguing with another moneylender. He'll let her know that she's been blacklisted and leaves. Speak to the woman and she'll mention needing ten million. Despite her debt she does seem to put on a brave face and dress to the nines. Akiyama tells her to go to his office. Go there yourself and she'll walk in. Basically, her problems add up to an inability to actually spend money practically. Akiyama gives her a million to begin with and asks her to spend all of it. After she leaves, he confides in Hana that it was a bit of a ruse to see exactly what she spends it on, and a measure of her character. Hana will mention that she'll probably hit three locations: Le Marche, Sushi Gin, and the host club Adam. You'll need to go to these three locations. The first two are marked on your map. Adam is in the middle of the Hotel District, north of the Batting Center. Going to Adam will get you in a fight with a few guys. Once you observe her at all three, head back to the office. She'll return the money and pass Akiyama's test. You'll get a Protective Amulet as a reward.",
         "completed": false,
         "available from": "chapter 2",
-        "status": "Not Completed",
+        "status": "Completed",
         "character": "Akiyama"
     },
     {
@@ -59,12 +59,11 @@
         "description": "Out in front of the MEB, you'll see two people conversing. Approach them and you'll learn that the guy is Minamizawa, one of the Mars Fighters, an Osakan comedy troupe that Kiryu helped out a couple of times. He and the woman he's with are writing an article about Tokyo cabaret clubs. They'll want Akiyama to help them with the job, and will be at Cuez Bar. The point here is to learn as much as you can about the three hostesses available to Akiyama: Rio at Shine, and Noa and Erena at Jewel. You'll have to visit each at least once in order to be able to give them the info. Just refer to my handy-dandy list here: Rio Favorite Drink? - Rose Champagne Pet? - A dog. Other job? - Being a pin-up model Noa Athletics? - Ballet Favorite Treat? - Chicken Basket Her Type? - Good drivers Erena Her Type? - Secretly sensitive rich guys Where She's From? - Kyoto Favorite Drink? - Yamazaki 12 Years For every girl, you'll answer the three questions, then leave the area and come back. You'll get 30,000 yen for each girl for all right answers, with a maximum of 90,000 yen possible. Wrong answers get you a smaller payment each.",
         "completed": false,
         "available from": "chapter 2",
-        "status": "Not Completed",
+        "status": "Completed",
         "character": "Akiyama"
     },
     {
         "id": 1,
-        "chapter": 3,
         "title": "The Fate of the 30 Million Yen",
         "description": "Go to the stairs of Sky Finance and you'll see a guy standing outside (you may need to clear out some other substories in the area before he appears). He'll ask for a loan. Choose to hear him out and he'll inform you his daughter has been kidnapped. Choose to give him a test and you'll set things up for him. He'll come back having passed the test, so you'll leave for a bit while Hana gets the money ready. As you walk around the city, you'll get a call from the father. Go back to the office to get the money, then head over to the Taihei Lockers to find the dad. Agree to go with him to the exchange. Once the exchange is made, you'll be told where the daughter is, and she'll be freed. Seems alls well that ends well, or does it? Hana calls and Akiyama lets her know he smells a rat. Apparently the exchange cab took the money to a spot near Children's Park on Shichifuku. Go to Children's Park and you'll see two young women talking. Approach them and they'll spill that Miki and her dad are living it up having fleeced Akiyama out of money. Go to Le Marche now and you'll see Miki. She'll bolt. Follow her shortly up Senryo and speak to the guy in the street to be told she took a cab to Theater Square. Go there yourself, to the east side, where you'll see a couple of students. They'll tell you that the taxi is in the Hotel District. Head up past the Batting Center and you'll find the cabbie. He'll point you to the hotel just north of here, with the brick facade and the pink neon sign. Approach the entrance and you'll head inside. Looks like Akiyama will be needing to launder that money! (ba dum tish). Anyway, beat up the dude and call it a day. You'll get a Gold Plate. Oh and before you freak out about the dude bathing with his wife AND daughter, be reminded that in Japan it's not uncommon for families to share baths and it's not really all that sexual.",
         "completed": false,
@@ -74,7 +73,6 @@
     },
     {
         "id": 2,
-        "chapter": 3,
         "title": "Counterfeit Bills",
         "description": "Once you complete 'Lonely Hana-chan', return to Sky Finance and Hana will mention counterfeit bills making the rounds in Kamurocho. One of Akiyama's clients comes in to make a payment and it turns out some of his bills are counterfeit. You get a description of the culprit and Hana will draw a sketch, more or less. Head out with the sketch and go to Sushi Gin, then go to the Poppo in Nakamichi Alley and speak to the employee nearer to the door. Next, go to Volcanic Volcano. and speak to the male staff member near the counter. Next, go to Park Boulevard near the taxi and find the guy in the white cap. With that done, walk around town for a bit until you get a call. Turns out our mark is on Pink Street. Head to the south end to find the guy. He'll run and you'll give chase, but he's not especially difficult. The guy will immediately give up his cohorts, hanging out by the docks, so take a cab there. Defeat the six dudes near the warehouses and you'll shut down the counterfeit ring.",
         "completed": false,
@@ -84,7 +82,6 @@
     },
     {
         "id": 5,
-        "chapter": 3,
         "title": "The Apprentice: Part 2",
         "description": "You must of course have completed 'The Apprentice'. Go to the southeast corner of Theater Square and Akiyama will run into a competitor: Arima of Tenjin Loans. He'll offer you a proposal of a merge, which Akiyama will flatly turn down. He'll bark at the back of your head as you leave. Return to Sky Finance and Hana will mention Shiobara has been doing well for himself lately. He'll stop by the office, looking like a million bucks (or yen) and will offer to return double his loan. Akiyama will refuse, saying he only wants the five million. He also reveals he's now working as a moneylender. A client will call, but Shiobara excuses himself and pinches the customer. The customer calls back and says he's at an office near the M Store. Go to Shichifuku just east of the M Store and you'll see a guy on his phone talking about the place. Head inside using the elevator and you'll pound the poop out of Shiobara. Arima will reveal himself as the instigator of getting Shiobara into finance. The substory will end here, but the intrigue is just beginning.",
         "completed": false,
@@ -94,7 +91,6 @@
     },
     {
         "id": 6,
-        "chapter": 3,
         "title": "A Wife's Concern",
         "description": "You must complete the previous substory, then return to Sky Finance and you'll find you have another customer. She asks for fifty million and agrees to Akiyama's test. As she leaves, she identifies herself as Setsuko Arima. Looks like Arima's having trouble himself. The floor manager at Elise will call and say that the woman is trying to get hired at Elise. Head over there (it shouldn't force the story) and you'll see Arima outside. He'll go in and Akiyama will follow. Beat up Arima and his goons inside and this will end the substory.",
         "completed": false,
@@ -104,7 +100,6 @@
     },
     {
         "id": 10,
-        "chapter": 3,
         "title": "Make It Big With FX",
         "description": "This substory is only available starting in Chapter 3 after you send Lily to Elise. Head to the stairs to Sky Finance and you'll get a text from a 'Ciel Trading' about forex, foreign currency exchange. Akiyama is unimpressed, but figures he might head to Senryo Ave. and their office. Go to the southeast part of the map, and just down the unnamed street leading east is a guy barking the for the forex session. Talk to him and agree to go inside. The deal comes across as super shady, so select 'Does your company profit from this?' 'Can I get my investment back, no matter what?', then naturally 'I think I'll pass.' The guy and his three goons will then attack you. Beat them up to get 40,000 yen.",
         "completed": false,
@@ -114,7 +109,6 @@
     },
     {
         "id": 15,
-        "chapter": 3,
         "title": "Lonely Hana-chan",
         "description": "You must complete 'The Fate of 30 Million Yen' first. Go outside Kanrai and Akiyama will get the idea of getting some Deluxe Kalbi Lunch for Hana. Head back to the office and apparently Hana won't be all that hungry, despite audible evidence to the contrary. After some bickering, Hana challenges Akiyama to find her a man who'd like someone of her body type. Select any of the four options you like. You'll be doing all of them, and you'll have to travel to each point. To do the first, go to the MEB. To do the second, look south of the Club SEGA on Nakamichi. For the third, go to Theater Square and you'll see a couple on the east side. For the fourth, just go to Elise and talk to the manager outside. With all those complete, note near Elise that there's a guy in a suit talking about 'fat chicks'. Listen in and apparently there's a scout on Pink Street bringing in heavier prospects. Head to the south end of Pink Street to find him (he's wearing black and glasses). You'll bring him back and end the substory.",
         "completed": false,
@@ -124,7 +118,6 @@
     },
     {
         "id": 7,
-        "chapter": 4,
         "title": "Tricks of the Trade",
         "description": "You must complete 'A Wife's Concern'. Go to the Tenkaichi gate at the south end and you'll bump into who else but Shiobara. Looks like the high life hasn't been the best on him, and he's back to his old self. Akiyama will give him a new test. Each of them takes a cigarette and tries to turn it into something valuable. Basically the two of you will be going on a fetch questto trade up as much as possible. Right outside the park is a yakuza looking for smokes. Speak to him and he'll give you stomach medicine. Now head over to Nakamichi. You'll see two guys not looking great. Talk to the older guy with the purple jacket. He'll give you concert tickets for the medicine. Next, head back to the Tenkaichi gate. There's a guy and a lady there. Speak to them and you'll exchange the tickets for a business card. Lastly, head to Theater Square. On the east side is a dude in a black suit. Give him the card and you'll get a fancy watch. This will end the challenge and you'll meet back up with Shiobara. This will end the Shiobara Saga, so I hope you enjoyed it.",
         "completed": false,
@@ -134,7 +127,6 @@
     },
     {
         "id": 11,
-        "chapter": 4,
         "title": "Beware of Impostors",
         "description": "At the corner of Taihei and Theater Avenue, east of the Matsuya, you'll find a guy in a white suit clearly angry with 'Sky Finance'. Speak to him and he'll chase you off, clearly having never met you. Hmm. Head north along Theater Avenue and just before you hit Shichifuku, you'll see a woman in glasses also complaining. Speak to her. She'll mention an impostor Sky Finance set up on Park Alley. Akiyama will call Hana and the two will set up a plan to punish them good. Head over to Park Alley, specifically talk to the guy in a red suit and he'll point you to the office at the corner of the alley. Head on up and you'll engage in the hilarity. I don't want to spoil it, because it's actually pretty funny. Defeat three guys and you'll get a Super High-voltage Battery as a reward.",
         "completed": false,
@@ -144,7 +136,6 @@
     },
     {
         "id": 13,
-        "chapter": 4,
         "title": "Hostess Training",
         "description": "Once you've completed 'Pimp My Otaku', go to Elise and speak to the manager standing outside. He'll lament that Miki is not doing so well. Akiyama will speak to her and she'll be lamenting the fact that that otaku guy, a regular for her, is no longer a customer to her. Not that she's doubting her skills, but it's a matter of pride, you see. Anyway, Akiyama suggests a refresher course in hostessing. The correct responses are 'Be more open', 'Ask for his favorite dish', 'Create a domestic atmosphere', 'Take out your wallet like you're going to pay'. The substory will end after this.",
         "completed": false,
@@ -154,7 +145,6 @@
     },
     {
         "id": 1,
-        "chapter": 4,
         "title": "Dragon Palace Bouncer",
         "description": "Oddly ordered, this can only be done after 'Brother and Sister 1', and you'll also have to advance the story to the point where you've tried the door in West Park. Return to your hideout, where Tadashi is, and there'll be a knock on the door. Seems Tadokoro has a job for Saejima. Head to the Dragon Palace near the Hotel District and you'll get the fun life of a bouncer. You'll go through the motions automatically, then get 300 Casino Chips as thanks. As you leave, you'll punch up the guy who was getting uppity.",
         "completed": false,
@@ -164,7 +154,6 @@
     },
     {
         "id": 3,
-        "chapter": 3,
         "title": "Brother and Sister 1",
         "description": "Go to the Underground Mall and you'll be buzzed by a little kid in a cap. He'll lift your cash and run off. Go towards the west end and speak to the man in the cap. He'll ask for 1000 yen before you can find where he went (or you can just beat him up). Head down to the Underground Parking Lot and you'll find him in the northeast area, next to #312. Talk to him and he'll spin his story of him and his sister being down on their luck. Tadashi scrimping for change on the streets and Akiko being sold off to a debt collector. Saejima will agree to help, then be taken to Tadokoro, the debt collector. You'll have to deal with the punks outside, and then the punks inside. Tadokoro will ask what Saejima wants and he'll respond that he's taking on Tadashi's five million yen debt. Tadokoro is amenable and enlists Saejima. Tadashi gives you a Chance Stone as thanks for helping him.",
         "completed": false,
@@ -174,7 +163,6 @@
     },
     {
         "id": 4,
-        "chapter": 3,
         "title": "Brother and Sister 2",
         "description": "For this one, you'll have to complete 'Bodyguard'. Go back to your hideout and you'll automatically check on Tadashi. There'll be a knock and another job for Saejima. Go to a spot and beat up some guys, essentially. The spot is just outside Orchid Palace Mahjong. First beat up the four guys on the street, then you'll head up to the roof and face a couple dozen guys, coming at you about five at a time. It's a long fight, but it's not especially difficult. Defeating them all will get you an Eye of the Dragon.",
         "completed": false,
@@ -184,7 +172,6 @@
     },
     {
         "id": 7,
-        "chapter": 3,
         "title": "Bodyguard",
         "description": "Once you complete 'Dragon Palace Bouncer', head back down to your hideout, and you'll see a suited guy standing outside it. Speak to him to get your next job for Tadokoro. Head to the parking lot in back of Millennium Tower and you'll get your guy you need to protect. As you take him along, you'll be attacked three times, each by single individuals. They'll beeline directly for your client, so make sure you're not whiffing with your strikes. Defeat all three to close out the substory.",
         "completed": false,
@@ -194,7 +181,6 @@
     },
     {
         "id": 9,
-        "chapter": 3,
         "title": "Speechless",
         "description": "After you complete 'Mother and Child', head to the front of Millennium Tower. To the east of the stairs up to the door is a man on the ground getting harassed. The guy's name is Numai, a local politician. Agree to be his lookout for his next speech. During the speech, some guys will be trying to rile things up. They're the two punk-looking guys who are the furthest away from where you start. Speak to them and you'll beat them up. You only get experience from this substory.",
         "completed": false,
@@ -204,7 +190,6 @@
     },
     {
         "id": 10,
-        "chapter": 3,
         "title": "Mother and Child",
         "description": "You must complete 'Running Woman'. Go to the hallway north of the lockers through the Theater, and you'll find a guy in a suit with a job for you. Hear him out and you'll be offered a bodyguard job for a young star named Makiko. Accept the job. As soon as you get back on the street, Makiko will ditch you. Talk to the guy in the white jacket nearby and he'll point you to the north. Head up the street to the parking lot and speak to the guy in the green suit. He'll point you into the parking lot. Go there and confront the goons. With them busted, you'll get your pay of a Diamond.",
         "completed": false,
@@ -214,7 +199,6 @@
     },
     {
         "id": 11,
-        "chapter": 3,
         "title": "Nice Catch",
         "description": "Head to the Docks and you'll see a dude standing next to the water. Speak to him and he'll be contemplating tossing himself in. Speak to him and it turns out he worked at a jewelry store that got robbed, but was a front for the yakuza, so he's got to get back the jewels or his life is forfeit. Pretty rough stuff. A new person has appeared, now, in the opposite corner. Speak to him and he'll mention just watching the area. Now, get some bait from the fisherman and go out and fish. You can cast for whatever you like. The important thing is to be successful three times, so I suggest not going super far out. On your third successful catch, you'll pull up a briefcase. Wouldn't you know, it's got the jewels. You'll have to fight that other guy forthe case. Careful, because he's kinda skilled and has four health bars. Once he's down, talk to the employee again. As a reward, you'll get a Ruby.",
         "completed": false,
@@ -224,7 +208,6 @@
     },
     {
         "id": 12,
-        "chapter": 3,
         "title": "The Homeless Men and the Cats",
         "description": "Right outside your hideout, you'll find some dudes trying to get cozy with some cats. Approach and you'll learn they're trying to help the wounded ones. Start by 'meowing like a cat' and you'll get them to drop their guard a bit. After that, suggest 'milk' to help them. Go to the Poppo on Showa St. to pick up some milk and bring it back. The cats will give you some pendants which have notes inside. These are notes to some hidden treasure. Go to the B2 level of the Theater Underground and go through the south halls until you find the room (Saejima will make note). Check the wall at the northeast to find another note. Head up to the B1 Underground, near the escalator, and check the red-lit fire alarm panel at the northwest end. You'll get one more note. Head down a level to the B2 Underground, and go southeast to the first room on the right and search the bookcase in the corner. You'll have to beat up two of the homeless guys, and then you'll have to name the cats. Once you're done, you can take the Locker Key you got and then go to the lockers to find 50,000 yen. You can choose to keep it or give it to the homeless man. If you give the money to him, you'll get the Cat Key as a souvenir, which will sell for 50,000 yen at Ebisu Pawn.",
         "completed": false,
@@ -234,7 +217,6 @@
     },
     {
         "id": 13,
-        "chapter": 3,
         "title": "Reason for Revenge",
         "description": "You can only access this after you try the door in West Park. Go to Theater Square to the stairs leading underground and you'll be approached by an old man who's asking for help. You'll go down and beat up a bunch of jerks, then be told that the bad guy seems to be really angry about something. Head up to the surface via the Theater Square stairs and to the spot you started the substory at. The guys will be back with more, so beat them all up, and then you'll be taken to Iguchi, the ringleader. Beat him and his thugs up (lotsa beatups in this one) and you'll end the substory and get an Elegant Umbrella, an Iron Nail, and a Banker's Piece cheating item for Baccarat.",
         "completed": false,
@@ -244,7 +226,6 @@
     },
     {
         "id": 14,
-        "chapter": 3,
         "title": "Running Woman",
         "description": "Go down to the Theater Underground B3 Transformer Room and you'll see several jerks surrounding a woman. Approach them and beat them up. The woman will try to pass a CD off to Saejima, but he's figuring this is more than he bargained for. She'll take off. Head back up out of the Theater Underground and up the stairs into Theater Square. Just as you reach that spot at the top of the stairs, more suits will show up. Demolish them and a different guy will show up. He'll mention more suits hanging around Club Shine. Head over there and then head east into Pink Alley. You'll be accosted there. Defeat the guys and you'll chase them off. Lastly, head to the Millennium Tower Basement (either go down from the Theater Underground or the elevator on the north side of the Tower). Go to the center of the room, and more bad guys are here. Beat them all up and the woman will give you a Player's Piece, a cheat item for Baccarat.",
         "completed": false,
@@ -254,7 +235,6 @@
     },
     {
         "id": 15,
-        "chapter": 3,
         "title": "Old Yakuza, New Tricks",
         "description": "Head to Children's Park and you'll see a scene of a young yakuza beating up on an older one with a wooden sword. Saejima will step in and stop the spectacle. The young guy will walk off and the old guy will tell Saejima that he's the younger guy's subordinate and isn't making as much money, which is why he can't just slap the punk around. Head over to Tenkaichi Alley and you'll see dudes in tracksuits. Swagger up to them and you'll see the young yakuza getting roughed up. Beat up the punks and give the young guy a dressing down. He'll leave, so leave the area and return and you'll see the two getting along better. You'll get as a reward the design called Trail of the Ancient Fighter King.",
         "completed": false,
@@ -264,7 +244,6 @@
     },
     {
         "id": 5,
-        "chapter": 4,
         "title": "Brother and Sister 3",
         "description": "After completing '25 Years', return to the hideout and Tadokoro himself will arrive. He'll ask you to show up at the Coliseum, and he'll bring along Tadashi. Head to the Coliseum and speak to Tadokoro and he'll ask you to enter the Weapon Master Grand Prix without a weapon. Of course, if you've been training up, that's hardly a handicap. Agree to it, enter the tournament by speaking to the guy next to the counter, and wreck your three opponents. After you win, Tadokoro will have skipped. Head out of Purgatory and you'll catch up to the pair. Chase Tadokoro through the streets and once you catch him, you'll beat him up. This will complete the substory, with one more to go.",
         "completed": false,
@@ -274,7 +253,6 @@
     },
     {
         "id": 6,
-        "chapter": 4,
         "title": "Brother and Sister 4",
         "description": "Once you complete the previous substory, return to the hideout. Tadashi will run off to save his sister. Head to Theater Alley, southeast of Mach Bowl (watch out for cops). You'll get in three big fights, and then reunite Tadashi with his sister. Your reward is a Seal of the Dragon.",
         "completed": false,
@@ -284,7 +262,6 @@
     },
     {
         "id": 8,
-        "chapter": 4,
         "title": "25 Years",
         "description": "You'll have to complete 'Brother and Sister 2' for this one. Leave the Theater Underground by the north and Tadokoro's subordinate will ask you to rough up a guy named Motoyama, who's at the north end of the Hotel District, near the Taxi Stand. Defeat him, then return to the hideout to close out the substory.",
         "completed": false,
@@ -294,7 +271,6 @@
     },
     {
         "id": 2,
-        "chapter": 4,
         "title": "Green Shadow",
         "description": "Head to the Theater Interior and just atop the escalator down to the Theater Underground you'll see a couple homeless guys talking about food being stolen. Head down to the Underground and further down to the B2 level. You'll pass two more guys talking about an 'alien' having gone into the manhole in Children's Park. Now, approach Saejima's hideout. A... something... will run out of it. Go to Children's Park and Saejima will consider leaving bait. Go to the M Store and get a Miso Paste Cucumber to leave. You'll miss your chance, but try again. Saejima will now think about Kappamaki. Head to Sushi Gin and order some, and take it back to the manhole. You'll now have to chase the kappa. You'll get a Stun Gun for your trouble.",
         "completed": false,
@@ -304,7 +280,6 @@
     },
     {
         "id": 1,
-        "chapter": 1,
         "title": "Be My Boyfriend?",
         "description": "After completing 'Gambler's Blues', go to Homeland and Zhao will introduce you to a Filipino girl named Fay. She'll ask for you to pretend to be her boyfriend so she can get away from her ex. Agree to it and go to Shellac. Her ex will show up and you'll take it outside. Beat him down and you'll get a Cold Pack as a reward. As you leave the Champion District, the ex will tail you. He'll now attack you with a gun. Beat him and then leave the area and you'll get a call from Fay. She's calling you to the club Purple Moon, which is south of Beam on North Pink Street. Go there and enter. It will end ina chase battle. Chase him down to end the substory and get a Chunk of Wood (Sacred).",
         "completed": false,
@@ -314,7 +289,6 @@
     },
     {
         "id": 8,
-        "chapter": 1,
         "title": "The Mixer",
         "description": "While this is in Chapter 1, it will only show up once your destination is the docks. Go to the pair of guys near the Club SEGA on Nakamichi and they'll ask you to join their mixer (standard Japanese 'group date' is three guys and three ladies). Agree to it and be prepared to answer in the following manner: 'Ryota', 'I'll leave it up to Yusuke', anything for the third, 'Throw Yusuke a lifeline', 'Recommend cocktails', 'You take care of her Yusuke'. You'll get 50,000 yen for your trouble.",
         "completed": false,
@@ -324,7 +298,6 @@
     },
     {
         "id": 12,
-        "chapter": 1,
         "title": "Gambler's Blues",
         "description": "Inside Little Asia, just west of Homeland, near the western exit, a couple will be arguing. They were swindled out of two million yen by someone they thought was a friend. Tanimura wants to help and Zhao comes up and offers gambling, specifically at the Dragon Palace (which gives Tanimura access to it). Head there and outside you'll see some homeless men. They'll shoo you away, except for the older one. He'll ask for your help in chasing some of the errant tabs of the Palace patrons. Akune - Find him in the northwest corner of the Underground Parking Lot. You'll have to chase him down. Kamei - Find him in the Champion District, northeast corner. You'll beat him up. Maria - In front of the Millennium Tower near the manhole. Beat up all her bodyguards. With everyone taken care of, you'll get the 2 million yen (but won't be able to play with it or try to appreciate it). You'll automatically go back to Little Asia and hand it over. You'll get a Design called Explosive Fishing! as a reward.",
         "completed": false,
@@ -334,7 +307,6 @@
     },
     {
         "id": 16,
-        "chapter": 1,
         "title": "Tanimura vs. Hostess Clubs",
         "description": "In front of the MEB, you'll find Minamizawa of Mars Fighters. Similar to the substory for Akiyama, you'll be challenged to meet and learn info about each of the hostesses that Tanimura can spend time with. Note that this doesn't include Elise hostesses, and also that you must meet with the hostesses in question at least once in order to give the proper info. Himeka Food? - Chicken Basket Worries? - A customer who is harassing her. Comedians? - She loves them. Chihiro Be careful of? - Don't order strong drinks. Club in college? - Kabuki Theater. Goal? - To become an actress. Much like Akiyama, you get 30,000 yen for every hostess answered correctly, for a total possible 60,000 yen.",
         "completed": false,
@@ -344,7 +316,6 @@
     },
     {
         "id": 3,
-        "chapter": 2,
         "title": "Another Case",
         "description": "As you walk in front of Homeland, Mei Hua will run up, letting you know that Zhao has been kidnapped. This case will take precedence, so hope you weren't in the middle of something. Head south down Senryo Ave. and down the alley to the east to find Zhao and some suits. Beat 'em up, then you'll learn from Zhao that a Filipino woman named Nadine was involved with them and Zhao will ask you to track her down. He suggests, of all things, that you visit Naomi's Palace for the info, so do so. She'll direct you to Pink Street and one 'Saki-chan'. Head just north of Shine and you'll find Saki, doing her best. Talk to her and she'll take off. Chase her down and she'll realize the misunderstanding and lead you to Nadine. You'll still have to get her passport back from the traffickers, so head to the Docks and you'll find them. Defeat all the bad guys to get the passport back, which will finish this substory. You'll learn more about Saki as well as a criminal named 'Bridge' and a detective that Tanimura's father worked with called 'K'.",
         "completed": false,
@@ -354,7 +325,6 @@
     },
     {
         "id": 4,
-        "chapter": 2,
         "title": "Clues",
         "description": "You must complete 'Another Case' first. As you're walking, you'll hear a dispatch about a murder near Mach Bowl. You'll even get another officer calling you over there. Head there and you'll get info on the victim, Koichi Yabe. After leaving, you'll get a phone call from Saki. She'll call you to Shellac. Head over there and Saki will tell you Yabe was on the trail of a Hong Kong woman who might be high up in the trafficking ring. Saki will point you to Nakamichi Alley, behind the Club SEGA. Walk around that specific area and Tanimura will automatically spot it. Beat up the guys inside and you won't learn too much apart from the fact that the madam has fled the country. Tanimura will decide to go back to Naomi's Palace. Pay her 50,000 yen and she'll direct you to Cuez Bar in the Underground Mall. There, speak to the bartender and she'll tell you that he hid his information in a locker in the Underground Mall. As you get there, some thugs will already be there. Beat them up and you'll take the info back to the bartender lady and get an Eye of the Dragon.",
         "completed": false,
@@ -364,7 +334,6 @@
     },
     {
         "id": 7,
-        "chapter": 2,
         "title": "Looking Down",
         "description": "You must complete 'The Witness' for this one to appear. Go to the west side of Theater Square to find a woman moping. Talk to her and she'll tell you she's worried about someone attacking her on her way to work. After Tanimura escorts her to her building, she says she feels someone watching her from the rooftops. Head up to the roof above Volcano and go to the spot to the west, above the building where you dropped off the woman. Tanimura won't find anything, and thinks he should stake out the spot from across the street to the south. Make your way around to that spot and you'll spot the guy. Chase him down and you'll get a Design called Shocking Spy Gear Exposed.",
         "completed": false,
@@ -374,7 +343,6 @@
     },
     {
         "id": 9,
-        "chapter": 2,
         "title": "The Witness",
         "description": "Go to the interior of the Kamuro Theater by going down the steps on the east side of Theater Square. There you'll see a man in a red jacket. Speak to him and he'll be scared to move from that spot because he spotted a robbery. He says the robbers are in Theater Square right now. Agree to go get them and he'll hand you a sketch of the guy and tell you he's wearing a black jacket. As you go to Theater Square, you'll notice four separate guys who could be your target. The one you want is wearing black and has lighter-colored hair. Beat him up and his cronies. You'll get a Blackjack Amulet for your trouble.",
         "completed": false,
@@ -384,7 +352,6 @@
     },
     {
         "id": 10,
-        "chapter": 2,
         "title": "Kamurocho Culture",
         "description": "Just south of Park Alley and Kamiyama Works, you'll see some yakuza harassing a white dude. Speak to them and beat them up. After which the foreigner will want to show you around. Take him up on it and he'll describe a place he wants to go, which is 'a shogi salon'. The next spot is 'a hot spring'. You'll get 50,000 yen as a reward.",
         "completed": false,
@@ -394,7 +361,6 @@
     },
     {
         "id": 11,
-        "chapter": 2,
         "title": "Car Thieves",
         "description": "Go to the northwest exit of Theater Square and you'll automatically hear a conversation about car break-ins. Leave the area and return to near Children's Park to see a couple of guys up to no good, peeking into a car. They'll bolt if you approach them too fast, so hold L1/LB to walk up to them. Ask them if 'that's the key to that car'. You'll go through a whole comedy routine, and then you'll have to fight the two guys. You'll get a Red Jewel as a reward.",
         "completed": false,
@@ -404,7 +370,6 @@
     },
     {
         "id": 14,
-        "chapter": 2,
         "title": "Stolen Funds",
         "description": "You must complete 'Be My Boyfriend?' for this to appear. Furthermore, you can only begin doing this after finding the 100 million and stashing it at Homeland. Go to the border of Little Asia (any entry point) and you'll get a call from Mei Hua who will call you back to Homeland. Apparently Zhao got robbed and the criminals want Tanimura to go to Public Park #3 in Tenkaichi Alley. Head there and go to the backlot north of it. You'll beat up the guys and get a Ruby.",
         "completed": false,
@@ -414,7 +379,6 @@
     },
     {
         "id": 15,
-        "chapter": 2,
         "title": "Voiceless Cries",
         "description": "Complete 'Stolen Funds', then return to Homeland. Speak to Zhao and Mei Hua and they'll tell you about graffiti that some kids in Little Asia have been throwing up, and how it's anti-Japanese messages. Tanimura will have to track them down. First, go to the northeast entrance to Little Asia. Partway in you'll see one of the kids. Talk to him and he'll run off and you'll have to find him. Go to Homeland and look to the east to a food stall. The kid will be crouched down inside. Stare at him in first-person mode to discover him. For the second kid, go up to the second floor area where Nair hangs out. The kid will be just outside that room. He'll go hide, too. Go down the western stairs and then look beneath them to spot him. The last kid is in the south part of Little Asia. From the southern entrance, go into the maze and past the vendor guy and you'll spot a girl with a pink scarf. When she runs, you'll find her above the entrance to Homeland, on a catwalk. Finding all three will finish the substory.",
         "completed": false,
@@ -424,7 +388,6 @@
     },
     {
         "id": 2,
-        "chapter": 4,
         "title": "A Dangerous Game",
         "description": "You'll need to complete 'Gambling Blues'. SAVE BEFORE YOU DO THIS ONE. Go to the Dragon Palace Casino and speak to the old man sitting down near the bar. He'll give you the opportunity to win big. Real big. Agree twice to his game and you'll play a little Russian Roulette. The first two pulls will happen with no problem. For your second pull, 'Pull Trigger Fearlessly'. For your last pull, 'Pull Trigger Impassively'. That's a cool 3,000,000 yen.",
         "completed": false,
@@ -434,7 +397,6 @@
     },
     {
         "id": 5,
-        "chapter": 4,
         "title": "Burning Bridges",
         "description": "Once you've completed 'Clues', go to the crossroads near the Poppo in Nakamichi Alley. You'll beat up some suits and get the idea to call Saki again. Go to Shellac to meet her and she'll consider trying to pose as a hostess to get into the crime ring. Tanimura, crazily enough, is heading back to Naomi's Palace. She'll fill you in on the story of Yusuke Kaga, the 'K' that was mentioned. While you're talking, Saki calls you to the rooftop garden above Volcano. Go there and you'll learn of a man named Tsugawa and fight four dudes (watch out for the grenade guy). Your next stop is Suppon St. Go there and you'll fight Tsugawa and his goons. This will end this part of the story, but there's yet one more.",
         "completed": false,
@@ -444,7 +406,6 @@
     },
     {
         "id": 6,
-        "chapter": 4,
         "title": "Successor",
         "description": "After completing 'Burning Bridges', leave the Champion District and you'll get a call from Naomi. Back once again over there and you'll devise a plan to draw out Bridge. Head over to Pink Alley (enter the south part from east of Shine) and you'll find your marks. Beat them down and you'll head to Millennium Tower to finally face the mastermind. Defeat all of his bodyguards, then chase him down. You'll finish this long tale with a Seal of the Dragon.",
         "completed": false,
@@ -454,7 +415,6 @@
     },
     {
         "id": 13,
-        "chapter": 4,
         "title": "Letter to Mei Hua",
         "description": "Make sure you clear 'Voiceless Cries'. Go to Homeland and you'll find Zhao standing outside. Speak to him and he'll refer to a letter he got, from someone claiming to be Mei Hua's biological father. Head to West Park to meet this alleged father and you'll have to beat down some thugs. You'll get a lead to head to the Hotel District. Go to the northwest corner and save Zhao again. Beat the guys up outside, then the guys inside to finish the substory.",
         "completed": false,
@@ -464,7 +424,6 @@
     },
     {
         "id": 1,
-        "chapter": 2,
         "title": "White Lie",
         "description": "You must complete 'Master vs. Apprentice'. Go to Bantam and go to the bar. You'll be told to sit in a particular seat. When you do so, a woman will enter and slap Kiryu. She has a case of mistaken identity, but play along. Choose to 'go with her' and you'll go to several places that are important to the woman. Defeat the two guys that show up at the store and a few more scenes will happen. You'll receive Platinum Engagement Rings at the end of it all, which can be sold at Ebisu Pawn for 150,000 yen.",
         "completed": false,
@@ -474,7 +433,6 @@
     },
     {
         "id": 4,
-        "chapter": 2,
         "title": "Yuya's Way",
         "description": "In front of New Serena, or more correctly in front of Stardust, is Yuya and one of his hosts, Shinya. They're discussing a host who failed to collect on a bill. Shinya thinks Yuya is too soft. Head inside Stardust and Kazuki will fill you in on the situation. He believes it's possible that there might be a set up involved. Head outside and east towards Nakamichi St. You'll hear a woman on her phone. Listen to her and she'll mention that Shinya is near Watami. Head just south of Watami to find Shinya and a woman. Defeat Shinya to finish the substory.",
         "completed": false,
@@ -484,7 +442,6 @@
     },
     {
         "id": 6,
-        "chapter": 2,
         "title": "Color Gangs",
         "description": "After completing 'Return of Fake Kiryu', search west of Jewel to find a guy in a suit. This was a former leader of a gang Kiryu cleaned out in the first game. He's now in used cars and gave you his business card. Next, go to Nakamichi St. just north of Pronto to find a guy with a couple of guys in suits, one with a red cloth on his head. They're more gang leaders from the past. Lastly, head to Nakamichi Alley and the lot behind Kotobuki Drugs. You'll find members of the last color gang, Blue Z, harassing a woman. Beat them down and you'll complete the substory.",
         "completed": false,
@@ -494,7 +451,6 @@
     },
     {
         "id": 8,
-        "chapter": 2,
         "title": "The Twist is Back in Style",
         "description": "Immediately once you get freedom in Kamurocho, you'll get a text telling you to come settle things at the Yoshida Batting Center. SAVE BEFORE YOU DO THIS. Head there and you'll meet Keisuke Baba, formerly of the gang known as the B-Kings, who Kiryu tangled with in the second game. He'll challenge you to hit his nasty curveball pitches. You only have to hit one of the ten pitches he throws at you, but they're nasty curves of varying speeds. Tag a single ball and you'll win. His agent will give you a Chunk of Wood (Sacred).",
         "completed": false,
@@ -504,7 +460,6 @@
     },
     {
         "id": 10,
-        "chapter": 2,
         "title": "Kotaro Gets a Job",
         "description": "After completing 'The Twist', go south of Bantam to see a guy in a white hoodie get kicked out of a ramen shop. Turns out this Kotaro, a guy Kiryu fought and helped in the previous game as part of a major 'Hitman' sidequest. Anyway, Kotaro's having trouble holding down a job, so Kiryu offers to keep an eye on him for the sake of Ibuki, the guy who runs the Honest Living Association, a group dedicated to helping yakuza and other criminals find honest lives. Anyway, head over to Shichifuku St. just west of Kanrai and talk to Kotaro, who's trying to throw out irate customers. Defeat the customers, but you can't stop Kotaro from getting fired. He'll text you shortly thereafter letting you know he's at Sushi Gin. Head there and talk to the ladies out in front to learn that Kotaro got dragged off towards Nakamichi St. You might actually have to leave the general area before you can come back and find him at the south end of Nakamichi on the ground. Talk to him and you'll get in a fight with a bunch of guys. Beat them up to complete the substory.",
         "completed": false,
@@ -514,7 +469,6 @@
     },
     {
         "id": 11,
-        "chapter": 2,
         "title": "Kiryu vs. Hostess Clubs",
         "description": "The other two guys had to do it, and now it's Kiryu's turn. Go to the MEB and you'll find the dude from Mars Fighters, looking for more info on hostesses. Remember that you only need info from the girls at Shine and Jewel. Once you visit each at least once, go to Cuez Bar and give Minamizawa the following info: Shizuka Day Job? - 'She's an embalmer.' The Trick? - 'She offers to wash their backs.' Fave food? - 'Vegetable Sticks.' Maya Day Job? - 'She's a model.' Problems? - 'She keeps getting questioned by the police.' Fave food? - 'Chocolate.' As always, you get 30,000 yen for each perfect response, for a maximum possible of 60,000 yen.",
         "completed": false,
@@ -524,7 +478,6 @@
     },
     {
         "id": 12,
-        "chapter": 2,
         "title": "Urban Hero",
         "description": "Once you complete 'Curry Adventure', walk along Tenkaichi Alley and you'll see a punk get beaten by a weird dude in a costume. Head to Nakamichi Alley in front of the Poppo and run into the kid with the gray jacket and he'll show up again. From here, go to the front of Millennium Tower and you'll find him with a little more than he can handle. Offer to help and head to the Matsuya to get curry for him. Once you bring it to him, he'll win and give you a Fitness Gear.",
         "completed": false,
@@ -534,7 +487,6 @@
     },
     {
         "id": 13,
-        "chapter": 2,
         "title": "Return of Fake Kiryu",
         "description": "You must complete 'Yuya's Way'. A new substory will appear at Stardust. Speak to Yuya and he'll let you know about a guy impersonating Kiryu online. His most recent post is at Club SEGA Theater Square. Head there now and you'll just miss him. Next you'll get a post about Smile Burger. Head there. The last place is the Champion District. Go to the east side of the district to find your man. Defeat him and you'll get a Popularity Bracelet.",
         "completed": false,
@@ -544,7 +496,6 @@
     },
     {
         "id": 14,
-        "chapter": 2,
         "title": "Curry Adventure",
         "description": "To the west of the Hot Springs, you'll find a delivery guy surrounded by some irate construction workers. Apparently he crashed his bike while bringing their lunches and needs some new side dishes for the rice. Specifically, you'll need some curry. Head to either Matsuya and buy the curry pack they offer, then take it to New Serena to use their stove to heat it up, then bring it back to the kid. He'll give you a Staminan Spark.",
         "completed": false,
@@ -554,7 +505,6 @@
     },
     {
         "id": 15,
-        "chapter": 2,
         "title": "Master vs. Apprentice",
         "description": "Enter Kyushu No. 1 Star and you'll hear an argument between the owner and his apprentice, who wants to open his own branch of the shop. Speak to Ueda, sitting at the counter, and he'll ask you to talk to the apprentice. Agree, and leave the store. Head to the parking lot at the east end of Taihei to find the guy. Approach him, then head back to the ramen shop and agree to help the apprentice find a new taste. Check out all the options, then choose to 'wander around town'. After all is said and done, you'll complete the substory and add a new menu item to the Kyushu No. 1 Star list: Black Tonkotsu Ramen.",
         "completed": false,
@@ -564,7 +514,6 @@
     },
     {
         "id": 3,
-        "chapter": 4,
         "title": "Becoming Family",
         "description": "You need to complete 'Urban Hero' before this appears. Go to New Serena and you'll find Saya Date standing out in front off the bar. She wants to introduce her father to her new boyfriend, but apparently he's a no show at the meet-up. Head out to Millennium Tower to find him, victim of a series of contrivances. You'll have to help him find a little girl's lost mother AND a purse snatcher. Go to Theater Square to find the mom, then go to Shichifuku Parking Lot to find the snatcher. Go back to Minoru and everything will be settled.",
         "completed": false,
@@ -574,7 +523,6 @@
     },
     {
         "id": 5,
-        "chapter": 4,
         "title": "A Doctor's Pledge",
         "description": "After completing 'White Lie', go to the Docks and you'll find a dude in a red jacket near the water's edge. Approach him and he'll refuse the help of the police. Kiryu will bring him to Doc Emoto, a character from previous games. Unfortunately, the man isn't Japanese, so you'll need an interpreter. Go to New Serena and talk to Tanimura and you'll bring him over to Emoto's. You'll then fight some bad guys. The end.",
         "completed": false,
