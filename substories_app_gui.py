@@ -28,14 +28,14 @@ def save_data(substories, json_filename):
         json.dump(substories, file, indent=4)
 
 # Function to load revelations from JSON file
-def load_revelations():
-    json_path = resource_path('revelations.json')
+def load_revelations(json_filename):
+    json_path = resource_path(json_filename)
     with open(json_path, 'r') as file:
         return json.load(file)
 
 # Function to save revelations data to JSON file
-def save_revelations(revelations):
-    json_path = resource_path('revelations.json')
+def save_revelations(revelations, json_filename):
+    json_path = resource_path(json_filename)
     with open(json_path, 'w') as file:
         json.dump(revelations, file, indent=4)
 
@@ -364,7 +364,7 @@ def update_status(substory, new_status):
             tree.focus(item)
 
 # Function to open a new window with revelation details
-def show_revelation_details(event):
+def show_revelation_details(event, json_filename):
     selected_item = revelations_tree.selection()
     if selected_item:
         revelation_id = int(revelations_tree.item(selected_item, 'values')[0])
@@ -419,7 +419,7 @@ def show_revelation_details(event):
         status_option = ttk.Combobox(detail_frame, values=['Completed', 'Not Completed'])
         status_option.set(revelation['status'])
         status_option.grid(row=3, column=1, sticky='w', padx=5, pady=5)
-        status_option.bind("<<ComboboxSelected>>", lambda e: update_revelation_status(revelation, status_option.get()))
+        status_option.bind("<<ComboboxSelected>>", lambda e: update_revelation_status(revelation, status_option.get(), json_filename))
         widgets.append(status_option)
 
         # Adding font size controls for the detail window
@@ -449,15 +449,15 @@ def show_revelation_details(event):
             revelation['title'] = title_entry.get()
             revelation['description'] = description_text.get("1.0", tk.END).strip()
             revelation['status'] = status_option.get()
-            save_revelations(revelations)
+            save_revelations(revelations, json_filename)
             refresh_revelations_table(revelations_tree, revelations)
             detail_window.destroy()
 
         detail_window.protocol("WM_DELETE_WINDOW", on_close)
 
-def update_revelation_status(revelation, new_status):
+def update_revelation_status(revelation, new_status, json_filename):
     revelation['status'] = new_status
-    save_revelations(revelations)
+    save_revelations(revelations, json_filename)
     refresh_revelations_table(revelations_tree, revelations)
 
 def refresh_revelations_table(tree, revelations):
@@ -467,9 +467,9 @@ def refresh_revelations_table(tree, revelations):
         tree.insert("", "end", values=(revelation['id'], revelation['title'], revelation['description'], revelation['status']))
 
 # Function to open the revelations window
-def show_revelations():
+def show_revelations(json_filename):
     global revelations, revelations_tree
-    revelations = load_revelations()
+    revelations = load_revelations(json_filename)
     
     revelations_window = tk.Toplevel(root)
     revelations_window.title("Revelations")
@@ -518,7 +518,7 @@ def show_revelations():
             selected_ids = [int(revelations_tree.item(item, 'values')[0]) for item in selected_items]
             for revelation_id in selected_ids:
                 revelation = next(rev for rev in revelations if rev['id'] == revelation_id)
-                update_revelation_status(revelation, new_status)
+                update_revelation_status(revelation, new_status, json_filename)
             refresh_revelations_table(revelations_tree, revelations)
             
             # Re-select the items based on their IDs
@@ -528,11 +528,33 @@ def show_revelations():
                     revelations_tree.focus(item)
 
     status_combobox.bind("<<ComboboxSelected>>", change_revelation_status)
-    
+
+    # Adding character filter for Yakuza 4 revelations
+    if json_filename == 'Y4_Revelations.json':
+        character_filter_frame = tk.Frame(revelations_window, background='#333333' if dark_mode_var.get() else '#f0f0f0')
+        character_filter_frame.grid(row=3, column=0, columnspan=2, pady=5)
+        
+        character_listbox = tk.Listbox(character_filter_frame, selectmode=tk.MULTIPLE, exportselection=0, height=4)
+        characters = ['All', 'Akiyama', 'Saejima', 'Tanimura', 'Kiryu']  # Replace with actual character names
+        for character in characters:
+            character_listbox.insert(tk.END, character)
+        character_listbox.grid(row=0, column=1, padx=5, pady=5)
+
+        def filter_revelations_by_character():
+            selected_characters = [character_listbox.get(i) for i in character_listbox.curselection()]
+            if 'All' in selected_characters or not selected_characters:
+                filtered_revelations = revelations
+            else:
+                filtered_revelations = [revelation for revelation in revelations if revelation.get('character') in selected_characters]
+            refresh_revelations_table(revelations_tree, filtered_revelations)
+        
+        button_filter_character = tk.Button(character_filter_frame, text="Filter by Character", command=filter_revelations_by_character, background='#333333' if dark_mode_var.get() else '#f0f0f0', foreground='#FFFFFF' if dark_mode_var.get() else '#000000')
+        button_filter_character.grid(row=0, column=0, padx=5, pady=5)
+
     refresh_revelations_table(revelations_tree, revelations)
 
     # Binding events
-    revelations_tree.bind("<Double-1>", show_revelation_details)
+    revelations_tree.bind("<Double-1>", lambda event: show_revelation_details(event, json_filename))
 
     apply_theme_to_window(revelations_window, [status_combobox_frame, status_combobox])
 
@@ -743,7 +765,7 @@ button_reset_font = tk.Button(frame_filter, text="Reset Font Size", command=rese
 button_reset_font.grid(row=2, column=2, padx=5, pady=5)
 
 # Adding button to show revelations
-button_revelations = tk.Button(frame_filter, text="Show Revelations", command=show_revelations)
+button_revelations = tk.Button(frame_filter, text="Show Revelations", command=lambda: show_revelations('revelations.json' if json_filename == 'substories.json' else 'Y4_Revelations.json'))
 button_revelations.grid(row=2, column=3, padx=5, pady=5)
 
 # Adding dark mode toggle

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "character": "Akiyama",
+        "title": "Essence of Triple Strike",
+        "description": "This is the first that Mack will point you to directly.",
+        "thought": "Those leaps and bounds were something else.",
+        "status": "Not Completed"
+    },
+    {
+        "id": 2,
+        "character": "Akiyama",
+        "title": "Essence of Comebacks",
+        "description": "Go to the west entrance of Little Asia, just south of Beam. You'll see a trio of guys laughing about some 'kung fu masters'. Look into the alley of Little Asia at the couple walking.",
+        "thought": "Hm, counterattacking after someone breaks your guard.",
+        "status": "Not Completed"
+    },
+    {
+        "id": 3,
+        "character": "Akiyama",
+        "title": "Essence of Loin Reaving",
+        "description": "On the Eastern Rooftops, you'll find a cop, a kidnapper, and a kid, in the southeast part near the exit to Pink Alley. Focus on the lady cop.",
+        "thought": "Right in the jewels. That's gotta hurt...",
+        "status": "Not Completed"
+    },
+    {
+        "id": 4,
+        "character": "Saejima",
+        "title": "Essence of Bell Ringing",
+        "description": "Head to the Underground Parking Lot and go the mid-south part. Look for area #104 and a black car with a guy sitting inside. Focus on him.",
+        "thought": "Guy slammed straight into the wall.",
+        "status": "Not Completed"
+    },
+    {
+        "id": 5,
+        "character": "Saejima",
+        "title": "Essence of Heavy Weapons",
+        "description": "Go to the Docks and focus on the dude in the oil drum.",
+        "thought": "Somethin' that heavy's sure to do damage.",
+        "status": "Not Completed"
+    },
+    {
+        "id": 6,
+        "character": "Saejima",
+        "title": "Essence of Clotheslining",
+        "description": "Go to the Nakamichi Alley Poppo. You'll see a guy harassing a girl. Focus on them.",
+        "thought": "The momentum helped him land a big hit.",
+        "status": "Not Completed"
+    },
+    {
+        "id": 7,
+        "character": "Saejima",
+        "title": "Essence of Smashing",
+        "description": "Go to the west entrance of Little Asia, just south of Beam. You'll see a trio of guys laughing about some 'kung fu masters'. Look into the alley of Little Asia at the couple walking.",
+        "thought": "Damn, she kicked clean through his guard.",
+        "status": "Not Completed"
+    },
+    {
+        "id": 8,
+        "character": "Tanimura",
+        "title": "Essence of Guillotine Heel",
+        "description": "Head to the Club SEGA at Theater Square. Look at the UFO Catchers and focus on the male of the couple.",
+        "thought": "Hm, he hit one toy with the other to make it fall.",
+        "status": "Not Completed"
+    },
+    {
+        "id": 9,
+        "character": "Tanimura",
+        "title": "Essence of Ball and Chain",
+        "description": "Go to the Hotel District south of the Taxi Stand. Instead of focusing on the girl, focus on the homeless guy at the vending machines.",
+        "thought": "Backwards between the legs?",
+        "status": "Not Completed"
+    },
+    {
+        "id": 10,
+        "character": "Tanimura",
+        "title": "Essence of Skull-Crushing",
+        "description": "From the Taxi Stand at the end of Park Boulevard, go west and focus on the girl singing.",
+        "thought": "He got clocked hard when he was off guard...",
+        "status": "Not Completed"
+    },
+    {
+        "id": 11,
+        "character": "Kiryu",
+        "title": "Essence of Merciless Throwing",
+        "description": "On the Eastern Rooftops, you'll find a cop, a kidnapper, and a kid, in the southeast part near the exit to Pink Alley. Focus on the lady cop.",
+        "thought": "She really gave him the ol' one-two.",
+        "status": "Not Completed"
+    },
+    {
+        "id": 12,
+        "character": "Kiryu",
+        "title": "Essence of Taunting",
+        "description": "Go to the Nakamichi Alley Poppo. You'll see a guy harassing a girl. Focus on them.",
+        "thought": "A strong hit after a taunt, huh?",
+        "status": "Not Completed"
+    }
+]
