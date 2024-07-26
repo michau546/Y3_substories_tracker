@@ -1,3 +1,4 @@
+# Import necessary modules
 import json
 import os
 import sys
@@ -6,6 +7,7 @@ from tkinter import ttk
 from tkinter import messagebox
 import configparser
 
+# Define the resource path function
 def resource_path(relative_path):
     """ Get the absolute path to the resource, works for dev and for PyInstaller """
     try:
@@ -671,12 +673,20 @@ def change_json_file(event):
     display_name = json_filename_var.get()
     json_filename = {v: k for k, v in json_file_display_names.items()}[display_name]
     substories = load_data(json_filename)
+    
     if json_filename == 'y4subst.json':
+        chapters = ['All', 'chapter 2', 'chapter 3', 'chapter 4', 'finale']
         label_character.grid()
         character_listbox.grid()
     else:
+        chapters = ['All', 'chapter 3', 'chapter 4', 'chapter 5', 'chapter 6', 'chapter 7', 'chapter 9', 'chapter 10', 'chapter 12']
         label_character.grid_remove()
         character_listbox.grid_remove()
+
+    chapter_listbox.delete(0, tk.END)
+    for chapter in chapters:
+        chapter_listbox.insert(tk.END, chapter)
+
     on_filter()
 
 # Creating the main application window
@@ -834,6 +844,9 @@ status_combobox.bind("<<ComboboxSelected>>", change_status)
 # Load and apply configuration settings
 config = load_config()
 apply_config(config)
+
+# Apply the JSON file selection logic initially
+change_json_file(None)
 
 # Initial table refresh
 on_filter()
