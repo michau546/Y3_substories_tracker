@@ -3,9 +3,9 @@
         "id": 1,
         "character": "Akiyama",
         "title": "Essence of Triple Strike",
-        "description": "This is the first that Mack will point you to directly.",
+        "description": "This is the first that Mack will point you to directly. The thoughts you want are \"Those leaps and bounds were something else.\"",
         "thought": "Those leaps and bounds were something else.",
-        "status": "Not Completed"
+        "status": "Completed"
     },
     {
         "id": 2,

@@ -1,4 +1,3 @@
-# Import necessary modules
 import json
 import os
 import sys
@@ -47,7 +46,7 @@ def filter_substories(query, substories, filter_by, status_filters, chapter_filt
     if filter_by == 'ID':
         filtered = [substory for substory in substories if query in str(substory['id'])]
     elif filter_by == 'Title':
-        filtered = [substory for substory in substories if query.lower() in substory['title'].lower()]
+        filtered = [substory for substory in filtered if query.lower() in substory['title'].lower()]
     elif filter_by == 'Description':
         filtered = [substory for substory in filtered if query.lower() in substory['description'].lower()]
 
@@ -68,31 +67,14 @@ def refresh_table(tree, substories):
         tree.delete(row)
     for substory in substories:
         if json_filename == 'y4subst.json':
-            values = (substory['id'], substory['title'], substory['description'],substory['available from'], substory['status'], substory['character'])
+            values = (substory['id'], substory['title'], substory['description'], substory['available from'], substory['status'], substory['character'])
         else:
             values = (substory['id'], substory['title'], substory['description'], substory['available from'], substory['status'])
         tree.insert("", "end", values=values)
 
 # Function to handle filtering
 def on_filter():
-    global substories, json_filename
-    display_name = json_filename_var.get()
-    json_filename = {v: k for k, v in json_file_display_names.items()}[display_name]
-    substories = load_data(json_filename)
-
-    # Show or hide character filter based on the selected JSON file
-    if json_filename == 'y4subst.json':
-        label_character.grid()
-        character_listbox.grid()
-    else:
-        label_character.grid_remove()
-        character_listbox.grid_remove()
-    
-    query = entry_search.get()
-    filter_by = filter_option.get()
-    status_filters = [status_listbox.get(i) for i in status_listbox.curselection()]
-    chapter_filters = [chapter_listbox.get(i) for i in chapter_listbox.curselection()]
-    character_filters = [character_listbox.get(i) for i in character_listbox.curselection()] if json_filename == 'y4subst.json' else []
+    query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
     if not status_filters:
         status_filters = ['All']
     if not chapter_filters:
@@ -108,7 +90,10 @@ def on_filter():
 
 # Function to get current filter settings
 def get_current_filters():
-    return entry_search.get(), filter_option.get(), [status_listbox.get(i) for i in status_listbox.curselection()], [chapter_listbox.get(i) for i in chapter_listbox.curselection()], [character_listbox.get(i) for i in character_listbox.curselection()] if json_filename == 'y4subst.json' else []
+    return (entry_search.get(), filter_option.get(),
+            [status_listbox.get(i) for i in status_listbox.curselection()],
+            [chapter_listbox.get(i) for i in chapter_listbox.curselection()],
+            [character_listbox.get(i) for i in character_listbox.curselection()] if json_filename == 'y4subst.json' else [])
 
 # Function to handle status change
 def change_status(event):
@@ -120,12 +105,12 @@ def change_status(event):
             substory = next(sub for sub in substories if sub['id'] == substory_id)
             substory['status'] = new_status
         save_data(substories, json_filename)
-        
+
         # Get current filters and reapply them after saving data
         query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
         filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
         refresh_table(tree, filtered_substories)
-        
+
         # Re-select the items based on their IDs
         for item in tree.get_children():
             if int(tree.item(item, 'values')[0]) in selected_ids:
@@ -348,7 +333,9 @@ def show_details(event):
             save_data(substories, json_filename)
             
             # Refresh the table without resetting the filters
-            refresh_table(tree, substories)
+            query, filter_by, status_filters, chapter_filters, character_filters = get_current_filters()
+            filtered_substories = filter_substories(query, substories, filter_by, status_filters, chapter_filters, character_filters)
+            refresh_table(tree, filtered_substories)
             
             detail_window.destroy()
 
@@ -452,7 +439,10 @@ def show_revelation_details(event, json_filename):
             revelation['description'] = description_text.get("1.0", tk.END).strip()
             revelation['status'] = status_option.get()
             save_revelations(revelations, json_filename)
+
+            # Refresh the table without resetting the filters
             refresh_revelations_table(revelations_tree, revelations)
+            
             detail_window.destroy()
 
         detail_window.protocol("WM_DELETE_WINDOW", on_close)
@@ -593,30 +583,38 @@ def apply_config(config):
         filters = config['FILTERS']
         entry_search.insert(0, filters.get('query', ''))
         filter_option.set(filters.get('filter_by', 'Title'))
+        
+        # Setting status filter
         status_filters = filters.get('status_filter', 'All').split(',')
         for i in range(status_listbox.size()):
             if status_listbox.get(i) in status_filters:
                 status_listbox.select_set(i)
+        
+        # Setting chapter filter
         chapter_filters = filters.get('chapter_filter', 'All').split(',')
         for i in range(chapter_listbox.size()):
             if chapter_listbox.get(i) in chapter_filters:
                 chapter_listbox.select_set(i)
+        
+        # Setting character filter
         character_filters = filters.get('character_filter', 'All').split(',')
         for i in range(character_listbox.size()):
             if character_listbox.get(i) in character_filters:
                 character_listbox.select_set(i)
+        
         json_filename_var.set(filters.get('json_file', 'Yakuza 3'))
+    
     if 'WINDOW' in config:
         window = config['WINDOW']
         width = window.get('width', '1024')
         height = window.get('height', '768')
         root.geometry(f'{width}x{height}')
+    
     if 'THEME' in config:
         theme = config['THEME']
         dark_mode_var.set(theme.getboolean('dark_mode', False))
         apply_theme()
 
-# Function to toggle dark mode
 def toggle_dark_mode():
     apply_theme()
     save_config()
@@ -676,12 +674,12 @@ def change_json_file(event):
     
     if json_filename == 'y4subst.json':
         chapters = ['All', 'chapter 2', 'chapter 3', 'chapter 4', 'finale']
-        label_character.grid()
-        character_listbox.grid()
+        label_character.pack()
+        character_listbox.pack()
     else:
         chapters = ['All', 'chapter 3', 'chapter 4', 'chapter 5', 'chapter 6', 'chapter 7', 'chapter 9', 'chapter 10', 'chapter 12']
-        label_character.grid_remove()
-        character_listbox.grid_remove()
+        label_character.pack_forget()
+        character_listbox.pack_forget()
 
     chapter_listbox.delete(0, tk.END)
     for chapter in chapters:
@@ -756,8 +754,8 @@ for character in characters:
     character_listbox.insert(tk.END, character)
 character_listbox.grid(row=1, column=5, padx=5, pady=5)
 if json_filename != 'y4subst.json':
-    label_character.grid_remove()
-    character_listbox.grid_remove()
+    label_character.pack_forget()
+    character_listbox.pack_forget()
 
 # Adding the filter button
 button_filter = tk.Button(frame_filter, text="Filter", command=on_filter)
@@ -816,8 +814,6 @@ tree.column("Status", width=100)
 if json_filename == 'y4subst.json':
     tree.column("Character", width=100)
 
-# Initial table refresh
-on_filter()
 # Creating scrollbars
 vsb = ttk.Scrollbar(frame_tree, orient="vertical", command=tree.yview)
 hsb = ttk.Scrollbar(frame_tree, orient="horizontal", command=tree.xview)
@@ -841,9 +837,15 @@ status_combobox = ttk.Combobox(status_combobox_frame, values=['Completed', 'Not 
 status_combobox.pack(side=tk.LEFT)
 status_combobox.bind("<<ComboboxSelected>>", change_status)
 
+# Save configuration settings on exit
+def on_exit():
+    save_config()
+    root.destroy()
+
+root.protocol("WM_DELETE_WINDOW", on_exit)
+
 # Load and apply configuration settings
 config = load_config()
-apply_config(config)
 
 # Apply the JSON file selection logic initially
 change_json_file(None)
@@ -854,12 +856,8 @@ on_filter()
 # Binding events
 tree.bind("<Double-1>", show_details)
 
-# Save configuration settings on exit
-def on_exit():
-    save_config()
-    root.destroy()
+# Apply configuration settings after the UI has been built
+apply_config(config)
 
-root.protocol("WM_DELETE_WINDOW", on_exit)
-
-# Running the main application loop
+# Start the main loop
 root.mainloop()
